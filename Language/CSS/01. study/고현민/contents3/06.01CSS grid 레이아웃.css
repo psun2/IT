@@ -1,0 +1,9 @@
+/* 기본세팅 */
+body { margin: 0; padding: 0; }
+.wrapper { border: 2px solid black; }
+.wrapper > div { 
+  background-color: yellow; 
+}
+.wrapper > div:nth-child(even) { 
+  background-color: yellowgreen;
+}

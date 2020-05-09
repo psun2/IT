@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 시트 css 접두어 webkit, moz, ms, o 의 의미</title>
+
+    <style>
+        #grad1 {
+            height: 200px;
+            color: white;
+
+            /* For Safari 5.1 to 6.0 */
+            background: -webkit-linear-gradient(to left, red, blue);
+
+            /* For Opera 11.1 to 12.0 */
+            background: -o-linear-gradient(to left, red, blue);
+
+            /* FOr Firefox 3.6 to 15 */
+            background: -moz-linear-gradient(to left, red, blue);
+
+            /* Standard */
+            background: linear-gradient(to left, red, blue);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grad1">
+        <span>
+            CSS 속성 중에 접두어를 붙어야 되는 경우가 있습니다. 각 접두어의 의미를 알아보겠습니다.
+            쓰는 방법은 속성 앞에 붙이면 됩니다.
+            <ul>
+                <li>-webkit- : 구글, 사파리 브라우저에 적용</li>
+                <li>-moz- : 파이어폭스 브라우저에 적용</li>
+                <li>-ms- : 익스플로러에 적용, 보통 생략합니다.</li>
+                <li>-o- : 오페라 브라우저에 적용</li>
+            </ul>
+        </span>
+    </div>
+    <a href="https://blog.naver.com/tjddjs90/221889420281">내 블로그에서 보기</a>
+    <br>
+    <hr>
+    <br>
+    출처 : https://mainia.tistory.com/3671
+</body>
+
+</html>

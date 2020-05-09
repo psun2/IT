@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>065-JavaScript - 클로저 (1_4) # 외부함수와 내부함수</title>
+</head>
+<body>
+    <script>
+        function outter(){
+            function inner(){
+                var title = 'coding everybody';
+                alert(title);
+            }
+            inner();
+        }
+        outter();
+    </script>
+</body>
+</html>

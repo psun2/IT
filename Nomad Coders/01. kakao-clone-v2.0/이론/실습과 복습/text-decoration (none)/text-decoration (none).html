@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5d1d5aa1e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>text-decoration: none;</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 1000vh;
+      }
+
+      .status-bar {
+        background-color: blanchedalmond;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* position: fixed; */
+        /* position:fixed 와 동시에 inline 요소로 전환되어, width 가 줄어 듭니다. */
+        /* width: 100%; */
+        /* top: 0; */
+        /* left: 0; */
+        /* padding: 30px; */
+      }
+
+      .none {
+        text-decoration: none;
+      }
+
+      a {
+        font-size: 30px;
+      }
+
+      h3 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:53</span>
+      </div>
+      <div class="status-bar__column">
+        <h1>text-decoration: none;</h1>
+        <h3>a태그 링크의 밑줄을 유심히 봐주세요.</h3>
+      </div>
+      <div class="status-bar__column">
+        <a href="https://blog.naver.com/tjddjs90/221900659072"
+          >내 블로그에서 보기</a
+        >
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <main>
+      <a href="#">일반 a태그의 링크 입니다.</a> <br />
+      <hr />
+      <a href="#" class="none"
+        >text-decoration: none; 적용한 a태그 링크 입니다.</a
+      >
+    </main>
+  </body>
+</html>

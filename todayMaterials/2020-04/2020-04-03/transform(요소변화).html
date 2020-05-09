@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform(요소변화)</title>
+
+    <style>
+        .box {
+            background-color: darkorange;
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            margin-bottom: 10px;
+        }
+
+        .box2 {
+            transform: translate(50%);
+        }
+
+        .box3 {
+            transform: translate(0, 50px);
+        }
+
+        .box4 {
+            transform: translate(50px, 50%);
+        }
+
+        .box5 {
+            transform: rotate(180deg);
+            /* transform: rotate(180deg); === transform: rotateZ(180deg); => default */
+        }
+
+        .box6 {
+            transform: rotateX(0.5turn);
+        }
+
+        .box7 {
+            transform: rotateY(0.5turn);
+        }
+
+        .box8 {
+            transform: rotate(180deg) rotateX(0.5turn) rotateY(0.5turn);
+        }
+
+        .box9 {
+            transform: translate(50%, 50px) rotate(180deg) rotateX(0.5turn) rotateY(0.5turn);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Transform(요소변화)</h3>
+    <a href="https://blog.naver.com/tjddjs90/221889445051">내 블로그에서 보기</a>
+    <p>
+        이 예제만 눈으로 보실시 이해가 잘 안 가실 수 있습니다.
+        <a href="https://blog.naver.com/tjddjs90/221889452656">transition 과 transform 이 같이 있는 예제</a> 를 보시면 이해해 도움이 됩니다.
+    </p>
+    <p>
+        <mark style="text-decoration: underline ;">
+            transform : 변환 <br>
+            translate : 옮기다. <br>
+            rotate : 회전 <br>
+        </mark>
+        <p>
+            transform: translate(값px, 값%) 로 작성합니다. <br>
+            요소(element) 를 X 축 또는 Y축으로 옴겨줍니다.
+        </p>
+        <p>
+            transfrom: rotate() <br>
+            요소(element) 를 z축(default), X축, Y축 으로 회전 시킵니다. <br>
+            값은 0 ~ 360 의 수를 넣어 deg 단위를 쓰거나, 0.5turn 또는 1turn 으로 작성합니다.
+        </p>
+        <p style="color: red">
+            글 의 맨 아래에 학습링크가 있습니다.
+        </p>
+    </p>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+    <div class="box box8"></div>
+    <div class="box box9"></div>
+    <br>
+    <hr>
+    <h3>transform 학습 링크</h3>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">MDN</a>
+</body>
+
+</html>

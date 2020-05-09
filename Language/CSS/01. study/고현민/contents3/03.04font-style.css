@@ -1,0 +1,20 @@
+/* normal
+일반 서체 */
+span{
+    font-style: normal;
+}
+
+
+/* italic
+기울임
+기울여 쓴 서체 - 주로 사용됨 */
+span{
+    font-style: italic;
+}
+
+/* oblique
+기울임
+본 서체를 기울인 것 */
+/* span{
+    font-style: oblique;
+} */

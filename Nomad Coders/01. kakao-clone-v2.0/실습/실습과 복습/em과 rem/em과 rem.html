@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>em과 rem</title>
+
+    <style>
+      html,
+      body {
+        font-size: 15px;
+      }
+      .em__test {
+        font-size: 1.5em;
+      }
+      .em__test-c {
+        font-size: 1.5em;
+      }
+      .rem__test {
+        font-size: 1.5rem;
+      }
+
+      .rem__test-c {
+        font-size: 1.5rem;
+      }
+      .result {
+        background-color: red;
+        color: white;
+        display: inline-block;
+      }
+      .result:nth-child(2) {
+        display: block;
+        width: 27px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://blog.naver.com/tjddjs90/221902467280"
+      >내 블로그에서 보기</a
+    >
+    <h1 class="result">em과 rem</h1>
+    <h3 class="result">em</h3>
+    <p>em의 단위는 부모 요소의 font-size에 영향을 받습니다.</p>
+    <p>예를들어, 1.5em은 부모요소의 font-size에 1.5배가 됩니다.</p>
+    <p>
+      또한 부모의 부모, 즉 상위요소 조상요소를 모두 참조하여, 안으로 들어 갈
+      수록 커지는 특징이 있습니다.
+    </p>
+    <div class="em__test">
+      body의 font-size를 참조하는 1.5em 입니다.
+      <mark>
+        (body의 font-size 는 15px 이므로, 15px * 1.5 = 22.5px 이 됩니다.)</mark
+      >
+      <div class="em__test-c">
+        body와 부모요소를 참조하게 되어 더욱 커지는 1.5em 입니다.
+        <mark
+          >(위의 부모요소는 현재 22.5px 이므로 22.5px * 1.5 = 33.75px 이
+          됩니다.)</mark
+        >
+      </div>
+    </div>
+    <h3 class="result">rem</h3>
+    <p>
+      "r"은 바로 "root(최상위)"를 뜻합니다. 최상위 태그(요소)에 지정한
+      font-size를 기준으로 삼으며, 최상위 태그만을 참조하여 size를 결정합니다.
+      보통 최상위 태그는 html태그입니다.
+    </p>
+    <p>예를들어, 1.5rem은 최상위 요소의 font-size에 1.5배가 됩니다.</p>
+    <p>
+      em 과는 다르게 rem은 최상위의 요소만을 참조하여, 똑같은 값을 사용 한다면
+      어디서든 같은 결과 값을 얻을 수 있습니다.
+    </p>
+    <div class="rem__test">
+      최상위 요소의 font-size 를 참조하는 1.5rem 입니다.
+      <mark
+        >(최상위 요소의 font-size 는 15px 이므로, 15px * 1.5 = 22.5px 이
+        됩니다.)</mark
+      >
+      <div class="rem__test-c">
+        em과는 다르게 최상위 요소만을 참조 함으로, 1.5rem은 어디서나 동일
+        합니다.<mark
+          >(최상위 요소는 15px 이고 위의 부모요소는 현재 22.5px 입니다. rem은
+          위치에 상관 없이 최상위 요소만을 참조 합니다.)</mark
+        >
+      </div>
+    </div>
+    <p class="result">
+      CSS 에서 body 의 font-size를 변경하면서 예제를 봐주시면, 확연한 차이가
+      보이 실 것입니다.
+    </p>
+  </body>
+</html>

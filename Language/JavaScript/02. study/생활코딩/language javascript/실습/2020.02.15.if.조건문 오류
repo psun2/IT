@@ -1,0 +1,73 @@
+오류코드
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var id = prompt('ID를 입력해주세요.');
+        
+        if(id === 'tjddjs90' || 'zzang9'){
+            console.log('여기 ', id)
+            var password = prompt('PASSWORD를 입력해주세요.')
+        if(password === '111111'){
+            alert('로그인 되었습니다.\n'+id+'님 반갑습니다.');
+        }else{
+            alert('비밀번호가 일치하지 않습니다.');
+        }
+            
+        }else{
+            alert('아이디가 일치하지 않습니다.');
+        }
+    </script>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------
+수정코드
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var id = prompt('ID를 입력해주세요.');
+        
+        if(id === 'tjddjs90' || id === 'zzang9'){
+            console.log('여기 ', id)
+            var password = prompt('PASSWORD를 입력해주세요.')
+        if(password === '111111'){
+            alert('로그인 되었습니다.\n'+id+'님 반갑습니다.');
+        }else{
+            alert('비밀번호가 일치하지 않습니다.');
+        }
+            
+        }else{
+            alert('아이디가 일치하지 않습니다.');
+        }
+    </script>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------
+문제점
+
+아이디가 조건에 안맞아도 비밀번호를 받는 현상 (다음단계로 넘어가는 현상)
+
+이유
+
+조건문에서 '문자' > ture 로 인식 tjddjs90, zzang9가 아니더라도 
+모든 문자열이 ture인식하여 다음단계 로 진행
+'빈문자열' > false
+조건에서 조건변경
+if(id === 'tjddjs90' || 'zzang9')
+if(id === 'tjddjs90' || id === 'zzang9')
+zzang9를 명확히 정의 해주는 일로 수정

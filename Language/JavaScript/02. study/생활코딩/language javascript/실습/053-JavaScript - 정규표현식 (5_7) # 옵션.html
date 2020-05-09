@@ -1,0 +1,22 @@
+var xi = /a/;
+undefined
+"Abcde".match(xi);
+null
+var oi = /a/i;
+undefined
+"Abcde".match(oi);
+["A", index: 0, input: "Abcde", groups: undefined]
+
+var xg = /a/;
+undefined
+"abcdea".match(xg);
+["a", index: 0, input: "abcdea", groups: undefined]
+var og = /a/g;
+undefined
+"abcdea".match(og);
+(2) ["a", "a"]
+
+var ig = /a/ig;
+undefined
+"AabcdAa".match(ig);
+(4) ["A", "a", "A", "a"]

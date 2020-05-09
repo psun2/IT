@@ -1,0 +1,19 @@
+var pattern = /(\w+)\s(\w+)/;
+undefined
+var str = "coding everybody";
+undefined
+var result = str.replace(pattern, "$2, $1");
+undefined
+console.log(result);
+VM609:1 everybody, coding
+undefined
+
+var result = str.replace(pattern, "$2 $1");
+undefined
+console.log(result);
+VM628:1 everybody coding
+undefined
+var result = str.replace(pattern, "$1,.,.,. $2");
+undefined
+console.log(result);
+VM649:1 coding,.,.,. everybody

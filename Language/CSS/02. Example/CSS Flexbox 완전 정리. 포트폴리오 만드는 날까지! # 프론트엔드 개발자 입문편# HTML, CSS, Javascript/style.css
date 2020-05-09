@@ -1,0 +1,160 @@
+:root {
+  --background: beige;
+  --oneColor: #ef9a9a;
+  --twoColor: #f48fb1;
+  --threeColor: #ce93d8;
+  --fourColor: #b39ddb;
+  --fiveColor: #90caf9;
+  --sixColor: #a5d6a7;
+  --sevenColor: #e6ee9c;
+  --eightColor: #fff59d;
+  --nineColor: #ffcc80;
+  --tenColor: #ffab91;
+}
+
+.container {
+  background-color: var(--background);
+  height: 100vh;
+  display: flex;
+  /* display: flex; 를 적용 함으로, 수직배치 되어있던 아이템 들이
+  수평방향으로 배치가 바뀝니다. */
+
+  flex-direction: row;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* 속성값에 따라 가로로 반전시킬수 있으며, 또는 세로로 반전 됩니다. */
+
+  flex-wrap: nowrap;
+  /* 기본 값 입니다. */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap 의 속성으로 아이템들이 자동으로 다음줄로 가게됩니다. */
+  /* flex-wrap: wrap-reverse; */
+  /* wrap의 속성을 주되, 역순으로 바꾸어줍니다 */
+
+  /* flex-flow: column nowrap; */
+  /* flex-direction 과 flex-wrap 을 함께 쓸수 있도록 하는 속성입니다. */
+
+  /* justify-content: flex-start; */
+  /* 기본(default)값 입니다. */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* space-around 는 좌우에 균일한 간격을 주지만 맨 끝요소는 적용이 안됩니다. */
+  /* justify-content: space-evenly; */
+  /* space-evenly 는 정확히 균일한 간격을 줍니다. */
+  justify-content: space-between;
+  /* space-between 양 끝요소는 브라우저의 양 끝에 배치하고 요소와의 간격을 줍니다. */
+  /* justify-content 는 flex 를 중심축으로 부터 정렬 시킵니다. */
+
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  align-items: baseline;
+  /* baseline 은 요소의 크기가 다를때 균등하게 정렬할때 사용 합니다. */
+  /* align-items 는 justify-content 와 다르게 중심축이 아닌 cross축을 기준으로 정렬 합니다. */
+
+  /* align-content: space-around; */
+  align-content: space-between;
+  /* align-content: center; */
+  /* justify-content 와 다른 축을 기준으로 정렬시킵니다. 
+  flex-wrap: wrap; 속성을 같이 부여하면, 금상첨화 ! 예를들어 갤러리 를 생각합니다. */
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.item1 {
+  background-color: var(--oneColor);
+  /* padding: 20px; */
+  /* order: 2; */
+  /* order로 아이템들의 위치를 지정 할 수 있습니다. */
+
+  /* grow : 자라다. */
+  /* flex-grow: 0; */
+  /* 기본값 입니다. */
+  flex-grow: 1;
+  /* 기본값을 제외한 여백이 있다면 남은 여백을 메우려는 움직임을 보입니다. */
+  /* 아이템 3까지 1 : 1 : 1 의 비율로 늘어 납니다. */
+
+  /* shrink : 수축 */
+  /* flex-shrink: 0; */
+  /* 기본값 입니다. */
+  flex-shrink: 2;
+  /* 컨테이너가 기본값 보다 작아 졌을시 어떻게 행동하느 냐를 지정합니다. */
+  /* 아이템 2 와 3에 비해 2배 작게 줄어 듭니다. */
+
+  /* flex-basis: auto; */
+  /* 기본 값 입니다. */
+  flex-basis: 60%;
+  /* 다른 아이템들과 비교해 60%의 자리를 차지합니다. */
+  /* 커지거나 작아질때 다른 아이템과 비교해 해당 %를 유지하려고 합니다. */
+
+  flex: 2 1 60%;
+  /* grow, shrink, basis 를 한꺼번에 사용할 수 있는 속성 입니다. */
+
+  align-self: center;
+  /* 아이템 별 개별적인 정렬을 정의합니다. */
+}
+.item2 {
+  background-color: var(--twoColor);
+  /* order: 1; */
+  /* order로 아이템들의 위치를 지정 할 수 있습니다. */
+
+  flex-grow: 1;
+  /* 기본값을 제외한 여백이 있다면 남은 여백을 메우려는 움직임을 보입니다. */
+  /* 아이템 3까지 1 : 1 : 1 의 비율로 늘어 납니다. */
+
+  flex-shrink: 1;
+  /* 컨테이너가 기본값 보다 작아 졌을시 어떻게 행동하느 냐를 지정합니다. */
+
+  flex-basis: 30%;
+  /* 다른 아이템들과 비교해 30%의 자리를 차지합니다. */
+  /* 커지거나 작아질때 다른 아이템과 비교해 해당 %를 유지하려고 합니다. */
+
+  flex: 1 1 30%;
+  /* grow, shrink, basis 를 한꺼번에 사용할 수 있는 속성 입니다. */
+}
+.item3 {
+  background-color: var(--threeColor);
+  /* order: 3; */
+  /* order로 아이템들의 위치를 지정 할 수 있습니다. */
+
+  flex-grow: 1;
+  /* 기본값을 제외한 여백이 있다면 남은 여백을 메우려는 움직임을 보입니다. */
+  /* 아이템 3까지 1 : 1 : 1 의 비율로 늘어 납니다. */
+
+  flex-shrink: 1;
+  /* 컨테이너가 기본값 보다 작아 졌을시 어떻게 행동하느 냐를 지정합니다. */
+
+  flex-basis: 10%;
+  /* 다른 아이템들과 비교해 10%의 자리를 차지합니다. */
+  /* 커지거나 작아질때 다른 아이템과 비교해 해당 %를 유지하려고 합니다. */
+
+  flex: 1 1 10%;
+  /* grow, shrink, basis 를 한꺼번에 사용할 수 있는 속성 입니다. */
+}
+.item4 {
+  background-color: var(--fourColor);
+}
+.item5 {
+  background-color: var(--fiveColor);
+}
+.item6 {
+  background-color: var(--sixColor);
+}
+.item7 {
+  background-color: var(--sevenColor);
+}
+.item8 {
+  background-color: var(--eightColor);
+}
+.item9 {
+  background-color: var(--nineColor);
+}
+.item10 {
+  background-color: var(--tenColor);
+}

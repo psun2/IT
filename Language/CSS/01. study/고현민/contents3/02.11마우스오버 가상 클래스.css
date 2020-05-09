@@ -1,0 +1,56 @@
+.blue-button {
+    font-size: 1em;
+    padding: 16px 24px;
+    color: white;
+    background-color: dodgerblue;
+    border: 0;
+    cursor: pointer; /* 마우스 오버시 커서 모양이 바뀐다 */
+    border-radius: 4px;
+}
+
+/* hover : 마우스 오버 상태 */
+.blue-button:hover {
+    background-color: darkblue; /* 마우스 오버시 어두운 파란색으로 바뀐다 */
+}
+
+div {
+    position: relative;
+    display: inline-block;
+    color: white;
+    background-color: tomato;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+div ul {
+    display: none;
+    position: absolute;
+    width: 100px;
+    left: 12px;
+    top: 56px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 아래부터 */
+div:hover ul {    /* div로 감겨 있는 파일에 마우스를 오버했을때 ul 태그가 나오게 된다. */
+    display: block;
+}
+
+div ul li {
+    background-color: #444;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+}
+
+/* 아래부터 */
+div ul li:hover {
+    background-color: #222;
+}
+
+div:hover {
+    background-color: turquoise;
+}

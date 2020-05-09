@@ -1,0 +1,54 @@
+/* # HTML - 블록 레벨(Block level) 요소와 인라인(Inline) 요소 */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 블록 요소 */
+div { 
+    background-color: red;
+    /* height: 20px; */
+    width: auto;
+}
+.divBoxSize {
+    background-color: violet;
+    width: 300px;
+    height: 100px;
+}
+.divFontSize {
+    background-color: yellowgreen;
+    font-size: 5rem;
+}
+.divMarginPadding {
+    background-color: teal;
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* 인라인 요소 */
+span {
+    background-color: red;
+}
+.spanFontSize {
+    background-color: yellowgreen;
+    font-size: 5rem;
+}
+.spanBoxSize {
+    background-color: violet;
+    width: 300px;
+    /* 가로사이즈 를 지정해도 차이가 없다. */
+    height: 100px;
+    /* 세로사이즈 를 지정해도 차이가 없다. */
+}
+.spanMarginPadding {
+    background-color: teal;
+    width: 100px; 
+    /* 넓이를 설정 해주어도 설정을 안해줬을때와 똑같다 넓이를 지정할수 없다 : 인라인 요소 */
+    height: 30px;
+    /* 높이를 설정 해주어도 설정을 안해줬을때와 똑같다 높이를 지정할수 없다 : 인라인 요소 */
+    margin: 20px;
+    padding: 20px;
+}

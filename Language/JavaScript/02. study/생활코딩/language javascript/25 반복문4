@@ -1,0 +1,13 @@
+i를 1부터 시작하고 싶을때
+
+오류코드
+
+        for(var i = 0; i < 10000; i++){
+            document.write('박성언two'+i+1+'<br />')
+            }
+
+수정코드
+
+        for(var i = 0; i < 10000; i++){
+            document.write('박성언two'+(i+1)+'<br />')
+            }

@@ -1,0 +1,21 @@
+== > equal operatot 이퀄 오퍼레이터 (버그 발생을 시키기 쉬움)
+데이터 형식이 같지 않더라도 정보의 형태가 같으면 true
+
+같냐 ? 같으면 true 아니면 flase
+
+alert(1==2) = flase
+
+alert(1==1) = true
+
+a=1 > =는 대입연산자
+
+a==1 > ==는 동등연산자
+
+좌항과 우항이 같다면 true 아니면 flase
+
+=== 일치연산자 strict equal operator
+좌항과 우항의 정보가 같을 뿐만 아니라 데이터의 형식도 정확히 일치 할때만
+true
+alert(1 === "1"); > flase
+
+alert(1 == "1"); > true

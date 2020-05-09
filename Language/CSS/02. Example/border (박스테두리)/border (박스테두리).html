@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+
+    <style>
+        .parent {
+            width: 400px;
+            height: 400px;
+            background: red;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+
+            /* TODO: border 의 속성을 따로 따로 줄때 */
+            border-width: 5px;
+            border-style: dashed;
+            border-color: aqua;
+        }
+
+        .chlidren {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+            /* TODO: border의 속성을 한꺼번에 줄때 */
+            border: 3px solid greenyellow;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: yellowgreen;
+            margin-top: 10px;
+            border: 5px dashed yellow;
+            border-radius: 5rem;
+        }
+
+        .circle2 {
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            margin-top: 10px;
+            border: 5px dashed springgreen;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="">참조</a>
+    <div class="parent">
+        <div class="chlidren"></div>
+        <div class="circle"></div>
+        <div class="circle2"></div>
+    </div>
+    <h3>border 속성 주기</h3>
+    <p>
+        border: 1px solid balck => 상, 하, 좌, 우 에 1px의 굵기의 검정 실선을 그어줍니다.
+        border-bottom: 1px solid balck => 아래 에 1px의 굵기의 검정 실선을 그어줍니다.
+        마찬가지로 top, right, left 각각 줄수 있습니다.
+        dashed 는 실선이 아닌 점선으로 표기하는 속성입니다.
+    </p>
+    <hr>
+    <h3>border-radius 로 원그리기</h3>
+    <p>
+        border-radius 는 border 즉 경계를 뭉뚱그립니다.
+        border-radius 의 값이 크면 클 수록 원에 가까워 집니다.
+    </p>
+</body>
+
+</html>

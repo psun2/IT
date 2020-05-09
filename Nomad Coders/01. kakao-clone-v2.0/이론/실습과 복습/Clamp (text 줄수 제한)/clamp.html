@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./main.js"></script>
+    <title>Clamp</title>
+  </head>
+  <body>
+    <h1>Clamp</h1>
+    <h3>
+      출처 :
+      <a href="https://developer.mozilla.org/ko/docs/Web/CSS/-webkit-line-clamp"
+        >MDN</a
+      >
+    </h3>
+    <div class="box">
+      <div class="text clamp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        blanditiis quod? Numquam vitae debitis ipsum pariatur, eligendi quaerat
+        nobis, reprehenderit beatae nulla ab sequi aspernatur velit sit
+        repudiandae, officia architecto. At modi provident nulla tenetur optio
+        quae magni commodi, cum accusamus maxime earum ducimus minus, voluptas
+        molestiae quod blanditiis, eveniet iusto! Quidem delectus molestias iste
+        suscipit adipisci nesciunt enim blanditiis. Corporis sit consequuntur
+        ducimus, excepturi architecto in, similique, aperiam quod reprehenderit
+        adipisci necessitatibus animi eius? Quo veritatis, tempore, similique
+        enim eveniet suscipit ut est incidunt quos omnis excepturi dolorum
+        consequatur? Illum rem voluptatem hic blanditiis voluptatum quos est
+        ipsa laudantium, delectus illo officiis. Ipsa, ea ipsam. Temporibus,
+        culpa dolorum accusamus architecto voluptate, itaque error hic fugiat
+        nihil modi aspernatur nesciunt. Perferendis, dicta. Eos, dolorum magnam.
+        Commodi, quibusdam nostrum dicta quae dolore non quam eveniet explicabo
+        saepe rem! Commodi soluta similique mollitia sunt labore, voluptatibus,
+        iure quam, reiciendis nobis assumenda eum?
+      </div>
+      <button class="more">more</button>
+    </div>
+    <xmp>
+      p {
+          <!-- width: 300px; -->
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3; <!-- 제한 줄 수 입력 --> 
+          overflow: hidden;
+        }
+    </xmp>
+  </body>
+</html>

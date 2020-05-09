@@ -1,0 +1,33 @@
+/* 기본세팅 */
+body { margin: 0; padding: 0; }
+.wrapper { border: 2px solid black; }
+.wrapper > div { 
+  background-color: yellow; 
+}
+.wrapper > div:nth-child(even) { 
+  background-color: yellowgreen;
+}
+
+.wrapper {
+  display: grid;
+}
+
+/* 전용 세팅 */
+.wrapper {
+  grid-template-columns: repeat(3, 1fr);
+}
+.wrapper > div > div { background-color: orange; }
+.wrapper > div:nth-child(even) > div { background-color: tomato; }
+.wrapper > div:nth-child(3n + 1) > div {
+  height: 100px;
+}
+.wrapper > div:nth-child(3n + 2) > div {
+  height: 200px;
+}
+.wrapper > div:nth-child(3n) > div {
+  height: 300px;
+}
+
+.wrapper {
+  grid-template-rows: 100px auto minmax(100px, 200px);
+}

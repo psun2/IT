@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z-index</title>
+
+    <style>
+      body {
+        position: relative;
+      }
+
+      p {
+        margin-top: 200px;
+      }
+
+      .box-1 {
+        width: 150px;
+        height: 150px;
+        background-color: burlywood;
+        border: 1px solid red;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+
+        /* z-index: 0; */
+      }
+
+      .box-2 {
+        width: 150px;
+        height: 150px;
+        background-color: chartreuse;
+        border: 1px solid red;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+
+        z-index: -1;
+      }
+
+      .box-3 {
+        width: 150px;
+        height: 150px;
+        background-color: cyan;
+        border: 1px solid red;
+        position: absolute;
+
+        z-index: -2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="https://blog.naver.com/tjddjs90/221884197058"></a>
+    <h3>z-index</h3>
+    <div class="box-1">default</div>
+    <div class="box-2">z-index: -1;</div>
+    <div class="box-3">z-index: -2;</div>
+  </body>
+  <p>
+    z-index 의 default 값은 0 이며, 0을 기준으로 위로 올리고 싶으면 1 아래로
+    계속 내려 주고 싶으면 -1, -2 로 나아가며 사용합니다.
+  </p>
+</html>

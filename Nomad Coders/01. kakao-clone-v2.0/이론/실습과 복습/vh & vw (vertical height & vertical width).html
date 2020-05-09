@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vh & vw (vertical height & vertical width)</title>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: black;
+        color: aqua;
+      }
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+      a:hover {
+        cursor: progress;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://blog.naver.com/tjddjs90/221902481993">내 블로그 구경</a>
+    <div class="box">
+      <p>
+        만약 타켓 요소의 너비값과 높이값을 뷰포트의 너비값과 높이값에 맞게
+        사용할 수 있다면 어떨까요? <br />
+        바로 vh와 vw 단위가 그런 의도에 맞는 단위이고 vh 요소는 높이값의 100분의
+        1의 단위입니다. <br />
+        예를 들어 브라우저 높이값이 900px일때 1vh는 9px이라는 뜻이 되지요.
+        <br />
+        그와 유사하게 뷰포트의 너비값이 750px이면 1vw는 7.5px이 됩니다.
+      </p>
+      <p>
+        min-height: 100vh; 은 <br />
+        최소-높이: 100vh; 즉 높이는 최소한 브라우저에 비례해서 브라우저의 길이에
+        맞추겠다는 의미가 되겠습니다.
+      </p>
+      <p>
+        이 외에도 width: 100vmin, vmax등 다양한 단위들이 존재 합니다.
+      </p>
+      <p>
+        아직은 공부가 부족하여, 제가 아는 내용만 정리 합니다. 더 많은 정보를
+        알고 싶으시면, 위글을 참조한 출처 :
+        <a href="https://webclub.tistory.com/356"
+          >https://webclub.tistory.com/356</a
+        >
+        를 참고하시면 되겠습니다.
+      </p>
+    </div>
+  </body>
+</html>

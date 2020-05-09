@@ -1,0 +1,33 @@
+/* # HTML - 블록 레벨(Block level) 요소와 인라인(Inline) 요소 */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    background-color: red;
+    width: 120px;
+    height: 80px;
+}
+
+div{
+    background-color: red;
+    width: 120px;
+    height: 80px;
+}
+
+.block {
+    background-color: yellow;
+    width: 120px;
+    height: 80px;
+    display: block;
+}
+
+.inline {
+    background-color: lightgreen;
+    width: 120px;
+    height: 80px;
+    display: inline;
+}
+

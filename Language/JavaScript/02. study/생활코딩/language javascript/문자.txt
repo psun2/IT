@@ -1,0 +1,31 @@
+| (역슬래쉬) 바로뒤의 문자는 문자로 해석한다
+
+alert('1|'2');  =  1'2
+
+숫자1 과 문자'1' 은 다르다 
+
+구분 방법 
+
+typeof 1 = number
+
+typeof "1"=string
+
+|n(역슬래쉬N) = 줄바꿈 
+
+줄|n바꿈  =  줄
+               바꿈
+
+alert("coding"+"everybody") = codingeverybody
+
+alert("coding"+"공백(띄어쓰기)"+"everybody") = coding everybody
+
+"coding everybody".length  =   16 (문자열의 수)
+
+
+"code".indexof("c")  =  0
+
+"code".indexof("o")  =  1
+
+"code".indexof("d")  =  2
+
+"code".indexof("e")  =  3

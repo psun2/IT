@@ -1,0 +1,11 @@
+div {
+  background-color: white;
+}
+
+/* 특정 요소의 자손/자식으로 지정하지 않으면 body 등에도 적용 */
+/* section 을 지우면 재미있는 현상이 일어남 */
+section * {
+  display: inline-block;
+  background-color: orange;
+  padding: 24px;
+}

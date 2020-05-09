@@ -1,0 +1,29 @@
+if(true) {
+alert(1);
+}else{
+alert(2);
+}
+
+= 만약에(if) 참(true)이라면, 1이 실행 그렇지 않으면 엘스구간 실행
+
+결과값 = 1
+
+if(false) {
+alert(1);
+}else{
+alert(2);
+}
+
+결과값 : 2
+
+
+
+if(false){
+alert(1);
+}else if(true){
+alert(2);
+}else if(true){
+alert(3);
+}else{
+alert(4);
+}

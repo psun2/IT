@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <h1 id=number>0</h1>
+    <button id="increase">+ 1</button>
+    <button id="decrease">- 1</button>
+
+    <script>
+        const number = document.getElementById("number");
+        const increase = document.getElementById("increase");
+        const decrease = document.getElementById("decrease");
+
+        console.log(number.innerText);
+        console.log(increase.offsetTop);
+        console.log(decrease.id);
+
+        increase.onclick = () => {
+            const current = parseInt(number.innerText, 10);
+            number.innerText = current + 1;
+            console.log("increase 가 클릭됨");
+        };
+
+        decrease.onclick = () => {
+            const current = parseInt(number.innerText, 10);
+            number.innerText = current - 1;
+            console.log("decrease 가 클릭됨");
+        };
+    </script>
+</body>
+
+</html>

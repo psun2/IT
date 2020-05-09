@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>margin 과 padding</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .parent {
+        width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+        border: 5px dashed tomato;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .children-margin {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 1px solid black;
+        margin: 30px;
+        /* TODO: 상하, 좌우 전체적으로 30px 씩의 외부 여백이 생깁니다. */
+      }
+
+      .children-padding {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        padding: 30px;
+        /* TODO: 상하, 좌우 전체적으로 30px 씩의 내부 여백이 생깁니다. */
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="https://blog.naver.com/tjddjs90/221884181564">참조</a>
+    <h1>margin 과 padding</h1>
+    <h3>margin</h3>
+    <div class="parent">
+      parent
+      <div class="children-margin">children</div>
+    </div>
+    <p>parent 와 children box (파란색 박스)의 위치가 보이시나요?</p>
+    <p>
+      parent box 내부에 있는 children box 에 외부여백 즉, margin 을 부여한
+      모습입니다.
+    </p>
+    <hr />
+    <h3>padding</h3>
+    <div class="parent">
+      parent
+      <div class="children-padding">children</div>
+    </div>
+    <p>parent 와 children box (파란색 박스)의 위치가 보이시나요?</p>
+    <p>
+      위의 margin 과 차이점이 보이시나요? 노란색 박스에 있는 children 의 글자가
+      위의 margin 예제와는 다르게 박스의 경계선으로 부터 떨여져 있는 것 처럼
+      보입니다. 즉, children 에 padding 내부여백을 줌으로써, border 와 content
+      사이에 여백이 생깁니다.
+    </p>
+    <hr />
+    <h3>margin 과 padding 다양하게 사용하기</h3>
+    <p>
+      기존에 padding: 30px; 혹은 margin: 30px; 상, 하, 좌, 우 전체 적으로
+      주셨다면, 상, 하, 좌, 우 각각 여백을 줄수 있습니다. margin을 예로 들자면
+      margin-top: 값, margin-bottom: 값, margin-right: 값, margin-left: 값 으로
+      각각의 속성을 부여 할수 있으며, margin: 값 값 즉, margin: 10px 20px;
+      이라고 작성하여 상하 에 10px의 외부여백 좌우 에 20px의 외부여백 을 적용할
+      수 있습니다.
+    </p>
+  </body>
+</html>

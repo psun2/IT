@@ -1,0 +1,12 @@
+var pattern = /a/;
+pattern.exec('abcde');
+["a", index: 0, input: "abcde", groups: undefined]
+var pattern = /a./;
+pattern.exec('abcde');
+["ab", index: 0, input: "abcde", groups: undefined]
+pattern.exec('bcdef');
+null
+pattern.test('abcde');
+true
+pattern.test('bcde');
+false

@@ -1,0 +1,63 @@
+:root {
+  --liigt-green-color: #c5e1a5;
+  --background: #fafafa;
+}
+
+button,
+button:focus {
+  background-color: var(--background);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.box {
+  width: 10vw;
+  height: 10vh;
+  background-color: var(--liigt-green-color);
+}
+
+.box1 {
+  transition: all 1s ease-in-out;
+  animation: left 1s ease-in-out;
+}
+
+.box2 {
+  transition: all 1s ease-in-out;
+  animation: left 1s ease-in-out;
+}
+
+.box3 {
+  transition: all 1s ease-in-out;
+  animation: left 1s ease-in-out;
+}
+
+.box4 {
+  transition: all 1s ease-in-out;
+  animation: left 1s ease-in-out;
+}
+
+.box1.active {
+  background-image: linear-gradient(#fc4a1a, #f7b733);
+}
+
+.box2.active {
+  background-image: linear-gradient(to right, #74ebd5, #acb6e5);
+}
+
+.box3.active {
+  background-image: linear-gradient(to left, #6d6027, #d3cbb8);
+}
+
+.box4.active {
+  background-image: linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
+}
+
+@keyframes left {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: none;
+  }
+}

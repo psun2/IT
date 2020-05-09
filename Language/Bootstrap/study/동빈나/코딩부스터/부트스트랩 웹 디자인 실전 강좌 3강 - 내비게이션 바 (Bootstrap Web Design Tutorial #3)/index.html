@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width", initial-scale="1">
+	<title>코딩 부스터</title>
+	<link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+	<!-- <h1>점보트론</h1>
+	<p>
+		점보트론(Jumbotron)은 원래 대형 전광판을 의미하는 단어입니다.
+		점보트론은 부트스트랩에서 홈페이지를 소개하는 메인 전광판이 됩니다.
+		컴포넌트 중에서 가장 돋보이는 컴포넌트이며 사용법 또한 굉장히 간단합니다.
+		또한 점보트론 안에는 버튼 등 다양한 컴포넌트가 포함 될 수 있습니다.
+	</p> -->
+	<style tpye="text/css">
+		.jumbotron {
+			background-image: url(./images/img.png);
+			background-size: cover;
+			text-shadow: black 0.2em 0.2em 0.2em;
+			color:white;
+		}
+	</style>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">코딩 부스터</a>
+			</div>
+			<div class="collapsed navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">소개<span class="sr-only"></span></a>
+					</li>
+					<li>
+						<a href="#">강사진</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">강의<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">C언어</a></li>
+							<li><a href="#">Java</a></li>
+							<li><a href="#">안드로이드</a></li>
+						</ul>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="jumbotron">
+			<!-- text-center 텍스트를 가운데로 정렬합니다. -->
+			<h1 class="text-center">코딩 부스터를 소개합니다.</h1>
+			<p class="text-center">코딩 부스터는 IT교육 사이트입니다. 다양한 IT 관련 무료 및 유료 강의가 존재합니다.</p>
+			<p class="text-center">
+				<a class="btn btn-primary btn-lg" href="#" role="button">강의 들으러 가기</a>
+			</p>
+		</div>
+	</div>
+<!-- 	<h1>스타일 시트</h1>
+	<p>
+		스타일 시트(CSS)는 자신이 작성하고 있는 HTML 문서의
+		디자인을 꾸미고자 할 때 작성합니다.
+		부트 스트랩은 기본적으로 스타일 시트(CSS)를 적절히 갖추고 있는 프레임워크입니다.
+		하지만 부트 스트랩의 CSS에서 자신만의 독특한 디자인을 만들고 싶다면 따로 추가 적인 스타일 시트를 정의해서 사용할 수 있습니다.
+	</p> -->
+
+	<!-- jquery import -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</body>
+</html>

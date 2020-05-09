@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 폼 사용하기</title>
+
+  <style>
+    form { line-height: 1.5em; margin: 36px 24px; }
+    input, select { font-size: 0.9rem; }
+    button { font-size: 1rem; }
+    label { margin-right: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+
+    <!-- <br>
+    <br>
+    <label for="search">찾기</label>
+    <input id="search" type="search"> -->
+    <label for="ID">ID</label>
+    <input id="ID" type="text" placeholder="아이디를 입력해주세요." maxlength="10">
+    <br>
+    <label for="password">Password</label>
+    <input id="password" type="password" placeholder="비밀번호를 입력해주세요." maxlength="20">
+    <br>
+    <br>
+    <label for="number">나이</label>
+    <input id="number" type="number" min="0" max="200" placeholder="나이를 입력해주세요.">
+    <br>
+    <br>
+    <label for="married">기혼</label>
+    <input id="married" type="checkbox">
+    <br>
+    <label for="married">기혼</label>
+    <input id="married" type="checkbox" checked> // checked 지정
+    <br>
+    <br>
+    <label>역할</label>
+    <input id="developer" name="role" type="radio" checked>
+    <label for="developer">개발자</label>
+    <input id="disign" name="role" type="radio">
+    <label for="disign">디자이너</label>
+    <input id="pm" name="role" type="radio">
+    <label for="pm">매니저</label>
+    <br>
+    <label>역할</label>
+    <input id="developer" type="radio" checked>
+    <label for="developer">개발자</label>
+    <input id="disign" type="radio">
+    <label for="disign">디자이너</label>
+    <input id="pm" type="radio">
+    <label for="pm">매니저</label> // 체크가 무한히 된다 
+    <br>
+    <br>
+    <label for="file">첨부</label>
+    <input id="file" type="file">
+    <br>
+    <label for="file">첨부</label>
+    <input id="file" type="file" multiple> // 첨부를 여러개 할때
+    <br>
+    <br>
+    <label for="select">소속</label>
+    <select id="select">
+        <option value="a">운영팀</option>
+        <option value="b">회계팀</option>
+        <option value="c">총무팀</option>
+        <option value="d">프론트엔드팀</option>
+        <option value="e">백엔드팀</option>
+        <option value="f">테스트팀</option>
+        <option value="g">유지보수팀</option>  
+    </select>
+    <br>
+    <br>
+    <label for="self_intro">소개</label>
+    <textarea name="" id="elf_intro" cols="30" rows="10" placeholder="소개를 입력하세요."></textarea>
+    <br>
+    <br>
+    <button type="button">제출</button>
+    <button type="button">취소</button>
+    <br>
+    <button type="submit">엔터치면 제출된다 사려라</button>
+    <button type="button" disabled>안눌린다</button>
+
+</body>
+</html>
+
+<!-- 
+
+    <input id="input-dev" type="radio"/>
+    <label for="input-dev">개발자</label>
+    <input id="input-design" type="radio"/>
+    <label for="input-design">디자이너</label>
+    <input id="input-pm" type="radio"/>
+    <label for="input-pm">매니저</label>
+
+      <option value="adm">운영팀</option>
+      <option value="mkt">마케팅팀</option>
+      <option value="frt">프론트엔드팀</option>
+      <option value="bck">백엔드팀</option>
+      <option value="tst">테스트팀</option>
+      <option value="mnt">유지보수팀</option>
+-->

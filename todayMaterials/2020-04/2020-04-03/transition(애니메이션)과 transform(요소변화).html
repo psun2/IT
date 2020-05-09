@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition(애니메이션)과 Transform(요소변화)</title>
+
+    <style>
+        .box {
+            background-color: darkorange;
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            margin-bottom: 10px;
+        }
+
+        .box2 {
+            transition: 1s;
+        }
+
+        .box2:hover {
+            transform: translate(50%);
+        }
+
+        .box3 {
+            transition: 1s;
+        }
+
+        .box3:hover {
+            transform: translate(0, 50px);
+        }
+
+        .box4 {
+            transition: 1s;
+        }
+
+        .box4:hover {
+            transform: translate(50px, 50%);
+        }
+
+        .box5 {
+            transition: 1s;
+        }
+
+        .box5:hover {
+            transform: rotate(180deg);
+            /* transform: rotate(180deg); === transform: rotateZ(180deg); => default */
+        }
+
+        .box6 {
+            transition: 1s;
+        }
+
+        .box6:hover {
+            transform: rotateX(0.5turn);
+        }
+
+        .box7 {
+            transition: 1s;
+        }
+
+        .box7:hover {
+            transform: rotateY(0.5turn);
+        }
+
+        .box8 {
+            transition: 1s;
+        }
+
+        .box8:hover {
+            transform: rotate(180deg) rotateX(0.5turn) rotateY(0.5turn);
+        }
+
+        .box9 {
+            transition: 1s;
+        }
+
+        .box9:hover {
+            transform: translate(50%, 50px) rotate(180deg) rotateX(0.5turn) rotateY(0.5turn);
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <a href="https://blog.naver.com/tjddjs90/221889435744">transition</a> 과
+        <a href="https://blog.naver.com/tjddjs90/221889445051">transform</a> 에 대해 먼저 선행 학습을 요구합니다.
+        <br>
+        <a href="https://blog.naver.com/tjddjs90/221889452656">내 블로그에서 보기</a>
+    </p>
+    <div class="box box2">over me!!!!!!!</div>
+    <div class="box box3">over me!!!!!!!</div>
+    <div class="box box4">over me!!!!!!!</div>
+    <div class="box box5">over me!!!!!!!</div>
+    <div class="box box6">over me!!!!!!!</div>
+    <div class="box box7">over me!!!!!!!</div>
+    <div class="box box8">over me!!!!!!!</div>
+    <div class="box box9">over me!!!!!!!</div>
+</body>
+
+</html>

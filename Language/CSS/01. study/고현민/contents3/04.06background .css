@@ -1,0 +1,72 @@
+/* 기본 세팅 */
+div {
+    width: 480px;
+    height: 360px;
+    border: 1px solid black;
+}
+
+
+
+/* !!!하나씩 주석 처리 하여 사용 하면서, 차이점 보기!!! */
+
+
+
+/* background-color 배경색  */
+div {
+    background-color: green;
+}
+
+div {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+
+/* background-image 배경 이미지 */
+div {
+    background-image: url(./04.06.jpg);
+}
+
+/* background-size 배경 이미지 크기 */
+div {
+    background-image: url("./04.06.jpg");
+    background-size: 480px 360px;
+}
+
+/* background-position 배경 이미지 위치 */
+/* background-repeat 배경 이미지 반복 여부 */
+div {
+    background-image: url("./04.06.jpg");
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    /* background-repeat: no-repeat : 50%선택시 사진이 4개가 반복 되어 나오는데 이것을 막아준다. */
+    background-position: 50px 50%;
+    /* background-position: 50px 50% : 사진이 가운데 오게 된다. */
+}
+
+/* cover 
+비율은 유지 시키나 사진이 잘린다. 
+상자에 빈 곳이 없도록 꽉 채움 */
+div {
+    
+    background-image: url("./04.06.jpg");
+    background-size: cover;
+}
+
+/* contain
+비율은 유지 시키나, 상자를 벗어나지 않도록 꽉 채우기 위하여 
+상자의 크기보다 사진이 작게 되면, 사진이 반복 된다. */
+div {
+    
+    background-image: url("./04.06.jpg");
+    background-size: contain;
+}
+
+/* 비율이 유지되고시키게 하고, 상자를 벗어나진 않지만 사진 비율보다 상자가 크면, 상자에 여백 발생 */
+div {
+    
+    background-image: url("https://images.unsplash.com/photo-1583856466720-4b2db862bc87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60");
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color : #eee;
+}

@@ -1,0 +1,19 @@
+/* default */
+.none {
+    text-decoration: none;
+}
+
+/* 밑줄 */
+.underline {
+    text-decoration: underline;
+}
+
+/* 윗줄 */
+.overline {
+    text-decoration: overline;
+}
+
+/* 취소선 */
+.line-through {
+    text-decoration: line-through;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/5d1d5aa1e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>YouTube Clone</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <button class="header__logoBtn"><i class="fab fa-youtube"></i></button>
+        <span class="header__logo-title">
+          <a href="#">YouTube</a>
+        </span>
+      </div>
+      <div class="header__icons">
+        <button class="header__iconsBtn"><i class="fas fa-search"></i></button>
+        <button class="header__iconsBtn">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Player -->
+    <section class="player">
+      <video
+        autoplay
+        controls
+        src="./video/video.webm"
+        class="player__video"
+      ></video>
+    </section>
+
+    <!-- 영상 출처 -->
+    <section class="source">
+      출처 :
+      <a
+        href="https://www.shutterstock.com/ko/video/clip-1018564099-two-friends-on-summer-vacation-holiday-run
+"
+        >shutterstock.com‎</a
+      >
+      <br />
+      <a
+        href="https://www.shutterstock.com/ko/support/article/Shutterstock-%EB%8F%99%EC%98%81%EC%83%81-%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4%EC%97%90-%EC%A0%80%EC%B4%89%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EC%82%AC%EC%9A%A9%EB%B2%95%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94?l=ko"
+        >표준 동영상 라이선스</a
+      >
+    </section>
+
+    <div class="display">
+      <div class="display__media">
+        <!-- Meta Data -->
+        <section class="metadata">
+          <ul class="metadata__hashtags">
+            <li class="metadata__hashtags-item"># 여름방학</li>
+            <li class="metadata__hashtags-item"># 휴일</li>
+            <li class="metadata__hashtags-item"># 알프스</li>
+            <li class="metadata__hashtags-item"># 호수</li>
+          </ul>
+          <div class="metadata__clamp">
+            <span class="metadata__info clamp">
+              여름 방학 혹은 휴일에 두 명의 친구가 알프스 산 호수의 목판길을
+              달리며, 차가운 깨끗한 물로 뛰어들며, 열기와 자연적인 야외 생활을
+              만끽한다. (Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Sapiente quos aut facere eligendi quas suscipit, blanditiis
+              architecto at amet. Ea dolores dolore aliquid nihil voluptates
+              quis, perferendis esse incidunt nulla.)
+            </span>
+            <button class="metadata__infoBtn">
+              <i class="fas fa-caret-down active"></i>
+            </button>
+          </div>
+          <span class="metadata__views">1M views 1 month ago</span>
+          <ui class="metadata__actions">
+            <li class="metadata__actions-item">
+              <button class="actionsBtn">
+                <i class="active fas fa-thumbs-up"></i>
+                <span class="active">1K</span>
+              </button>
+            </li>
+            <li class="metadata__actions-item">
+              <button class="actionsBtn">
+                <i class="fas fa-thumbs-down"></i><span>0</span>
+              </button>
+            </li>
+            <li class="metadata__actions-item">
+              <button class="actionsBtn">
+                <i class="fas fa-share"></i><span>Share</span>
+              </button>
+            </li>
+            <li class="metadata__actions-item">
+              <button class="actionsBtn">
+                <i class="fas fa-plus"></i><span>Save</span>
+              </button>
+            </li>
+            <li class="metadata__actions-item">
+              <button class="actionsBtn">
+                <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+              </button>
+            </li>
+          </ui>
+        </section>
+
+        <!-- Subscribe -->
+        <section class="subscribe">
+          <div class="subscribe__meta">
+            <img src="./image/avatar.png" class="subscribe__avatar" />
+            <div class="subscribe__info">
+              <span class="subscribe__author">Test</span>
+              <span class="subscribe__views">1M subscribers</span>
+            </div>
+          </div>
+          <button class="subscribeBtn">subscribe</button>
+        </section>
+      </div>
+
+      <!-- UP Next -->
+      <section class="upnext">
+        <span class="upnext__title">UP Next</span>
+        <ul class="upnext__list">
+          <li class="upnext__list-item">
+            <div class="upnext__avatar">
+              <img src="./image/avatar1.png" />
+            </div>
+            <div class="upnext__metadata">
+              <span class="upnext__meta active"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae repellendus rem laudantium similique, velit autem
+                consequatur ab magni voluptatem porro eligendi veritatis ad? Rem
+                atque iure ut, minus itaque sunt?</span
+              >
+              <div class="upnext__data">
+                <span class="upnext__author">test</span>
+                <span class="upnext__views">82K views</span>
+              </div>
+            </div>
+            <button class="upnext__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="upnext__list-item">
+            <div class="upnext__avatar">
+              <img src="./image/avatar1.png" />
+            </div>
+            <div class="upnext__metadata">
+              <span class="upnext__meta active"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae repellendus rem laudantium similique, velit autem
+                consequatur ab magni voluptatem porro eligendi veritatis ad? Rem
+                atque iure ut, minus itaque sunt?</span
+              >
+              <div class="upnext__data">
+                <span class="upnext__author">test</span>
+                <span class="upnext__views">82K views</span>
+              </div>
+            </div>
+            <button class="upnext__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="upnext__list-item">
+            <div class="upnext__avatar">
+              <img src="./image/avatar1.png" />
+            </div>
+            <div class="upnext__metadata">
+              <span class="upnext__meta active"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae repellendus rem laudantium similique, velit autem
+                consequatur ab magni voluptatem porro eligendi veritatis ad? Rem
+                atque iure ut, minus itaque sunt?</span
+              >
+              <div class="upnext__data">
+                <span class="upnext__author">test</span>
+                <span class="upnext__views">82K views</span>
+              </div>
+            </div>
+            <button class="upnext__moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

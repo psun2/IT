@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEAGE of LEGENDS</title>
+</head>
+
+<body>
+    <h1>LEAGE of LEGENDS</h1>
+    <h2>Characters</h2>
+    <input type="button" value="night" onclick="
+    let target = document.querySelector('body');
+        if (this.value === 'night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+        this.value = 'day'
+        
+        let alist = document.querySelectorAll('a');
+        let i = 0;
+        while (i < alist.length) {
+            console.log(alist[i]);
+            alist[i].style.color = 'powderblue';
+            i = i + 1;
+        }
+
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+        this.value = 'night'
+
+        let alist = document.querySelectorAll('a');
+        let i = 0;
+        while (i < alist.length) {
+            console.log(alist[i]);
+            alist[i].style.color = 'blue';
+            i = i + 1;
+        }
+        }
+    ">
+    <ol>
+        <li><a href="./ex12 copy.html">Kai’Sa</a></li>
+        <li><a href="./ex12 copy 2.html">Kalista</a></li>
+        <li><a href="./ex12 copy 3.html">Aphelios</a></li>
+    </ol>
+    <h2>INFOMATION</h2>
+    <p>
+        infomation
+    </p>
+</body>
+
+</html>

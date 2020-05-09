@@ -1,0 +1,32 @@
+div {
+    width: 400px;
+    height: 400px;
+}
+
+.relative {
+    position: relative;
+    background-color: green;
+}
+
+/* absolute 는 부모요소를 기준으로 위치를 정하고
+ 위에 둥둥 떠다닌다 */
+.absolute {
+    position: absolute;
+}
+
+.absolute._1 {
+    top: 100px;
+    left: 25%;
+    background-color: red;
+    z-index: 2;
+}
+
+/* z-index : 숫자가 높을수록 위에 있는 요소 이다. */
+.absolute._2 {
+    top: 200px;
+    left: 50%;
+    background-color: blue;
+    z-index: 1;
+}
+
+/* z-index : 숫자가 높을수록 위에 있는 요소 이다. */

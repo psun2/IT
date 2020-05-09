@@ -1,0 +1,21 @@
+/* left, right, center, justify */
+
+/* 왼쪽정렬 */
+p {
+    text-align: left;
+}
+
+/* 오른쪽 정렬 */
+p.right {
+    text-align: right;
+}
+
+/* 중앙정렬 */
+p.center {
+    text-align: center;
+}
+
+/* 양쪽은 길이를 맞춘다 왼쪽 정렬과는 다름 오른쪽 끝선 주목! */
+p.justify {
+    text-align: justify;
+}

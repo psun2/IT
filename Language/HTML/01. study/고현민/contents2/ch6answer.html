@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 폼 사용하기</title>
+
+  <style>
+    form { line-height: 1.5em; margin: 36px 24px; }
+    input, select { font-size: 0.9rem; }
+    button { font-size: 1rem; }
+    label { margin-right: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+
+  <form autocomplete="on">
+    <label for="input-name">이름</label>
+    <input id="input-name" type="text" placeholder="이름을 입력하세요." maxlength="4"/>
+    <br>
+    <label for="input-pw">비번</label>
+    <input id="input-pw" type="password" placeholder="영문 + 숫자"/>
+    <br>
+    <br>
+    <label for="input-age">나이</label>
+    <input id="input-age" type="number"/>
+    <br>
+    <br>
+    <label for="input-married">기혼</label>
+    <input id="input-married" type="checkbox"/>
+    <br>
+    <label>역할</label>
+    <input name="role" id="input-dev" type="radio" checked/>
+    <label for="input-dev">개발자</label>
+    <input name="role" id="input-design" type="radio"/>
+    <label for="input-design">디자이너</label>
+    <input name="role" id="input-pm" type="radio"/>
+    <label for="input-pm">매니저</label>
+    <br>
+    <br>
+    <label for="input-file">첨부</label>
+    <input id="input-file" type="file" multiple/>
+    <br>
+    <br>
+    <label for="select-dep">소속</label>
+    <select id="select-dep">
+      <option value="adm">운영팀</option>
+      <option value="mkt">마케팅팀</option>
+      <option value="frt">프론트엔드팀</option>
+      <option value="bck">백엔드팀</option>
+      <option value="tst">테스트팀</option>
+      <option value="mnt">유지보수팀</option>
+    </select>
+    <br>
+    <br>
+    <label for="ta-intro">소개</label>
+    <textarea id="ta-intro" rows="5"></textarea>
+    <br>
+    <br>
+    <button>제출</button>
+    <button type="button">취소</button>
+  </form>
+  
+</body>
+</html>

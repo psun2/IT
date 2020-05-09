@@ -1,0 +1,31 @@
+body>div>* {
+    background-color: yellowgreen;
+    display: inline-block;
+    padding: 24px;
+}
+
+
+/* body>div>span {
+    display: none;
+} */
+
+/* display: none
+요소를 화면에 두지 않음
+자리를 차지하지 않음 */
+span {
+    display: none;
+}
+
+/* visibility: hidden
+요소를 화면에 두되 보이지 않도록 함
+자리 차지 */
+body>div>.hidden{
+    visibility: hidden;
+}
+
+/* opacity: 0
+요소를 화면에 두고 불투명도를 0으로 함
+자리 차지 */
+body>div>.opacity {
+    opacity: 0;
+}

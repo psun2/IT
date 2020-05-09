@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cursor</title>
+
+    <style>
+      .box {
+        width: 20vw;
+        height: 10vh;
+        background-color: burlywood;
+        border: 1px solid black;
+        margin-bottom: 10px;
+      }
+
+      .column :last-child {
+        margin-bottom: 0px;
+      }
+
+      .column .progress {
+        cursor: progress;
+      }
+
+      .column .not-allowed {
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://blog.naver.com/tjddjs90/221902475776"
+      >내 블로그에서 보기</a
+    >
+    <h1>cursor</h1>
+    <p>
+      일 전에 다루었던 예제이지만, 오늘 다른 속성의 cursor을 배우게 되어 기록을
+      남깁니다.
+    </p>
+    <div class="column">
+      <h3>progress</h3>
+      <div class="box progress">Over me!!</div>
+      <h3>not-allowed</h3>
+      <div class="box not-allowed">Over me!!</div>
+    </div>
+    <p>
+      위 소개해드린 속성 말고도 cursor: 하면 많은 옵션들이 나타나게 되니, 한번씩
+      실험 해보시면, 도움이 되십니다.
+    </p>
+  </body>
+</html>

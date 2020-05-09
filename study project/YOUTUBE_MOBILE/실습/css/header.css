@@ -1,0 +1,30 @@
+.header {
+  background-color: var(--black-color);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-large);
+  padding: var(--padding);
+  color: var(--white-color);
+}
+
+.header a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.header .header__logoBtn i {
+  color: var(--red-color);
+}
+
+.header i {
+  font-size: var(--font-large);
+  color: var(--white-color);
+}
+
+.header button,
+.header button:focus {
+  background-color: var(--black-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

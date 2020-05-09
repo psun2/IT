@@ -1,0 +1,17 @@
+/* 인접 형제(바로 다음 동생) */
+div {
+  padding: 12px 24px;
+  border-top: 1px solid black;
+}
+
+.selected {
+  border-top: 0;
+  color: white;
+  background-color: dodgerblue;
+}
+
+/* 아래부터 */
+/* 넷째줄의 윗선을 사라지게 한다. */
+.selected+div {
+  border-top: 0;
+}

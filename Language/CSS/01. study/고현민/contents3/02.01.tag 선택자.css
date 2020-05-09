@@ -1,0 +1,10 @@
+/* tag 선택자 */
+span {
+    color: blue;
+}
+
+div {
+    margin: 24px;
+    padding: 48px;
+    background-color: pink;
+}

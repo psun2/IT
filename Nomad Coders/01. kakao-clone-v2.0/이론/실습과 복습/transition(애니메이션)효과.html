@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 애니매이션(?) 효과 넣기</title>
+
+    <style>
+        .red {
+            color: red;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .box:hover {
+            font-size: 2rem;
+            background-color: black;
+            color: aqua;
+        }
+
+        .box2 {
+            opacity: 0;
+            transition: all 2s ease-in-out .5s
+        }
+
+        .box2:hover {
+            font-size: 2rem;
+            font-weight: bold;
+            background-color: black;
+            color: aqua;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://blog.naver.com/tjddjs90/221889435744">내 블로그에서 보기</a>
+    <span class="box">transition 효과가 없습니다.</span><span class="red">☜ over me!!!</span>
+    <div>마우스를 오버 하면서 위, 아래 예제를 비교해주세요.</div>
+    <span class="box2">transition 효과를 사용 했습니다.
+    </span>
+    <span class="red">☜ over me!!!</span>
+
+    <p>
+        transition 은 가상 클래스 선택자를 통해 사용 가능합니다.
+        예를 들면, 위 예제와 같이 :hover 이란 가상클래스 선택을 사용할때, 쓰여지며,
+        가상클래스를 통해 바꾸고자 하는 속성을 property로 줍니다.
+        가상 클래스 선택자가 아닌 클래스에서 transition 속성을 부여 합니다.
+    </p>
+    <xmp>
+        .box2 {
+        transition: all 2s ease-in-out .5s
+        }
+
+        .box2:hover {
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: black;
+        color: aqua;
+        }
+    </xmp>
+    <h3>transition</h3>
+    <table>
+        <th>속성</th>
+        <th>값</th>
+        <th>의미</th>
+        <tr>
+            <td rowspan="2">transition-property</td>
+            <td>속성이름</td>
+            <td>전환 효과를 사용할 속성이름</td>
+        </tr>
+        <tr>
+            <td>all</td>
+            <td>모든속성에 적용</td>
+        </tr>
+        <tr>
+            <td rowspan="2">transition-duration</td>
+            <td>지속시간</td>
+            <td>몇 초간에 걸쳐 행동 할 것인지 정합니다.</td>
+        </tr>
+        <tr>
+            <td>s, ms 사용가능</td>
+            <td>1s 또는 1000ms</td>
+        </tr>
+        <tr>
+            <td>transition-timing-function</td>
+            <td>ease-in-out</td>
+            <td>선택 사항입니다만, 효과가 미미합니다.</td>
+        </tr>
+        <tr>
+            <td rowspan="2">transition-delay</td>
+            <td>지연시간</td>
+            <td>몇 초후 동작이 시작될 것인지를 정합니다.</td>
+        </tr>
+        <tr>
+            <td>s, ms 사용가능</td>
+            <td>.5s 또는 500ms 0.5일시 앞에 0을 생략 가능합니다.</td>
+        </tr>
+        <tr>
+            <td>transition</td>
+            <td>property duration timing-function delay</td>
+            <td>한 줄 작성이 가능합니다.</td>
+        </tr>
+    </table>
+    <h3>Example</h3>
+    <xmp>
+        .box {
+        transition-property: background-color, color;
+        transition-duration: 1s, .5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 3s;
+        }
+
+        .box {
+        transition: width 1s, height 2s ease-in-out .5s;
+        }
+
+        .box:hover {
+        color:red;
+        background-color: blue;
+        wdith: 300px;
+        height: 300px;
+        }
+    </xmp>
+    위의 .box의 두가지 방법중 편하신 방법으로 작성하시면 됩니다.
+    <hr>
+    <p>
+        <h3>transition 학습 링크</h3>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition#cubic-bezier-timing-function"
+            target="_blank">MDN</a> <br>
+        <a href="http://tcpschool.com/css/css3_transform_transition" target="_blank">TCP SCHOOL</a> <br>
+        <a href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions"
+            target="_blank">CSS 트랜지션 사용하기</a>
+    </p>
+</body>
+
+</html>

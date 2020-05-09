@@ -1,0 +1,17 @@
+.tall {
+    margin: 48px;
+    width: 200px;
+    height: 5000px;
+    background-color: yellowgreen;
+}
+
+/* 스크롤에 영향을 받지 않는다. 아무리 스크롤을 움직여도 그자리에 고정
+예를 들어 메뉴바를 만든다거나, 항상 보여야 하는 버튼 을 만들때 유용 */
+.fixed {
+    position: fixed;
+    top: 24px;
+    left: 80px;
+    width: 300px;
+    height: 100px;
+    background-color: purple;
+}

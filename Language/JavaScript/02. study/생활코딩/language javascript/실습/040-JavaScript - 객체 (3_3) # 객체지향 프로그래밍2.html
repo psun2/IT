@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var grades = {
+    'list': {'egoing': 10, 'k8805': 6, 'sorialgi': 80},
+    'show' : function(){
+        console.log(this.list);// 디스는 함수가 소속되어있는 객체를 의미
+        for(var name in this.list){
+            document.write(name+':'+this.list[name]+"<br />");
+        }
+        //alert(grades['list']['egoing']);
+        /*
+        alert(grades['show']());
+        */
+    }
+};
+grades.show();
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* static 평소의 상태 */
+span {
+    font-size: 1.2rem;
+    color: white;
+    background-color: tomato;
+    border: 2px solid firebrick;
+    position: static;
+}
+
+
+/* 그냥 연습해봄
+span:hover {
+    cursor: pointer;
+    background-color: darkred} */

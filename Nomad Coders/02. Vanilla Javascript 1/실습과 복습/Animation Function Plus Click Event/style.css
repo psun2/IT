@@ -1,0 +1,58 @@
+:root {
+  --first-background: thistle;
+  --last-background: yellowgreen;
+}
+
+body > div div {
+  width: 10vw;
+  height: 10vh;
+  background-color: var(--first-background);
+}
+
+body > div > div:first-child {
+  margin-right: 10rem;
+}
+
+.wrap {
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+}
+
+.ease-in:nth-child(2) {
+  animation: Animation 10s ease-in infinite;
+}
+.ease-out:nth-child(2) {
+  animation: Animation 10s ease-out infinite;
+}
+.ease-in-out:nth-child(2) {
+  animation: Animation 10s ease-in-out infinite;
+}
+.linear:nth-child(2) {
+  animation: Animation 10s linear infinite;
+}
+
+@keyframes Animation {
+  50% {
+    background-color: var(--last-background);
+  }
+}
+
+.ease-in.change {
+  transition: background-color 5s ease-in;
+  background-color: var(--last-background);
+}
+.ease-out.change {
+  transition: background-color 5s ease-out;
+  background-color: var(--last-background);
+}
+.ease-in-out.change {
+  transition: background-color 5s ease-in-out;
+  background-color: var(--last-background);
+}
+.linear.change {
+  transition: background-color 5s linear;
+  background-color: var(--last-background);
+}

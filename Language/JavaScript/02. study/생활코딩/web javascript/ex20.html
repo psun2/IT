@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체와 반복문</title>
+</head>
+<body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+        var coworks = {
+            'programmer': 'park',
+            'designer': 'un',
+        };
+        document.write('programmer : ' + coworks.programmer+"<br>");
+        document.write('designer : ' + coworks.designer+"<br>");
+        coworks.bookkeeper = 'sung'
+        document.write('bookkeeper : ' + coworks.bookkeeper+"<br>");
+        coworks['data scientist'] = 'park sung un';
+        document.write('data scientist : ' + coworks['data scientist']+"<br>");
+        console.log(coworks);
+    </script>
+    <h2>Iterate</h2>
+    <script>
+        for(let key in coworks) {
+            document.write(key+' : '+coworks[key]+'<br>')
+        }
+    </script>
+</body>
+</html>

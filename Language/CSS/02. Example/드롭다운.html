@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        display: flex;
+        /* list-style: none; */
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+      ul li ul {
+        display: none;
+      }
+      ul li:hover ul {
+        display: block;
+        background-color: cornsilk;
+        position: absolute;
+      }
+      a {
+        text-decoration: none;
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>메뉴 1</li>
+      <li>
+        드롭다운
+        <ul>
+          <li>
+            <a href="#">메뉴1</a>
+          </li>
+          <li>
+            <a href="#">메뉴2</a>
+          </li>
+          <li>
+            <a href="#">메뉴3</a>
+          </li>
+          <li>
+            <a href="#">메뉴4</a>
+          </li>
+        </ul>
+      </li>
+      <li>메뉴 2</li>
+      <li>메뉴 3</li>
+    </ul>
+    <br />
+    <a href="https://blog.naver.com/tjddjs90/221900668796"
+      >내 블로그에서 보기</a
+    >
+  </body>
+</html>

@@ -1,0 +1,14 @@
+#test {
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+.test2 {
+    font-weight: bold;
+    color: red;
+}
+
+span {
+    font-weight: bold;
+    color: tomato
+}

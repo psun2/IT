@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: red;
+  margin: 0;
+}
+
+input {
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
+  padding: 20px 60px;
+  width: 100%;
+  border: none;
+  transition: all 1s linear;
+}
+
+input:focus {
+  outline: none;
+  width: 80%;
+  transform: translateY(-100px);
+  border-radius: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  /* 박스-그림자: 수평방향, 수직방향, blur(흐림, 번짐) */
+  animation: Ani 3s linear infinite 1s;
+}
+
+.chat {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 20px; */
+  transition: background-color 1s linear;
+}
+
+/* input:focus .chat {
+  background-color: white;
+} */
+
+/* .chat.clicked {
+  background-color: white;
+} */
+
+.chat i {
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+.chat > i {
+  position: absolute;
+  left: 10px;
+}
+
+.chat .box {
+  position: absolute;
+  right: 10px;
+}
+
+.icons {
+  transition: opacity 1s linear;
+}
+
+input:focus ~ .icons {
+  opacity: 0;
+}
+
+@keyframes Ani {
+  0% {
+    transform: translateY(-100px);
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    /* 박스-그림자: 수평방향, 수직방향, blur(흐림, 번짐) */
+  }
+  50% {
+    transform: translateY(-110px);
+    box-shadow: 0 30px 60px -60px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    /* 박스-그림자: 수평방향, 수직방향, blur(흐림, 번짐) */
+  }
+  100% {
+    transform: translateY(-100px);
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    /* 박스-그림자: 수평방향, 수직방향, blur(흐림, 번짐) */
+  }
+}

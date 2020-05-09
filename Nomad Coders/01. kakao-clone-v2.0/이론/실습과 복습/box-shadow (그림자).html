@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow : 그림자</title>
+
+    <style>
+        /* 기본 세팅 */
+        body {
+            background-color: lightgray;
+        }
+
+        div {
+            background-color: white;
+            width: 320px;
+            height: 120px;
+            border-radius: 16px;
+            margin-bottom: 10px;
+        }
+
+        /* 그림자 */
+        /* 오른쪽 으로 돌아 아래쪽으로  */
+        .box {
+            box-shadow: -3px -3px black, 3px 3px yellowgreen;
+        }
+
+        /* 숫자를 하나 더 넣으면 번지는 효과로 인하여, 부드럽게 한다 */
+        .box1 {
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        /* 그림자 여러개 넣기 */
+        .box2 {
+            box-shadow:
+                0 0 4px red,
+                2px 2px 8px orange,
+                4px 2px 12px yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://blog.naver.com/tjddjs90/221890761366">내 블로그에서 보기</a>
+    <h1>box-shadow : 그림자</h1>
+    글 보다는 예제가 도움이 많이 되는 부분이므로 예제와 코드를 비교하며, 살펴봐 주세요.
+    <div class="box"></div>
+    <xmp>
+        .box {
+        box-shadow: -3px -3px black;
+        }
+    </xmp>
+    속성 값을 음수 즉, -3 을 주게되면, 좌측 과 상단에 그림자가 표현 됩니다.
+    <xmp>
+        .box {
+        box-shadow: 3px 3px yellowgreen;
+        }
+    </xmp>
+    속성 값을 양수 즉, 3 을 주게되면, 우측 과 하단에 그림자가 표현 됩니다.
+    <div class="box1"></div>
+    <xmp>
+        .box1 {
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+    </xmp>
+    마지막 px 값은 그림자의 번짐효과를 추가 합니다.
+    <div class="box2"></div>
+    <xmp>
+        .box2 {
+        box-shadow:
+        0 0 4px red,
+        2px 2px 8px orange,
+        4px 2px 12px yellow;
+        }
+    </xmp>
+    속성은 콤마로 구분하여, 두개 또는 그 이상의 속성을 연달아 사용할 수 있습니다.
+</body>
+
+</html>

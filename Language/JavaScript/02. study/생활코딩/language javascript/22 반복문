@@ -1,0 +1,19 @@
+while
+
+for
+
+while(조건){
+반복해서 실행할 코드
+}
+
+<br /> 줄바꿈 코드
+
+document.write () 스크립트 안에서 괄호 안의 문자를 웹페이지에 표현하는 명령어
+
+
+
+  while(true){
+            document.write("Coding everybody <br />")
+        }
+
+무한루프 // 무한반복

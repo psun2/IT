@@ -1,0 +1,113 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap'); */
+:root {
+  /* 극단적인 흰색, 검정 색은 피해주는게 좋습니다. */
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: #d49466;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263343;
+  padding: 8px 12px;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.navbar__logo i {
+  color: #d49466;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  /* 기본으로 잡혀있던 padding 이 존재하여 padding을 0으로 만들어 줍니다. */
+}
+
+.navbar__menu li {
+  padding: 8px 12px;
+  /* padding 을 넣어줌으로써 클릭 할 수 있는 범위를 확보시켜 줍니다. */
+}
+
+.navbar__menu li:hover {
+  background-color: #d49466;
+  border-radius: 4px;
+}
+
+.navbar__icons {
+  list-style: none;
+  color: var(--text-color);
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #d49466;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 8px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    /* flex-direction을 column로 적용하여, justify-content 대신 align-items 
+    를 사용 합니다. */
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar__toggleBtn {
+    display: block;
+    /* transition: all 3s ease-in-out; */
+  }
+
+  /* 자바스크립트 이벤트 처리 */
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+
+  /* .navbar__toggleBtn:hover {
+    background-color: red;
+  } */
+}

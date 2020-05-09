@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_flex</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        /* TODO: align-items */
+        .align-items>* {
+            width: 250px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+            display: flex;
+        }
+
+        .a-flex-start {
+            align-items: flex-start;
+        }
+
+        .a-center {
+            align-items: center;
+        }
+
+        .a-flex-end {
+            align-items: flex-end;
+        }
+
+        /* TODO: justify-content */
+        .justify-content>* {
+            width: 500px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+            display: flex;
+        }
+
+        .j-flex-start {
+            justify-content: flex-start;
+        }
+
+        .j-center {
+            justify-content: center;
+        }
+
+        .j-flex-end {
+            justify-content: flex-end;
+        }
+
+        /* TODO: justify-content: space-(around, between) */
+        .space-aroud {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .space-around-childeren {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+
+        .space-between {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .space-between-childeren {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+
+        /* TODO: flex-direction: column */
+        .flex-direction-column {
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+        .flex-direction-column-children {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+
+
+        /* TODO: flex-direction: row */
+        .flex-direction-row {
+            display: flex;
+
+            flex-direction: row;
+        }
+
+        .flex-direction-row-children {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+
+        /* TODO: flex-direction: column-revers */
+        .flex-direction-column-reverse {
+            display: flex;
+
+            flex-direction: column-reverse;
+
+        }
+
+        .flex-direction-column-reverse-children {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+
+        /* TODO: flex-direction: row-revers */
+        .flex-direction-row-reverse {
+            display: flex;
+
+            flex-direction: row-reverse;
+        }
+
+        .flex-direction-row-reverse-children {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+
+
+        /* TODO: flex-wrap */
+        .flex-wrap {
+            display: flex;
+
+            flex-wrap: wrap;
+        }
+
+        .flex-wrap-children {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://blog.naver.com/tjddjs90/221885672487">참고</a>
+    <br>
+    <a href="http://flexboxfroggy.com/#ko">학습 자료</a>
+    <h3>align-items</h3>
+    <div class="align-items">
+        <div class="a-flex-start">align-items: flex-start (default)</div>
+        <div class="a-center">align-items: center</div>
+        <div class="a-flex-end">align-items: flex-end</div>
+    </div>
+    <p>
+        박스 안에서 텍스트들의 움직임이 보이시나요 ?
+        align-items 는
+        세로줄 즉 Y축을 기준으로 위, 가운데, 아래로 움직입니다.
+    </p>
+    <a href="https://blog.naver.com/tjddjs90/221885696326">다른예제 보기</a>
+    <hr>
+    <h3>justify-content</h3>
+    <div class="justify-content">
+        <div class="j-flex-start">justify-content: flex-start (default)</div>
+        <div class="j-center">justify-content: center</div>
+        <div class="j-flex-end">justify-content: flex-end</div>
+    </div>
+    <p>
+        박스 안에서 텍스트들의 움직임이 보이시나요 ?
+        justify-content 는
+        가로줄 즉 X축을 기준으로 좌, 가운데, 우 로 움직입니다.
+    </p>
+    <a href="https://blog.naver.com/tjddjs90/221885699027">다른예제 보기</a>
+    <hr>
+    <h3>justify-content: space-around</h3>
+    <div class="space-aroud">
+        <div class="space-around-childeren">around</div>
+        <div class="space-around-childeren">around</div>
+        <div class="space-around-childeren">around</div>
+        <div class="space-around-childeren">around</div>
+        <div class="space-around-childeren">around</div>
+    </div>
+    <p>
+        space-aroud 옵션은 요소들 기준으로 좌,우 에 똑같은 외부여백 즉, margin 값을 갖습니다.
+    </p>
+    <h3>justify-content: space-between</h3>
+    <div class="space-between">
+        <div class="space-between-childeren">between</div>
+        <div class="space-between-childeren">between</div>
+        <div class="space-between-childeren">between</div>
+        <div class="space-between-childeren">between</div>
+        <div class="space-between-childeren">between</div>
+    </div>
+
+    <p>
+        space-between 옵션은 좌우 브라우저 끝선을 기준으로 요소들을 정렬 시킵니다.
+    </p>
+    화면을 최대화로 하시면 차이점을 알아보시기 편한합니다.
+    <hr>
+    <h3>flex-direction: column</h3>
+    <div class="flex-direction-column">
+        <div class="flex-direction-column-children">1</div>
+        <div class="flex-direction-column-children">2</div>
+        <div class="flex-direction-column-children">3</div>
+        <div class="flex-direction-column-children">4</div>
+        <div class="flex-direction-column-children">5</div>
+    </div>
+    <p>
+        flex-direction: column : display: flex 를 하기 전 상황 즉, 세로로 재 배치 합니다.
+    </p>
+    <h3>flex-direction: row (default)</h3>
+    <div class="flex-direction-row">
+        <div class="flex-direction-row-children">1</div>
+        <div class="flex-direction-row-children">2</div>
+        <div class="flex-direction-row-children">3</div>
+        <div class="flex-direction-row-children">4</div>
+        <div class="flex-direction-row-children">5</div>
+    </div>
+    <p>
+        flex-direction: row : 기본값 default 입니다.
+    </p>
+    <h3>flex-direction: column-reverse</h3>
+    <div class="flex-direction-column-reverse">
+        <div class="flex-direction-column-reverse-children">1</div>
+        <div class="flex-direction-column-reverse-children">2</div>
+        <div class="flex-direction-column-reverse-children">3</div>
+        <div class="flex-direction-column-reverse-children">4</div>
+        <div class="flex-direction-column-reverse-children">5</div>
+    </div>
+    <p>
+        flex-direction: column-revers : 세로로 배치된 순서를 역으로 뒤집어 줍니다.
+    </p>
+    <h3>flex-direction: row-reverse</h3>
+    <div class="flex-direction-row-reverse">
+        <div class="flex-direction-row-reverse-children">1</div>
+        <div class="flex-direction-row-reverse-children">2</div>
+        <div class="flex-direction-row-reverse-children">3</div>
+        <div class="flex-direction-row-reverse-children">4</div>
+        <div class="flex-direction-row-reverse-children">5</div>
+    </div>
+    <p>
+        flex-direction: row-revers : 가로 배치 순서를 뒤집어 주며, 마치 justify-conten: flex-end 와 같은 효과를 냅니다.
+    </p>
+    <hr>
+    <h3>flex-wrap</h3>
+    <div class="flex-wrap">
+        <div class="flex-wrap-children"></div>
+        <div class="flex-wrap-children"></div>
+        <div class="flex-wrap-children"></div>
+        <div class="flex-wrap-children"></div>
+        <div class="flex-wrap-children"></div>
+        <div class="flex-wrap-children"></div>
+        <div class="flex-wrap-children"></div>
+        <div class="flex-wrap-children"></div>
+        <div class="flex-wrap-children"></div>
+        <div class="flex-wrap-children"></div>
+    </div>
+    <p>
+        flex-wrap : wrap (감싸줍니다.) 화면을 줄였다, 키웟다 하면서 보시면 이해가 빠르게 되실수 있습니다.
+        nowrap, wrapreverse 등 다양한 옵션이 있습니다.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries(미디어 쿼리 - 반응형)</title>
+
+    <style>
+        * {
+            background-color: black;
+            color: white;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            color: aqua;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            animation: 3s myAnimation infinite ease-in-out;
+        }
+
+        .box2,
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box2 {
+            box-shadow: 1px 1px 5px black;
+            animation: 1s myAnimation2 infinite ease-in-out;
+        }
+
+        .box4,
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .box5 {
+            box-shadow: 1px 1px 5px black;
+            animation: 1s myAnimation3 infinite ease-in-out;
+        }
+
+        @media screen and (min-width:320px) and (max-width: 640px) {
+            * {
+                background-color: tomato;
+                color: black;
+            }
+
+            @keyframes myAnimation {
+
+                0%,
+                100% {
+                    transform: none;
+                }
+
+                50% {
+                    background-color: white;
+                    color: black;
+                    transform: translate(50%, 50px) rotate(1turn) rotateX(.5turn) rotateY(.5turn) scale(.5, .5);
+                }
+            }
+
+            @keyframes myAnimation2 {
+
+                0%,
+                100% {
+                    transform: none;
+                }
+
+                50% {
+                    background-color: white;
+                    color: black;
+                    transform: rotate(2turn) scale(0, 0);
+                }
+            }
+
+            @keyframes myAnimation3 {
+
+                0%,
+                100% {
+                    transform: none;
+                }
+
+                50% {
+                    background-color: white;
+                    color: black;
+                    transform: translate(50%, 50%) scale(0, 0);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://blog.naver.com/tjddjs90/221890691829">내 블로그에서 보기</a>
+    <h3>Media Queries(미디어 쿼리 - 반응형)</h3>
+    반응형이란 ? <br>
+    우리가 만든 예쁜 웹 페이지는 모바일에서도 적상적으로 작동해야 됩니다.
+    하지만, 모바일로 접속해보시면, 가끔씩 위치도 않 맞고 기능도 정상 작동이 안되는 경우가 있습니다.
+    우리는 그런 일을 대비해 웹페이지를 반응형으로 만들어야 합니다.
+    이론의 설명만으로 저도 배운게 많이 없어 어려우니, Media Queries 즉, 반응형의 구문을 보도록 하겠습니다.
+    <xmp>
+        @media screen and (min-width:320px) and (max-width: 640px) {
+        * {
+        background-color: tomato;
+        color: black;
+        }
+        }
+    </xmp>
+    @keyfarmes 애니메이션과 비슷하게 골뱅으로 선언 해줍니다. <br>
+    @media screen 으로 선언 하며, and 뒤에는 조건 입니다. 즉 가로의 최소 사이즈가 320px, 그리고 가로의 최대가이즈가 640px
+    일때 배경색은 토마토 색 이고 글씨는 검정으로 변한다는 희미입니다.
+    선언된 media qeuries 안에서 우리는 style 태그에 css를 작성 하는 것처럼, 여러방법으로 스타일링 할 수 있습니다.
+    <p>
+        그리고 (min-width:320px) and (max-width: 640px) 에서 width 를 height 로 바꾸는등
+        조건을 수정할수 잇으며, (min-width:320px) and (max-width: 640px) and (min-height) and (max-height) 와 같이
+        조건을 추가 해 줄 수 도 있습니다.
+    </p>
+    <hr>
+    <div>아래예제는 브라우저의 가로사이즈를 줄이면 애니메이션 효과가 발동됩니다.</div>
+    <div>브라우저의 가로 사이즈를 줄여주세요.</div>
+    <div>애니메이션 효과</div>
+    <div class="box">Hello World</div>
+    <div>애니메이션 효과2</div>
+    <div class="box3">
+        <div class="box2"></div>
+    </div>
+    <div>애니메이션 효과3</div>
+    <div class="box4">
+        <div class="box5"></div>
+    </div>
+</body>
+
+</html>

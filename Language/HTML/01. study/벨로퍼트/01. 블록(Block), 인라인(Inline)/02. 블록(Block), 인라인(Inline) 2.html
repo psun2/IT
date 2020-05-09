@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>02. 블록(Block), 인라인(Inline) 2</title>
+    <link rel="stylesheet" href="./02. 블록(Block), 인라인(Inline) 2.css">
+</head>
+
+<body>
+    <h1>HTML - 블록 레벨(Block level) 요소와 인라인(Inline) 요소</h1>
+
+    <h3>1. 블록 요소</h3>
+    <ol>
+        <li>DIV, H1, P</li>
+        <li>사용 가능한 최대 가로 너비를 사용한다.</li>
+        <li>크기를 지정할 수 있다.</li>
+        <li>
+            (with: 100%; height:0; 으로 시작한다.)
+            높이가 0으로 시작 되고, 태그 안 의 글자 크기 만큼의 높이를 가진다.
+        </li>
+    </ol>
+    <div>예제2. 안녕하세요</div>
+
+    <div class="divBoxSize">예제3. divBoxSize</div>
+
+    <div class="divFontSize">예제4. divFontSize</div>
+
+    <div>예제5. 블록 요소 : 수직으로 쌓임</div>
+    <div>예제5. 블록 요소 : 수직으로 쌓임</div> 
+    <div>예제5. 블록 요소 : 수직으로 쌓임</div>
+    <div>예제5. 블록 요소 : 수직으로 쌓임</div>
+    <div>예제5. 블록 요소 : 수직으로 쌓임</div>
+    
+    <div class="divMarginPadding">
+        예제6. divMarginPadding 
+        <!-- 박스크기를 정해주어 폰트사이즈와 는 상관없는 박스가 구성된다. -->
+    </div>
+
+    <h3>2. 인라인 요소</h3>
+    <ol>
+        <li>SPAN, IMG</li>
+        <li>필요한 만큼의 너비를 사용한다.</li>
+        <li>크기를 지정할 수 없다.</li>
+        <li>
+            (width:0; height:0; 으로 시작한다.)
+            안쪽의 글자크기, contents의 크기로 가로와 높이가 지정된다.
+        </li>
+    </ol>
+    <span>예제2. 인라인요소 : span 태그 = 필요한 만큼의 너비만 사용</span>
+    <span class="spanBoxSize">예제3. spanBoxSize</span> <br>
+    예제3. box의 크기를 지정할 수 없으므로, contents가 없으면 배경색이 나오지 않는다 -> <span></span> span <- span 태그가 코드 상에서 사용되고 있음.
+    <span class="spanFontSize">예제4. spanFontSize</span> <br>
+    <span>예제5. 인라인 요소 : 수평으로 쌓임</span>
+    <span>예제5. 인라인 요소 : 수평으로 쌓임</span>
+    <span>예제5. 인라인 요소 : 수평으로 쌓임</span>
+    <span>예제5. 인라인 요소 : 수평으로 쌓임</span>
+    <span>예제5. 인라인 요소 : 수평으로 쌓임</span> <br>
+    <span>예제5-1. span태그 붙여서 작성</span><span>예제5-1. span태그 붙여서 작성</span><span>예제5-1. span태그 붙여서 작성</span>
+    <span>예제5-1. span태그 enter로 작성</span>
+    <span>예제5-1. span태그 enter로 작성</span> <br>
+    <span class="spanMarginPadding">
+        예제6. spanMarginPadding
+        margin, padding 위, 아래는 사용을 할 수 없다.
+    </span>
+
+</body>
+
+</html>

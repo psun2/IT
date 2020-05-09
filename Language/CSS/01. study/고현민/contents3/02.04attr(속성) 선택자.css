@@ -1,0 +1,12 @@
+/* attr(속성) 선택자 */
+label {
+    display: inline-block; /* 디스플레이 횡대로 정렬 input창이 정렬됨 */
+    width: 80px; 
+}
+input[type=text] {
+    background-color: powderblue;
+}
+label[for=ip-id]{
+    color: blue;
+    font-weight: bold;
+}

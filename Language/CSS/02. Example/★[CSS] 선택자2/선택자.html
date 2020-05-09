@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+
+    <style>
+        div {
+            /* TODO: tag 선택자 */
+            color: yellowgreen;
+        }
+
+        .class {
+            /* TODO: class 선택자 */
+            color: blue;
+        }
+
+        #ide {
+            /* TODO: id 선택자 */
+            color: deeppink;
+        }
+
+        .parent>.children {
+            /* TODO: 종속 tag(?) 선택자 */
+            color: turquoise;
+        }
+
+        .parent :nth-child(2) {
+            /* TODO: 자식 선택자 */
+            color: violet;
+        }
+
+        .all>* {
+            /* TODO: 전체 선택자 */
+            color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://blog.naver.com/tjddjs90/221885653717">참고</a>
+    <div>태그 선택자</div>
+    <div class="class">.class 선택자</div>
+    <div id="ide">#id 선택자</div>
+    <div class="class" id="ide">
+        tag 와 class 와 id 가 모두다 있으면,
+        id 선택자는 최상위 선택자가 되어, id 값으로 style이 됩니다.
+        그다음으론 class가 됩니다.
+        최하위로 tag가 됩니다.
+    </div>
+    <div class="parent">
+        <div class="children">.parent>.children 자식(?) 종속(?) 선택자</div>
+        <div class="children">.parent :nth-child(2) 자식 선택자 (만능선택자 good!)</div>
+    </div>
+    <div class="all">
+        <div class="all-children">*전체(?) 선택자</div>
+        <div class="all-children">*전체(?) 선택자</div>
+        <div class="all-children">*전체(?) 선택자</div>
+        <div class="all-children">*전체(?) 선택자</div>
+        <div class="all-children">*전체(?) 선택자</div>
+    </div>
+</body>
+
+</html>

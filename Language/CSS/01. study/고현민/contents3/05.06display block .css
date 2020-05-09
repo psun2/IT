@@ -1,0 +1,8 @@
+/* 기본 세팅 */
+body>div>* {
+    background-color: yellowgreen;
+}
+
+body>div>* {
+    display: block;
+}

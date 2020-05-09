@@ -1,0 +1,16 @@
+math.pow(3,2) = 9 = 제곱
+
+math.sqrt(9) = 3 = 제곱근
+
+math.round(10.6) = 11 = 반올림
+
+math.ceil(10.2) = 11 = 올림
+
+math.floor(10.2) = 10 = 버림(내림)
+
+math.randome(); = 1보다 작은 랜덤한 숫자
+
+100 * math.randome(); = 100보다 작은 랜덤한 숫자
+
+math.round(100 * math.randome()); = 100보다 작은 소수점 없는 랜덤한 숫자
+

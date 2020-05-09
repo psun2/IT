@@ -1,0 +1,28 @@
+Node.js에서의 모듈의 로드
+새창으로 열기
+본 수업은 Node.js를 위한 수업이 아니기 때문에 Node.js를 실행하는 방법은 다루지 않는다. 호스트 환경에 따라서 모듈을 로드하는 방법이 달라진다는 것을 보여주기 위한 예제일 뿐이기 때문에 동영상 수업을 참고하자.
+모듈을 로드하는 방법은 호스트 환경에 따라서 달라진다. Node.js에서는 아래와 같은 방법으로 모듈을 로드한다.
+
+node.circle.js (로드될 대상)
+
+
+var PI = Math.PI;
+  
+exports.area = function (r) {
+return PI * r * r;
+};
+  
+exports.circumference = function (r) {
+return 2 * PI * r;
+};
+node.demo.js (로드의 주체)
+
+
+var circle = require('./node.circle.js');
+console.log( 'The area of a circle of radius 4 is '
+           + circle.area(4));
+아래는 실행방법과 실행 결과다.
+
+
+F:\BitNami\wampstack-5.4.22-0\apache2\htdocs\javascript\module>node node.demo.js
+The area of a circle of radius 4 is 50.26548245743669

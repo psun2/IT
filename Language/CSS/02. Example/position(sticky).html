@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position(sticky)</title>
+  </head>
+
+  <style>
+    a {
+      color: white;
+    }
+
+    #header,
+    #nav,
+    #content {
+      color: white;
+      text-decoration: none;
+    }
+
+    #header {
+      background-color: red;
+      height: 100px;
+    }
+
+    #nav {
+      background-color: cornflowerblue;
+      text-align: center;
+      padding: 40px 0;
+      position: sticky;
+      top: 0;
+    }
+
+    #content {
+      background-color: green;
+      height: 1000vh;
+    }
+  </style>
+  <body>
+    <a href="https://blog.naver.com/tjddjs90/221898183321"
+      >내 블로그에서 보기</a
+    >
+    <h1>position: sticky;</h1>
+    <h3>Content 정독 후 스크롤을 위, 아래로 움직여 주세요</h3>
+    <div id="header">Header</div>
+    <div id="nav">Navigation</div>
+    <div id="content">
+      Content
+      <p>아주 식상하리 만큼 진부한 레이아웃 입니다.</p>
+      <p>
+        많은 개발자들은 스크롤을 밑으로 하면, 네비게이션을 항상 볼 수 있도록
+        네비게이션이 위에 붙어있길 원할 것 입니다.
+      </p>
+      <p>원했던 바로 그 기능이 "sticky" 입니다.</p>
+      <p>
+        이 기능을 위해 자바스크립트를 이용해서 ... normal -> fixed 변경하고
+      </p>
+      <p>
+        Display block, position relative 설정을 통해 해당 기능을 구현했습니다.
+      </p>
+      <p>
+        그러나 "sticky" 라는 녀석을 css 속성 값으로 주어, 쉽게 구현할 수
+        있습니다.
+      </p>
+      <p>
+        출처 :
+        <a href="https://www.youtube.com/watch?v=X68ZDGzs-_E"
+          >아니, 이걸 몰랐어? Sticky CSS! 프론트엔드 개발자는 주목!</a
+        >
+      </p>
+    </div>
+  </body>
+</html>

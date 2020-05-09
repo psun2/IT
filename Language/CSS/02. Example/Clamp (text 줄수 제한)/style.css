@@ -1,0 +1,46 @@
+.box {
+  display: flex;
+}
+
+.more {
+  height: 100%;
+  animation: slide 1s linear forwards, rotate 1s ease-in-out 1s,
+    big 1s ease-in-out infinite 2s;
+}
+
+.text.clamp {
+  /* line-clamp: 3; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  /* 출처 : https://developer.mozilla.org/ko/docs/Web/CSS/-webkit-line-clamp */
+}
+
+@keyframes big {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-300px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

@@ -1,0 +1,33 @@
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+  margin-bottom: var(--padding);
+}
+
+.subscribe .subscribe__meta {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe .subscribe__avatar {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  margin-right: var(--padding);
+}
+
+.subscribe button,
+.subscribe button:focus {
+  background-color: var(--white-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.subscribe .subscribeBtn {
+  text-transform: uppercase;
+  color: var(--red-color);
+}

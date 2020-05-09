@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 과 input을 활용한 회원가입페이지 생성</title>
+
+    <style>
+        form {
+            margin: 0 auto;
+            /* TODO: form 통채로 가운데 정렬 */
+            width: 400px;
+            /* TODO: form 의 box 크기 */
+            padding: 1em;
+            border: 1px solid #CCC;
+            /* TODO: 테두리에 선을 그려줍니다. */
+            border-radius: 1em;
+            /* TODO: 테두리를 둥글게 해줍니다. */
+            align-items: center;
+        }
+
+        label {
+            display: inline-block;
+            /* TODO: wdith 를 맞추기 위해 inline-block 속성을 준다.*/
+            width: 90px;
+            /* TODO: 가로길이를 90px로 지정합니다. */
+            text-align: right;
+            /* TODO: 텍스트를 오른쪽 정렬 합니다. */
+        }
+
+        table {
+            padding-left: 15px;
+            /* TODO: 표를 테두리가 그려진 폼의 중앙으로 옴겨주는 작업 */
+        }
+
+        .center {
+            padding-left: 50px;
+            /* TODO: 회원가입 글자를 가운데로.... */
+        }
+    </style>
+</head>
+
+<body>
+    <form autocomplete="on">
+        <!-- TODO: 자동완성 속성을 주었습니다. -->
+        <table>
+            <th class="center">회원 가입</th>
+            <tr>
+                <td>
+                    <label for="name">이름</label>
+                    <input type="text" minlength="3" maxlength="10" id="name">
+                    <!--TODO: label과 input을 연동 시켜주고,  -->
+                    <!-- TODO: 최소 3글자, 최대10 글자를 입력받는 input 생성 -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id">ID</label>
+                    <input type="text" id="id" placeholder="ID를 입력해주세요">
+                    <!-- TODO: placeholder 를 주어 입력 대기창에 메시지를 띄웁니다. -->
+                </td>
+                <!-- TODO: id가 id인 input에 label 태그를 주어 서로 한쌍임을 표현 함으로 묶었습니다. -->
+                <!-- TODO: 이렇게 무엇을 표현할때 묶어 줌으로써 효율을 가집니다 (?) -->
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">password</label>
+                    <input type="password" id="password" placeholder="비밀번호를 입력해주세요.">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">e-mail</label>
+                    <input type="email" id="email" placeholder="e-mail">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="jop">직업</label>
+                    <select vname="" id="jop">
+                        <!-- TODO: jop이라는 id를 부여 lable과 묶어줍니다. -->
+                        <option value="a clerk for a firm">회사원</option>
+                        <option value="Student">학생</option>
+                        <option value="a military man">군인</option>
+                        <option value="not employed">무직</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Single">미혼</label>
+                    <input type="radio" id="Singlengle" name="marriage">
+                    <!-- TODO: 마찬가지로 input 과 label 을 묶어주는 작업을 합니다. -->
+                    <!-- TODO: 저는 input radio속성을 주Married선택할수 있는 선택적 input type 을 부여했습니다.-->
+                    <!-- TODO: 둘중 한가지로만 입력 받기 위해 name 으로 서로 다른 input을 묶어 줍니다. -->
+                    <label for="Married">기혼</label>
+                    <input type="radio" id="Married" name="marriage">
+                </td>
+            </tr>
+            <tr>
+                <td style="display: flex;">
+                    <!-- TODO: display: flex; 속성 값을 주어 밑으로 쳐져있던 본인소개 글을 위로 올렸습니다. -->
+                    <label for="Introduce yourself">본인소개</label>
+                    <textarea name="" id="Introduce yourself" cols="30" rows="10"></textarea>
+                    <!-- TODO: 다른 작업물들과 같이 id값으로 label과 엮어 줍니다. -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                    <!-- TODO: 제출버튼 생성 -->
+                    <input type="reset">
+                    <!-- TODO: 초기화 버튼 생성 -->
+                    <button>이런 버튼도 존재 합니다.</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

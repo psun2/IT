@@ -1,0 +1,24 @@
+        function get_argument(arg){
+    return arg;
+    }
+    
+    alert(get_argument(1));
+    alert(get_argument(2));
+
+arg = 변수
+
+    alert(get_argument(1)); > 겟 아규먼트라는 함수를 호출할때 숫자 1을 넣어준다
+
+그 숫자 1이 들어갈 자리에 arg 가 있음
+
+arg 는 변수가 됨
+
+arg = 1 이다 라는 뜻
+
+arg = 2라 는 뜻
+
+arg = 매개변수, parameter
+
+arg 전달한 값들은 인자 argument
+
+

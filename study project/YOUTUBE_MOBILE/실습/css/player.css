@@ -1,0 +1,17 @@
+.player {
+  text-align: center;
+  background-color: var(--black-color);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.player .player__video {
+  width: 100%;
+  height: 100%;
+  max-width: var(--video-size);
+}
+
+.player .player__video:focus {
+  outline: none;
+}

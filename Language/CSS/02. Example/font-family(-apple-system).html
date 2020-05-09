@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font-family(-apple-system)</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+      body {
+        color: #202020;
+        font-family: 'Shadows Into Light', -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+          'Helvetica Neue', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a
+        href="https://blog.naver.com/tjddjs90/221898161931"
+        class="header__reference"
+        >내 블로그에서 보기</a
+      >
+      <h1 class="header__title">font-family(-apple-system) 란?</h1>
+      <main class="main">
+        <p class="main__text">
+          이 글은 google 의 font style 중 Shadows Into Light 글씨체를 적용
+          하였습니다.
+          <xmp
+>
+            body {
+                color: #202020;
+                font-family: 'Shadows Into Light', -apple-system, BlinkMacSystemFont,
+                  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+              }
+          </xmp>
+          바디 태그에 적용된 font style 입니다. font-family의 첫번째, 속성으로
+          이 글에서 사용되는 글씨체가 들어 갔으며, 두번째 부터는 -apple-system
+          블라블라 로 이어 집니다.
+        </p>
+        <p class="main__result">
+          즉 개발자가 설정한 폰트가 사용이 안될시, 뒤에 기본 스타일들이
+          적용됩니다. -apple-system도 적용 안 될시 한 칸씩 밀려가며, 적용이
+          됩니다.
+        </p>
+      </main>
+    </header>
+  </body>
+</html>

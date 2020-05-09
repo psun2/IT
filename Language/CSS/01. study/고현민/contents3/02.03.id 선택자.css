@@ -1,0 +1,10 @@
+/* id 선택자 */
+section{
+    padding: 32px;
+}
+#intro {
+    background-color: yellowgreen;
+}
+#board {
+    background-color: pink;
+}

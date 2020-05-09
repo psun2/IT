@@ -1,0 +1,40 @@
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 8px 16px;
+    border-top: 1px solid lightgray;
+}
+
+/* 아래부터 */
+ul li:first-child {
+    border-top: 2px solid black;
+}
+
+ul li:last-child {
+    border-bottom: 2px solid black;
+}
+
+/* 특정 요소에 적용 */
+ul li:nth-child(3) {
+    color: purple;
+}
+
+/* 짝수 라인만 적용 */
+ul li:nth-child(even) {
+    background-color: #eee;
+}
+
+/* 홀수 라인만 적용 
+ul li:nth-child(odd) {
+    background-color: #eee;
+} */
+
+/* 몇개중의 하나에 적용 */
+ul li:nth-child(3n+1) {
+    text-decoration: underline;
+}
+
+/* 4n+2 (4개 중의 2개에 적용) */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>각 컨텐츠별 중앙정렬</title>
+
+    <style>
+      .box {
+        background-color: red;
+        color: white;
+        width: 20vw;
+        height: 15vh;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .flex,
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        /* 콘테이너 중앙정렬 */
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+      }
+
+      .text-align {
+        text-align: center;
+      }
+
+      .line-height {
+        line-height: 15vh;
+      }
+
+      .center {
+        text-align: center;
+        line-height: 15vh;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://blog.naver.com/tjddjs90/221902470771"
+      >내 블로그에서 보기</a
+    >
+    <h1>각 컨텐츠별 중앙정렬</h1>
+    <h3>flex 중앙정렬</h3>
+    <div class="box flex">flex</div>
+    <h3>box(콘테이너) 중앙정렬</h3>
+    <div class="box container">container</div>
+    <h3>text-align</h3>
+    <div class="box text-align">text-align</div>
+    <h3>line-height</h3>
+    <div class="box line-height">line-height</div>
+    <h3>중앙정렬</h3>
+    <div class="box center">center</div>
+  </body>
+</html>

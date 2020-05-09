@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 10px 20px;
+        padding: 20px 40px;
+      }
+      .box {
+        width: 50%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        height: 280px;
+        /* background-color: aqua; */
+        border: 3px solid black;
+        margin-bottom: 20px;
+      }
+      .box__c {
+        width: 50%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        height: 30px;
+        /* background-color: red; */
+        border: 3px solid black;
+      }
+      .box:nth-child(2) {
+        background-color: blueviolet;
+      }
+
+      .box :nth-child(2) {
+        background-color: chartreuse;
+      }
+
+      .box :nth-child(1) {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <a href="https://blog.naver.com/tjddjs90/221902487874">내 블로그에서 보기</a>
+  <body>
+    <div class="box">
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+    </div>
+    <div class="box">
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+    </div>
+    <div class="box">
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+      <div class="box__c"></div>
+    </div>
+    <h1>nth-child()</h1>
+    <p>
+      위 예제는 3개의 부모컨테이너 안에 다섯 개의 자식 컨테이너가 각각 있습니다.
+      <br />
+      위 예제들의 박스의 스타일은 class 이름이 box 인 것에만 스타일을
+      주었습니다.
+    </p>
+    <p>
+      예제를 진행하면서 느끼는 건데 스타일을 부여할때 선택자가 가장 중요한 부분
+      인 것 같습니다.
+    </p>
+    <p>
+      부모요소에 보라색의 background 는 <q>box:nth-child(2)</q> 로 작성 하였고,
+      <br />
+      자식요소에 연두색의 background 는 <q>box :nth-child(2)</q> 로 작성
+      하였습니다.
+      <br />
+      위 예제와 같이 선택자에서 스페이스 즉 띄어쓰기 하나에 따라 전혀 다른 결과
+      가 나옵니다.
+    </p>
+    <p>
+      box:nth-child(2) 의 의미는 class name이 box에서 두번째 요소를 선택한다는
+      의미이고 <br />
+      box :nth-child(2) 의 의미는 class name이 box의 하위 자식요소중 두번째
+      자식이라는 의미 입니다.
+    </p>
+    <h3>
+      nth-child()의 경우 제가 지정한 box위에 다른 요소들이 존재하면, 그 요소
+      또한 counting이 되니 유의하시기 바랍니다. 실제로 box class 위에 다른
+      요소를 놓아 실험해 보세요.
+    </h3>
+  </body>
+</html>

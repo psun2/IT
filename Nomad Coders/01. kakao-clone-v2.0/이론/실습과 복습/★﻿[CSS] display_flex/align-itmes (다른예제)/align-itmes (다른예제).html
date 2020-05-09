@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-itmes (다른예제)</title>
+
+    <style>
+        /* TODO: align-items: flex-start */
+        .align-items-start {
+            height: 300px;
+            background-color: darkgrey;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .align-items-start-children {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+
+        /* TODO: align-items : center */
+        .align-items-center {
+            height: 300px;
+            background-color: darkolivegreen;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .align-items-center-children {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+
+        /* TODO: align-items: flex-end */
+        .align-items-end {
+            height: 300px;
+            background-color: darkorchid;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .align-items-end-children {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="align-items-start">
+        <div class="align-items-start-children"></div>
+        <div class="align-items-start-children"></div>
+        <div class="align-items-start-children"></div>
+        <div class="align-items-start-children"></div>
+        <div class="align-items-start-children"></div>
+    </div>
+    <h3>align-items: flex-start => 부모요소의 위쪽으로 정렬 됩니다.</h3>
+    기본값 default 입니다.
+</body>
+<div class="align-items-center">
+    <div class="align-items-center-children"></div>
+    <div class="align-items-center-children"></div>
+    <div class="align-items-center-children"></div>
+    <div class="align-items-center-children"></div>
+    <div class="align-items-center-children"></div>
+</div>
+<h3>align-items: flex-center => 부모요소의 가운데로 정렬 됩니다.</h3>
+<div class="align-items-end">
+    <div class="align-items-end-children"></div>
+    <div class="align-items-end-children"></div>
+    <div class="align-items-end-children"></div>
+    <div class="align-items-end-children"></div>
+    <div class="align-items-end-children"></div>
+</div>
+<h3>align-items: flex-end => 부모요소의 아래쪽으로 정렬 됩니다.</h3>
+
+</html>

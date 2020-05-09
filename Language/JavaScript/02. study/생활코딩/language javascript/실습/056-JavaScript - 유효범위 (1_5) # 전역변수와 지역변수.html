@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vscope = 'global'; //전역변수(global variables)
+        function fscope(){
+            var vscope = 'local'; //지역변수(local variables)
+            var lv = 'local variables';
+            alert(vscope);
+        }
+        function fscope2(){
+            alert(vscope);
+        }
+        fscope();
+        fscope2();
+        //alert(lv); >> 지역변수 이므로 함수 밖에서 호출을 못함 undefind
+        alert(vscope);
+    </script>
+</body>
+</html>

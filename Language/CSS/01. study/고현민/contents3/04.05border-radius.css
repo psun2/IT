@@ -1,0 +1,27 @@
+/* 기본 세팅 */
+div {
+    width: 400px;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+    color: white;
+    background-color: orange;
+    border: 2px solid darkorange;
+}
+
+div {
+    border-radius: 8px;
+}
+
+div {
+    border-radius: 50%;
+}
+
+/* 왼쪽 위 부터 시작해서 시계방향 오른쪽으로 돌아간다 */
+div {
+    border-radius: 24px 0 25% 50%;
+}
+
+div {
+    border-radius: 0px 25px 25px 0%;
+}

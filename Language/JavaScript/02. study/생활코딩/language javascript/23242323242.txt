@@ -1,0 +1,11 @@
+if(id === 'tjddjs90' || id === 'zzang9')
+
+
+if(id === 'tjddjs90' || 'zzang9') 
+
+if('sd') = true
+
+
+"ㄱ" = "ㄴ" =true
+
+' ' = "ㄳㄱㅇㄹㄴㅇㄹ" = true

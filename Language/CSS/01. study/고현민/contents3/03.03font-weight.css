@@ -1,0 +1,30 @@
+/* 100 ~ 900
+절대값
+100 단위로 입력
+
+
+normal
+일반 굵기
+400 */
+span {
+    font-weight: 900;
+}
+
+/* bold
+두껍게
+700, 자주 사용됨 */
+span {
+    font-weight: bold;
+}
+
+/* lighter, bolder
+상속보다 얇거나 두껍게
+정도는 상속된 값마다 다름 */
+/* 점점 두꺼워 지고 자주 사용하진 않기 때문에 참고만 할것  */
+body {
+    font-weight: 100;
+}
+
+span {
+    font-weight: bolder;
+}

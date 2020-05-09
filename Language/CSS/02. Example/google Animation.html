@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .animatio__column {
+        display: flex;
+        margin: 10px 10px;
+      }
+      .animatio__column .box {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50%;
+      }
+      .animatio__column .box1 {
+        background-color: #4284f7;
+        margin-right: 10px;
+        animation: 2s box1 infinite ease-in-out;
+      }
+      .animatio__column .box2 {
+        background-color: #e74239;
+        animation: 2s box2 infinite ease-in-out;
+      }
+      .animatio__column .box3 {
+        background-color: #ffbd00;
+        animation: 2s box3 infinite ease-in-out;
+        margin-right: 10px;
+      }
+      .animatio__column .box4 {
+        background-color: #31ad52;
+        animation: 2s box4 infinite ease-in-out;
+      }
+
+      @keyframes box1 {
+        50% {
+          transform: translate(30px, 30px);
+        }
+      }
+      @keyframes box2 {
+        50% {
+          transform: translate(-30px, 30px);
+        }
+      }
+      @keyframes box3 {
+        50% {
+          transform: translate(30px, -30px);
+        }
+      }
+      @keyframes box4 {
+        50% {
+          transform: translate(-30px, -30px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animatio__column">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+    </div>
+    <div class="animatio__column">
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+    </div>
+
+    <a href="https://blog.naver.com/tjddjs90/221900663101"
+      >내 블로그에서 보기</a
+    >
+  </body>
+</html>

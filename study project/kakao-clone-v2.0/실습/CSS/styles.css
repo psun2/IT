@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;600&display=swap');
+@import './reset.css';
+@import './status-bar.css';
+@import './header.css';
+@import './nav-bar.css';
+@import './friend.css';
+@import './friends.css';
+@import './find.css';
+@import './more.css';
+@import './settings.css';
+@import './chat.css';
+@import './mobile.css';
+
+* {
+  box-sizing: border-box;
+  /* TODO: ex) box size 는 300으로 만들것 이지만, 
+  padding 또는 margin 값으로 box의 크기는 그 값만큼 추가 됩니다.
+  이때 boxsizing: border-box 는 padding 및 margin 의 크기를 계산해
+  box의 크기를 조절해 우리가 처음에 생각했던 box의 크기 가 됩니다.
+
+  ex) width: 300px, height: 100px 의 box에 
+  padding: 20 주게 되면 width: 320, height: 120px 의 
+  box가 되버립니다.
+  여기서 box-sizing: border-box 의 속성값을 부여하면
+  width: 280, height: 80px 의 박스가 padding 또는 margin 과
+  합쳐 지면서, width: 300px, height: 100px 의 box가 만들어 집니다. */
+}
+
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #020202;
+  font-family: 'Gaegu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* -apple-system 이란 구글 폰트가 없을시 설정된 앞에 font 가 없으면 차례로 다음 font를 쓴다고 합니다.*/
+  /* margin-bottom: 60px; */
+}
+
+a {
+  color: inherit;
+  /* 부모 element 의 color 색상으로 변경합니다. */
+  text-decoration: none;
+  /* a태그의 링크걸렸을때 생선된 밑줄을 없애 줍니다. */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+main {
+  animation: fadeIn 0.5s ease-in-out;
+}

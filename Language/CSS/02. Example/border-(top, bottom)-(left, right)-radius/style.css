@@ -1,0 +1,50 @@
+:root {
+  --liigt-green-color: #c5e1a5;
+  --background: #fafafa;
+}
+
+button,
+button:focus {
+  background-color: var(--background);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.box {
+  width: 10vw;
+  height: 10vh;
+  background-color: var(--liigt-green-color);
+}
+
+.box1 {
+  transition: all 1s ease-in-out;
+}
+
+.box2 {
+  transition: all 1s ease-in-out;
+}
+
+.box3 {
+  transition: all 1s ease-in-out;
+}
+
+.box4 {
+  transition: all 1s ease-in-out;
+}
+
+.box1.active {
+  border-top-left-radius: 50%;
+}
+
+.box2.active {
+  border-top-right-radius: 50%;
+}
+
+.box3.active {
+  border-bottom-left-radius: 50%;
+}
+
+.box4.active {
+  border-bottom-right-radius: 50%;
+}

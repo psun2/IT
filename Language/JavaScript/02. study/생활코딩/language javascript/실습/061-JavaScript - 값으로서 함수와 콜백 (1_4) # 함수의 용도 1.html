@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        function a(){};   // >> 함수a
+
+        a = {
+         b:function (){
+        }s
+        };
+        */
+/*
+메소드b, b메소드
+함수 안에 담긴 함수
+*/
+
+//함수는 값이기 때문에 다른 함수의 인자로 전달 될수도 있다. 아래 예제를 보자.
+
+function cal(func, num){
+    return func(num)
+}
+function increase(num){
+    return num+1
+}
+function decrease(num){
+    return num-1
+}
+alert(cal(increase, 1));
+alert(cal(decrease, 1));
+    </script>
+</body>
+</html>

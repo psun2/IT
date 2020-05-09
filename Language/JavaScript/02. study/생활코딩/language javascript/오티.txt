@@ -1,0 +1,7 @@
+type="botton" onclick="alert('hello world')" value="hello world"
+
+ = 사용자가 헬로우 월드라고 적혀있는 버튼을 클릭했을 떼
+경고창을 실행 시키고 그 경고창에 헬로우 월드란 텍스트를 출력하라
+
+"alert('hello world')"
+

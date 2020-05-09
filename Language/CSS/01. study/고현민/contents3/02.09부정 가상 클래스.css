@@ -1,0 +1,16 @@
+.blue {
+    color: blue;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* 아래부터 */
+.underline:not(.blue) {
+    color: red;
+}
+
+.underline:not(.blue):not(li) {
+    color: inherit;
+}

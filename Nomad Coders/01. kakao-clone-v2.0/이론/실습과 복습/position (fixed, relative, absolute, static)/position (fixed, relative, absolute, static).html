@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        height: 400%;
+        background-color: coral;
+        margin: 0;
+      }
+
+      .nav {
+        width: 100%;
+        height: 200px;
+        background-color: cornflowerblue;
+        z-index: 1;
+        /* TODO: 비 활성화시 메뉴바 보다 content가 위에 있습니다. */
+        position: fixed;
+        top: 50px;
+      }
+
+      .parent {
+        width: 400px;
+        height: 400px;
+        background-color: crimson;
+        margin-top: 250px;
+        border: 3px solid black;
+
+        position: relative;
+      }
+
+      .children {
+        width: 200px;
+        height: 200px;
+        background-color: yellowgreen;
+        border: 3px dashed aquamarine;
+        border-radius: 7rem;
+
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="https://blog.naver.com/tjddjs90/221884193212">참조</a>
+
+    <div class="nav">
+      <h3>position: fixed</h3>
+      <p>
+        주의 : position: fixed를 사용시, 블럭 요소인 div도 width 크기를 줘야
+        나타나게 됩니다.
+      </p>
+      position: fixed 를 사용하면, 위치가 고정되어 아무리 스크롤을 해도,
+      변화하지 않습니다. top, bottom, left, right 값을 설정 할 수 있습니다.
+    </div>
+
+    <div class="parent">
+      <h3>position: relative</h3>
+      <div class="children">
+        <h3>position: absolute</h3>
+
+        <h3>bottom: 5px;</h3>
+
+        <h3>right: 5px;</h3>
+      </div>
+    </div>
+    <h3>position: static</h3>
+    <p>
+      position: static => defalut 값 입니다.
+    </p>
+    <h3>position: absolute</h3>
+    <p>
+      position: relative 와 한 셋트로 움직이며, absolute 는 fixed 와 비슷하며,
+      부모 요소의 위치에 대한 관계를 확립합니다. position: absolute; => 부모요소
+      안에서 절대적인 위치를 취합니다. bottom: 5px; => 밑에서 5px right: 5px; =>
+      오른쪽에서 5px 의 거리에 fixed 시킨다는 의미 정도가 됩니다.
+    </p>
+    <h3>position: relative</h3>
+    <p>
+      position: absolute 와 한 셋트로 움직이며, 자식요소가 absolute로, 위치의
+      움직임을 주려 할때, 부모요소에 position: relative 를 적용해, 자식요소가
+      움직일수 있는 기준을 마련해 줍니다.
+    </p>
+  </body>
+</html>

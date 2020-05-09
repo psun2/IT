@@ -1,0 +1,38 @@
+/* 기본 세팅 */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.outer {
+    background-color: yellowgreen;
+}
+
+.inner {
+    color: white;
+    background-color: green;
+}
+
+
+/* padding */
+.outer {
+    padding: 24px;
+}
+
+.outer {
+    padding-top: 24px;
+    padding-right: 48px;
+    padding-bottom: 0;
+    padding-left: 12px;
+}
+
+/* 위와 똑같다 맨 위부터 시계방향으로 오른쪽으로 돌아간다 */
+.outer {
+    padding: 24px 48px 0 12px;
+}
+
+/* 숫자를 두개 입력시 첫번째 수 : 위 아래
+두번째 수 : 왼쪽, 오른쪽을 나타냄. */
+.outer {
+    padding: 12px 48px;
+}

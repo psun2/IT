@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            color: aqua;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            animation: 3s myAnimation infinite ease-in-out;
+        }
+
+        .box2,
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box2 {
+            box-shadow: 1px 1px 5px black;
+            animation: 1s myAnimation2 infinite ease-in-out;
+        }
+
+        .box4,
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .box5 {
+            box-shadow: 1px 1px 5px black;
+            animation: 1s myAnimation3 infinite ease-in-out;
+        }
+
+        /* 
+        @keyframes name {
+            from {
+
+            }
+            to {
+                
+            }
+        } */
+        @keyframes myAnimation {
+
+            0%,
+            100% {
+                transform: none;
+            }
+
+            50% {
+                background-color: white;
+                color: black;
+                transform: translate(50%, 50px) rotate(1turn) rotateX(.5turn) rotateY(.5turn) scale(.5, .5);
+            }
+        }
+
+        @keyframes myAnimation2 {
+
+            0%,
+            100% {
+                transform: none;
+            }
+
+            50% {
+                background-color: white;
+                color: black;
+                transform: rotate(2turn) scale(0, 0);
+            }
+        }
+
+        @keyframes myAnimation3 {
+
+            0%,
+            100% {
+                transform: none;
+            }
+
+            50% {
+                background-color: white;
+                color: black;
+                transform: translate(50%, 50%) scale(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://blog.naver.com/tjddjs90/221890662773">내 블로그에서 보기</a>
+    <h3>Animation</h3>
+    transition 과 transform 을 이용해 가상 클래스 선택자에게 특별한,
+    일회성 애니메이션 효과를 주어 봤습니다. <br>
+    하지만 효과는 일 회성이고 계속 지속 할 수 없었습니다. <br>
+    하지만 밑의 예제처럼 애니메이션을 이용해 transform 및 애니 메이션 효과를 지속 시킬 수 있습니다.
+    <div>구문</div>
+    <xmp>
+        @keyframes animationName {
+        form{
+
+        }
+        to {
+
+        }
+        }
+    </xmp>
+    from 과 to 를 넣는 방법 외에도.
+    <xmp>
+        @keyframes animationName {
+        0%{
+
+        }
+        50% {
+
+        }
+        100% {
+
+        }
+        }
+    </xmp>
+    또는
+    <xmp>
+        @keyframes animationName {
+        0%, 100%{
+
+        }
+        50% {
+
+        }
+        }
+    </xmp>
+    이렇게 합쳐서 여러 방법으로 시도 할 수 있습니다. <br>
+    자세한 사항은 예제의 소스 코드를 참고 해주세요.
+    <br>
+    이렇게 애니메이션에 줄 효과를 마치 가상 클래스 선택자에 transform 등, 여러가지 효과를
+    입력 해주면 되고, 입력후
+    이 애니메이션을 사용하고자 하는 클래스의 스타일에서,
+    animation 의 속성을 추가 해주고, 속성 값 또한 transition 과 매우 유사하다고 볼 수 있습니다.
+    <xmp>
+        .box5 {
+        box-shadow: 1px 1px 5px black;
+        animation: 1s myAnimation3 infinite ease-in-out;
+        }
+    </xmp>
+    위와 같이 애니메이션 속성을 추가해주고 그 값으로는, druation, 애니메이션 이름, infinite(무한 반복여부) ,timing-function
+    을 속성 값으로 주시면 되겠습니다.
+    <br>
+    잘 이해가 안가는 부분은
+    <a href="https://blog.naver.com/tjddjs90/221889435744">transition</a> 과
+    <a href="https://blog.naver.com/tjddjs90/221889445051">transform</a>,
+    <a href="https://blog.naver.com/tjddjs90/221889452656">응용방법</a> 을
+    참고 해주시면 감사 하겠습니다.
+    <hr>
+    <div>애니메이션 효과</div>
+    <div class="box">Hello World</div>
+    <div>애니메이션 효과2</div>
+    <div class="box3">
+        <div class="box2"></div>
+    </div>
+    <div>애니메이션 효과3</div>
+    <div class="box4">
+        <div class="box5"></div>
+    </div>
+</body>
+
+</html>

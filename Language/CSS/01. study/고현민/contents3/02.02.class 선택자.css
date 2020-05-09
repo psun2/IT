@@ -1,0 +1,16 @@
+/* class 선택자 */
+.important {
+    text-decoration: underline;
+}
+
+.finished {
+    color: skyblue;
+}
+
+li.important {
+    background-color: yellow;
+}
+
+.finished.important {
+    font-style: italic;
+}

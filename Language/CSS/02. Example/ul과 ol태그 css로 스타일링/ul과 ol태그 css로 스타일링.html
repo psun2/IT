@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list-style: none</title>
+
+    <style>
+
+        li.a {
+            list-style-type: lower-roman
+        }
+
+        /* 로마숫자 소문자으로된 목록 */
+
+        li.b {
+            list-style-type: upper-roman
+        }
+
+        /* 로마숫자 대문자으로된 목록 */
+
+        li.c {
+            list-style-type: lower-alpha
+        }
+
+        /* 알파벳 소문자으로된 목록 */
+
+        li.d {
+            list-style-type: upper-alpha
+        }
+
+        /* 알파벳 대문자으로된 목록 */
+
+        li.e {
+            list-style-type: disc
+        }
+
+        /* 점으로 된 목록 */
+
+        li.f {
+            list-style-type: circle
+        }
+
+        /* 속이 하얀색 원으로 된 목록 */
+
+        li.g {
+            list-style-type: square
+        }
+
+        /* 사각형으로 된 목록 */
+
+        li.h {
+            list-style-type: decimal
+        }
+
+        /* 숫자로 된 목록 */
+
+        li.i {
+            list-style-type: none
+        }
+
+        /* 아무 표시 없음 */
+    </style>
+
+</head>
+
+<body>
+    <h1>리스트 아이템 스타일링</h1>
+    <h3>불릿 없애기</h3>
+    <ul>
+        <li>기존 ul 과 li</li>
+        <li>기존 ul 과 li</li>
+        <li>기존 ul 과 li</li>
+    </ul>
+
+
+    <ul style="list-style: none">
+        <li>불릿 없애기</li>
+        <li>불릿 없애기</li>
+        <li>불릿 없애기</li>
+    </ul>
+
+    <hr>
+
+    <h3>불릿 없애기 + 들여쓰기 없애기</h3>
+
+    <ol>
+        <li>기존 ol 과 li</li>
+        <li>기존 ol 과 li</li>
+        <li>기존 ol 과 li</li>
+    </ol>
+
+    <ol style="list-style: none; padding-left: 0">
+        <li>불릿 없애기 + 들여쓰기 없애기</li>
+        <li>불릿 없애기 + 들여쓰기 없애기</li>
+        <li>불릿 없애기 + 들여쓰기 없애기</li>
+    </ol>
+
+    <hr>
+
+    <h3>여러가지 불릿 목록</h3>
+
+    <ol>
+        <li class='a'>리스트 항목 lower-roman</li>
+        <li class='b'>리스트 항목 upper-roman</li>
+        <li class='c'>리스트 항목 lower-alpha</li>
+        <li class='d'>리스트 항목 upper-alpha</li>
+        <li class='e'>리스트 항목 upper-alpha</li>
+        <li class='f'>리스트 항목 disc</li>
+        <li class='g'>리스트 항목 circle</li>
+        <li class='h'>리스트 항목 square</li>
+        <li class='i'>리스트 항목 none</li>
+    </ol>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content (다른예제)</title>
+
+    <style>
+        /* TODO: justify-content: flex-start */
+        .justify-content-start {
+            height: 300px;
+            background-color: darkgrey;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .justify-content-start-children {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+
+        /* TODO: justify-content: center */
+        .justify-content-center {
+            height: 300px;
+            background-color: darkolivegreen;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .justify-content-center-children {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+
+        /* TODO: justify-content: flex-end */
+        .justify-content-end {
+            height: 300px;
+            background-color: darkorchid;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .justify-content-end-children {
+            width: 100px;
+            height: 100px;
+            color: aqua;
+            background-color: black;
+            border: 3px dashed yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="justify-content-start">
+        <div class="justify-content-start-children"></div>
+        <div class="justify-content-start-children"></div>
+        <div class="justify-content-start-children"></div>
+        <div class="justify-content-start-children"></div>
+        <div class="justify-content-start-children"></div>
+    </div>
+    <h3>justify-content: flex-start => 부모요소의 왼쪽으로 정렬 됩니다.</h3>
+    기본값 default 입니다.
+</body>
+<div class="justify-content-center">
+    <div class="justify-content-center-children"></div>
+    <div class="justify-content-center-children"></div>
+    <div class="justify-content-center-children"></div>
+    <div class="justify-content-center-children"></div>
+    <div class="justify-content-center-children"></div>
+</div>
+<h3>justify-content: flex-center => 부모요소의 가운데로 정렬 됩니다.</h3>
+<div class="justify-content-end">
+    <div class="justify-content-end-children"></div>
+    <div class="justify-content-end-children"></div>
+    <div class="justify-content-end-children"></div>
+    <div class="justify-content-end-children"></div>
+    <div class="justify-content-end-children"></div>
+</div>
+<h3>justify-content: flex-end => 부모요소의 오른쪽으로 정렬 됩니다.</h3>
+
+</html>

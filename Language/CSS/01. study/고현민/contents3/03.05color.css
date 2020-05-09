@@ -1,0 +1,20 @@
+span {
+    color: blue;
+}
+
+/* 빨강 + 초록 + 파랑 (0~255) */
+span {
+    color: rgb(0, 0, 255);
+}
+
+/* 빨강 + 초록 + 파랑 (0~255) + 불투명도 (0~1) */
+span {
+    color: rgba(0, 0, 255, 0.5);
+}
+
+/* 16진수 표기 */
+span {
+    color: #FF0000
+}
+
+/* Google에 rgb(a)값, #hex 값 또는 color picker 검색 */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aphelios</title>
+</head>
+
+<body>
+    <h1>LEAGE of LEGENDS</h1>
+    <h2>Characters</h2>
+    <button title= "처음 화면으로 .."><a href="./ex12.html">Home</a></button>
+    <input type="button" value="night" onclick="
+    let target = document.querySelector('body');
+        if (this.value === 'night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+        this.value = 'day'
+        
+        const alist = document.querySelectorAll('a');
+        let i = 0;
+        while (i < alist.length) {
+            console.log(alist[i]);
+            alist[i].style.color = 'powderblue';
+            i = i + 1;
+        }
+
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+        this.value = 'night'
+
+        const alist = document.querySelectorAll('a');
+        let i = 0;
+        while (i < alist.length) {
+            console.log(alist[i]);
+            alist[i].style.color = 'blue';
+            i = i + 1;
+        }
+        }
+    ">
+    <ol>
+        <li><a href="./ex12 copy.html">Kai’Sa</a></li>
+        <li><a href="./ex12 copy 2.html">Kalista</a></li>
+        <li><a href="./ex12 copy 3.html">Aphelios</a></li>
+    </ol>
+    <h2>아펠리오스</h2>
+    <p>
+        아펠리오스, 신념의 무기<br>
+        Aphelios, the Weapon of the Faithful<br>
+        라이엇포인트 : 975 파랑정수 : 6300<br>
+        아펠리오스는 다섯 종류의 무기를 사용하는 원거리 공격수입니다.<br>
+        각 무기는 주 무기, 보조 무기로 사용할 수 있으며 탄환을 모두 사용하면 새로운 무기를 얻습니다.<br>
+        각각의 무기의 스킬, 보조 효과를 완벽히 숙지하는 것이 중요한 챔피언입니다.<br>
+        특징|암살자, 원거리, 치유, 보호막, 둔화, 속박<br>
+    </p>
+    <button title= "처음 화면으로 .."><a href="./ex12.html">Home</a></button>
+</body>
+
+</html>
