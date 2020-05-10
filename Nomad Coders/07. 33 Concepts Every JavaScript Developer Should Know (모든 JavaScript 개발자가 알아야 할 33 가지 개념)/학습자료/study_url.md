@@ -32,3 +32,7 @@
 ## 07. Expression vs Statement(표현 대 진술)
 
 - [Nomad Coders YouTube](https://www.youtube.com/watch?v=tclQMRg5v7Y&list=PL7jH19IHhOLMmmjrwCi7-dMFVdoU0hhgF&index=4)
+
+## 08. IIFE, Modules and Namespaces ( IIFE, 모듈 및 네임 스페이스)
+
+- [Nomad Coders YouTube](https://www.youtube.com/watch?v=WHAfp-1JPMg&list=PL7jH19IHhOLMmmjrwCi7-dMFVdoU0hhgF&index=3)

@@ -47,6 +47,7 @@
 ## 2.3 Changing Color (색상 변경)
 
 - [Github Commit](https://github.com/nomadcoders/paintjs/commit/e3e840b277143f7388674a9e34729bc89690f589)
+- [canvasContext MDN](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D)
 
 ## 2.4 Brush Size (브러시 크기)
 
@@ -60,3 +61,5 @@
 ## 2.6 Saving the Image (이미지 저장)
 
 - [Github Commit](https://github.com/nomadcoders/paintjs/commit/4517b95bc3fa821a97e976f22f53fff56cb5f4a1)
+- [HTMLCanvasElement.toDataURL ()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)
+- [html a download](https://developer.mozilla.org/ko/docs/Web/HTML/Element/a)
