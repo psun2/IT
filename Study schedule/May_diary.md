@@ -120,7 +120,7 @@
 1. 동빈나 자바 한 강 
 2. 노마드 python 한 강 
 3. fastCampus python 한강 [fail]
-4. 동빈나 react 
+4. 동빈나 react  [success]
 5. 노마드 react 한 강 [success]
 6. 노마드 자바스크립트 개발자가 알아야할 33가지 이론 한 강 [success]
 7. 노마드 js2 - 학원 저녁시간에 canvas 처음부터 끝까지 
@@ -132,7 +132,7 @@
 2. 노마드 python 한 강 
 3. fastCampus python 한강 [fail]
 4. 동빈나 react 
-5. 노마드 react 한 강 
+5. 노마드 react 어제자 배포법 다시 보기
 6. 노마드 자바스크립트 개발자가 알아야할 33가지 이론 한 강 
 7. 노마드 js2 
 8. 학원 복습

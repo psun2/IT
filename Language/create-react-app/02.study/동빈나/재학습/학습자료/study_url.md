@@ -34,5 +34,7 @@
 - [YouTube](https://www.youtube.com/watch?v=mhBfAibYwHQ&list=PLRx0vPvlEmdCED62ZIWCbI-6G_jcwmuFB&index=6)
 - [CODEPEN](https://codepen.io/)
 
+## 7강 - React의 이벤트 처리(Event Handling) [React JS 이론부터 실전까지]
 
-
+- [YouTube](https://www.youtube.com/watch?v=eoEen2rHrm0&list=PLRx0vPvlEmdCED62ZIWCbI-6G_jcwmuFB&index=7)
+- [CODEPEN](https://codepen.io/)
