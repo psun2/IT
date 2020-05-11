@@ -1,27 +1,3 @@
-# ReactJS로 웹 서비스 만들기
-- [Academy](https://academy.nomadcoders.co/)
-
----
-
-# 4 Making the Movie App (영화 앱 만들기)
-
-## 4.5 Cutting the summary (요약 잘라 내기)
-- [Github Commit](https://github.com/nomadcoders/movie_app_2019/commit/7d5cde6a4cecb6c21553f8273af30fe49e29861a)
-
----
-
-# 5 Conclusions (결론)
-
-## 5.0 Deploying to Github Pages (Github 페이지에 배포)
-- [Github Commit](https://github.com/nomadcoders/movie_app_2019/commit/566d23d09db9b96a022562d2a2f47f2c64727e9b)
-npm i gh-pages
-package.json
-# 5 Conclusions (결론)
-
-## 5.0 Deploying to Github Pages (Github 페이지에 배포)
-- [Github Commit](https://github.com/nomadcoders/movie_app_2019/commit/566d23d09db9b96a022562d2a2f47f2c64727e9b)
-npm i gh-pages
-package.json
 {
 "name": "movie_app_2020",
 "version": "0.1.0",
@@ -71,9 +47,6 @@ deploy 는 gh-pages 를 호출하게 됩니다.
 1️⃣ npm i gh-pages
 2️⃣"homepage": "https://{your github username}.github.io/{the name of your project in github}" // {} 생략
 }
-
-npm run build => build 폴더 생성
-npm run deploy => gh-pages 에 pubulish
 
 ✅
 7️⃣
