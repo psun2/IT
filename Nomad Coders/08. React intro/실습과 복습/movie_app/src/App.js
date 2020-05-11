@@ -7,7 +7,8 @@ import './App.css';
 class App extends React.Component {
   state = {
     // isLoading: true,
-    isLoading: 'https://placeimg.com/1000/800/any',
+    // isLoading: 'https://placeimg.com/1000/800/any',
+    isLoading: true,
     moives: [],
   };
 
@@ -68,20 +69,22 @@ class App extends React.Component {
             <span className="loader__text">Loading...</span>
           </div>
         ) : (
-          movies.map((movie) => (
-            <Movie
-              key={movie.id}
-              id={movie.id}
-              title={movie.title}
-              year={movie.year}
-              genres={movie.genres.map((genres) => `\t${genres}`)}
-              poster={movie.medium_cover_image}
-              rating={movie.rating}
-              runtime={movie.runtime}
-              summary={movie.summary}
-              genres={movie.genres}
-            />
-          ))
+          <div className="movies">
+            {movies.map((movie) => (
+              <Movie
+                key={movie.id}
+                id={movie.id}
+                title={movie.title}
+                year={movie.year}
+                genres={movie.genres.map((genres) => `\t${genres}`)}
+                poster={movie.medium_cover_image}
+                rating={movie.rating}
+                runtime={movie.runtime}
+                summary={movie.summary}
+                genres={movie.genres}
+              />
+            ))}
+          </div>
         )}
       </section>
     );

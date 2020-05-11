@@ -110,8 +110,8 @@
 2. 노마드 python 한 강 
 3. fastCampus python 한강 [fail]
 4. 동빈나 react 
-5. 노마드 react style
-6. 노마드 자바스크립트 개발자가 알아야할 33가지 이론 한 강 
+5. 노마드 react style [success] 
+6. 노마드 자바스크립트 개발자가 알아야할 33가지 이론 한 강 [success] 
 7. 노마드 js2 - 끝까지 복습 [success]
 8. 학원 복습 [success]
 9. 유튜브 JS, CSS동영상 클론 코딩 [fail]
