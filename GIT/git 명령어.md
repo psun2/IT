@@ -13,7 +13,7 @@ git push -u origin master|-u 옵션을 주어 README.md를 내 원격 저장소�
 git add -u|-u 옵션은 단순 파일 및 이름등의 변경이나 경로 변경이 있을시 push 하기 위해쓰는 명령어
 git add .|변동된 모든 항목을 스테이징 시킨다.
 git commit -m "commit"|"commit" 부분에 commit 을 달아 줍니다
-git push origin master 깃헙url|GitHub 에 파일을 밀어 넣습니다. 즉 게시물을 게시합니다.
+git push origin master|GitHub 에 파일을 밀어 넣습니다. 즉 게시물을 게시합니다.
 git pull origin master|local 컴퓨터로 git hub 의 자료를 가져 옵니다.
 git clone 깃헙url|깃헙url의 저장소를 내 컴퓨터로 다운(?) 받습니다.
 git log|git 의 log 즉 지금껏 commit 했던 시점들을 봅니다. 종료 : q
