@@ -16,6 +16,7 @@ git commit -m "commit"|"commit" 부분에 commit 을 달아 줍니다
 git push origin master|GitHub 에 파일을 밀어 넣습니다. 즉 게시물을 게시합니다.
 git pull origin master|local 컴퓨터로 git hub 의 자료를 가져 옵니다.
 git clone 깃헙url|깃헙url의 저장소를 내 컴퓨터로 다운(?) 받습니다.
+git clone -b {branch_name} --single-branch {저장소 URL} | 깃헙url의 특정 브랜치를 clone 합니다.
 git log|git 의 log 즉 지금껏 commit 했던 시점들을 봅니다. 종료 : q
 git reset|원하는 로그 로 지점을 되돌립니다.
 git status|스테이징 된 파일의 목록을 확인한다 (?)
