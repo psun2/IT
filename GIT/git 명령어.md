@@ -1,4 +1,4 @@
-# `git 명령어(학습하면서 계속 업데이트 예정중입니다.)`
+﻿# `git 명령어(학습하면서 계속 업데이트 예정중입니다.)`
 
 [참고](https://blog.naver.com/tjddjs90/221876885733)
 
@@ -32,3 +32,8 @@ git config --unset user.name|해당프로젝트의 user name 삭제
 git config --unset user.email|해당프로젝트의 user email 삭제
 git config --unset --global user.name|global 옵션으로 전역에 해당하는 user name 삭제
 git config --unset --global user.email|global 옵션으로 전역에 해당하는 user email 삭제
+git checkout test(test = 변경하고자 하는 브랜치명)|브랜치의 체크아웃과 다른 브랜치로의 이동
+git merge master(master = merge 하고자 하는 브랜치명)|master에 merge 하겠음.
+git checkout master|'master' 브랜치에 'test'를 넣기 위해서는 우선 'master' 브랜치에 'HEAD'가 위치하게 만들어야 합니다. 이 때에는 checkout 명령어를 이용하여 현재 사용중인 브랜치를 'master'로 전환합니다.
+git merge test|master로 변경뒤, merge 합니다 해당 브랜치를....
+git push origin master|merge 가 되면 commit 이 되는지 모르겠지만, commit 후 push
