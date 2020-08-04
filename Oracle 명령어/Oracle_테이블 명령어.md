@@ -1,4 +1,4 @@
-# Oracle\_테이블 명령어
+# Oracle_table
 
 ## create (생성)
 

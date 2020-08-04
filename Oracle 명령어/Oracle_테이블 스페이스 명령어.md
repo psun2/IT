@@ -1,4 +1,4 @@
-# Oracle
+# Oracle_tablespace
 
 ## 테이블 스페이스 생성
 
@@ -18,6 +18,38 @@ size 100000000;
 
 ```
 select * from dba_tablespaces;
+```
+
+---
+
+## 테이블 스페이스 정보
+
+### 생성된 테이블 스페이스 확인
+
+```
+select * from dba_tablespaces;
+```
+
+### 테이블 스페이스 상세정보 확인
+
+```
+select file_name, file_id, tablespace_name, status from dba_data_files where tablespace_name = '테이블 스페이스 명';
+```
+
+```
+select file_name, file_id, tablespace_name, status from dba_data_files where tablespace_name = 'TP_2';
+```
+
+---
+
+## 테이블스페이스 사이즈 변경
+
+```
+alter database datafile '파일경로' resize 변경용량;
+```
+
+```
+ALTER DATABASE DATAFILE 'C:\ORACLEXE\APP\ORACLE\ORADATA\KOREA\TP_BBB.DBF' RESIZE 100000000;
 ```
 
 ---
