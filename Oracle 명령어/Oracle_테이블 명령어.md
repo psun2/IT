@@ -51,3 +51,15 @@ select * from 테이블명;
 ```
 select * from test1;
 ```
+
+---
+
+## 테이블 삭제
+
+```
+drop table 테이블명;
+```
+
+```
+drop table test1;
+```

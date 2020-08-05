@@ -191,6 +191,8 @@ alter user korea_b identified by 987654;
 
 ## 계정 삭제 (drop : 떨어뜨리다)
 
+접속시 삭제가 안되므로, 접속 해제수 삭제 진행 합니다.
+
 ```
 drop user 유저명 cascade;
 ```
