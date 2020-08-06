@@ -7,7 +7,7 @@
 
 ---
 
-## create(생성)
+## create (생성)
 
 ```
 create view view_name as select 문;
