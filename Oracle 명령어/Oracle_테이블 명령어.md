@@ -24,6 +24,18 @@ hobby nvarchar2(10)
 
 ## 현재 모든 테이블 확인
 
+### 테이블 상세정보
+
+```
+select * from dba_tables;
+```
+
+```
+select * from all_all_tables;
+```
+
+### 테이블 이름
+
 ```
 select * from tab;
 ```
