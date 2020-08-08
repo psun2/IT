@@ -5,7 +5,8 @@
 
 - <mark><b>주의 사항!</b></mark>  
   sequence와 같이 insert all 을 하게 되면,  
-  max가 인지를 못하고 모두 같은 번호로 생성되게 됩니다.
+  max가 인지를 못하고 모두 같은 번호로 생성되게 됩니다.  
+  insert all 사용 대신 DAO를 통해 List 형식으로 setAutoCommint(false) 와 commit rollback 을 사용 하여 insert 합니다.
 
 ## max를 이용한 insert
 

@@ -6,7 +6,8 @@ ex) 겹치지 않아야 할 id값을 사용자가 원하는대로 값을 증가 
 
 - <mark><b>주의 사항!</b></mark>  
   sequence 사용시 insert all 을 하게 되면,  
-  sequence가 인지를 못하고 모두 같은 번호로 생성되게 됩니다.
+  sequence가 인지를 못하고 모두 같은 번호로 생성되게 됩니다.  
+  insert all 사용 대신 DAO를 통해 List 형식으로 setAutoCommint(false) 와 commit rollback 을 사용 하여 insert 합니다.
 
 ## create (생성)
 
