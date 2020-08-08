@@ -76,4 +76,26 @@ select avg(kor) as avg from examm;
 
 ## LIKE
 
+자바의 pattern 과 유사합니다.
+
+TEL 컬럼이 010으로 시작하는 내용을 조회합니다
+
+```
+SELECT * FROM TEST_TABLE_ONE WHERE TEL LIKE '010%'
+```
+
+TEL 컬럼이 0001이 포함된 내용을 조회합니다.
+
+```
+SELECT * FROM TEST_TABLE_ONE WHERE TEL LIKE '%0001%'
+```
+
+TEL 컬럼이 011,021로 시작되는 내용을 조회합니다.
+
+위 조건은 첫번째 자리는 무조건 0, 세번째 자리는 1 , 가운데 \_ 자리는 아무것이 나와도 상관 없는 조건을 준 것입니다.
+
+```
+SELECT * FROM TEST_TABLE_ONE WHERE TEL LIKE '0_1%';
+```
+
 ---

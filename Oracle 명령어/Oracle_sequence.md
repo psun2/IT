@@ -82,3 +82,20 @@ drop sequence exam_id;
 ```
 select * from user_sequences;
 ```
+
+---
+
+## insert all
+
+-- insert all 사용시 sequence
+-- id 값이 변경되지 않고 통일되어 하나로 들어 갑니다.
+
+```
+insert all
+into exam (id, pid, title, regdate, kor, eng) values (exam_id.nextval, 'eee', '기말', '2019-05-05', 34, 56)
+into exam (id, pid, title, regdate, kor, eng) values (exam_id.nextval, 'eee', '기말', '2019-05-05', 34, 56)
+into exam (id, pid, title, regdate, kor, eng) values (exam_id.nextval, 'eee', '기말', '2019-05-05', 34, 56)
+into exam (id, pid, title, regdate, kor, eng) values (exam_id.nextval, 'eee', '기말', '2019-05-05', 34, 56)
+into exam (id, pid, title, regdate, kor, eng) values (exam_id.nextval, 'eee', '기말', '2019-05-05', 34, 56)
+select * from dual;
+```
