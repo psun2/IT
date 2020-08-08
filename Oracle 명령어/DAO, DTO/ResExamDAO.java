@@ -212,8 +212,7 @@ public class ResExamDAO {
 
 		int res = 0;
 
-		this.sql = "delete exam where id = " + id + "";
-		// this.sql = "delete from exam where id = " + id + "";
+		this.sql = "delete from exam where id = " + id + "";
 		System.out.println(sql);
 
 		try {
