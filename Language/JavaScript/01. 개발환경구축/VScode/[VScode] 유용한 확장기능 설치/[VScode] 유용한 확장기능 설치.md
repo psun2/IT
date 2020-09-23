@@ -169,6 +169,32 @@ HTML CSS Support 와는 반대로 css에서 html에 있는 태그를 자동 완�
 
 ---
 
+## `Code Runner`
+
+<mark>필수옵션</mark>
+
+![Code_Runner](./img/Code_Runner.gif)  
+![Code_Runner](./img/Code_Runner2.gif)
+
+❗❗❗ Node.JS 가 설치 되 어있을시 runtime(?) Extention 입니다.
+콘솔 창에 결과물을 출력 할 수 있습니다.
+
+❗❗❗ 설정
+
+![Code_Runner](./img/Code_Runner3.png)
+
+extension 에서 해당 앱의 톱니모양 을 누르면,
+바로 해당 앱의 설정으로 갈 수있는데,  
+Clear Previous Output 을 활성화 시킴으로서,  
+전 출력물들은 지워주고 현재 해당 출력 물들만을 출력 할 수 있게 합니다.
+
+![Code_Runner](./img/Code_Runner4.png)
+
+extension 설치 후 해당 아이콘이 생성 되는데,  
+초기 단축키는 ctrl + alt + n 으로 실행이 가능하며, 저는 이클립스와 같이 ctrl + f11 로 변경한 상태 입니다.
+
+---
+
 ## `Beautify`
 
 <mark>prettier 과 같이 사용시 충돌이 일어 난다고 합니다. ﻿(둘 중 한가지만 사용해 주세요.)</mark>  
