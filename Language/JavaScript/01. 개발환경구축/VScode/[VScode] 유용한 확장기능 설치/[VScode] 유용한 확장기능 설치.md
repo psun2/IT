@@ -146,10 +146,14 @@ Editor: Format On Save
 ## `HTML CSS Support`
 
 <mark>필수옵션</mark>  
-![HTML CSS Support](./img/IntelliSense-for-CSS-class-names-in-HTML.gif)  
+![HTML CSS Support](./img/HTML_CSS_Support.gif)  
 작업 중인 디렉토리의 CSS 파일을 미리 로드해서 CSS Class를 자동 완성해주는 확장기능입니다.
 
 매번 CSS 파일을 열어보지 않아도 될 뿐만 아니라, 사소한 오타 때문에 시간을 버리는 일을 방지해줍니다.
+
+![HTML CSS Support](./img/HTML_CSS_Support2.png)  
+settingjson 파일에서
+Remote Style Sheets 의 내용과 Style Sheet File Extensions 의 내용을 붙여넣어 설정을 완료합니다.
 
 ---
 
