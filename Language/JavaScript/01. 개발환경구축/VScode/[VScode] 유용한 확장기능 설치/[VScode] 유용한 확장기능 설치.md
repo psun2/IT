@@ -153,7 +153,8 @@ Editor: Format On Save
 
 ![HTML CSS Support](./img/HTML_CSS_Support2.png)  
 settingjson 파일에서
-Remote Style Sheets 의 내용과 Style Sheet File Extensions 의 내용을 붙여넣어 설정을 완료합니다.
+Remote Style Sheets 의 내용은 자신이 사용할 프레임워크의 CDN 주소를 입력합니다.  
+Style Sheet File Extensions 의 내용을 붙여넣어 설정을 완료합니다.
 
 ---
 
