@@ -2,7 +2,9 @@
 
 > [노마드 강의 주소 바로가기](https://nomadcoders.co/react-native-fundamentals/lectures/1713)
 
-> [react-native 공식 사이트](https://reactnative.dev/)
+> [react-native 공식 사이트](https://reactnative.dev/)  
+
+> [expo 공식 사이트](https://docs.expo.io/)  
 
 > [expo playstore - 안드로이드](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=ko)
 

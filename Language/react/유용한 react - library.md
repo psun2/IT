@@ -1,4 +1,4 @@
-# 유용한 npm package
+# 유용한 npm library
 
 ## axios
 
