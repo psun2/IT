@@ -1,0 +1,7 @@
+https://create-react-app.dev/docs/deployment#netlify
+
+#Netlify
+
+npm install netlify-cli -g
+
+netlify deploy
