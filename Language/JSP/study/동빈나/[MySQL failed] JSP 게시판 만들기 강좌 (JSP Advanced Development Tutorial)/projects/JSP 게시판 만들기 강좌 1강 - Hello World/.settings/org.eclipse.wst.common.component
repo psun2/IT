@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="JSP 게시판 만들기 강좌 1강 - Hello World">
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="JSP_게시판_만들기_강좌_1강_-_Hello_World"/>
-        <property name="java-output-path" value="/JSP 게시판 만들기 강좌 1강 - Hello World/build/classes"/>
-    </wb-module>
-</project-modules>

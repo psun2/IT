@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="JSP 게시판 만들기 강좌 2강 - 로그인 페이지 디자인">
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="JSP_게시판_만들기_강좌_2강_-_로그인_페이지_디자인"/>
-        <property name="java-output-path" value="/JSP 게시판 만들기 강좌 2강 - 로그인 페이지 디자인/build/classes"/>
-    </wb-module>
-</project-modules>
