@@ -23,5 +23,8 @@ setting.json 이 생성된 모습입니다.
     "titleBar.activeBackground": "#F54133",
 
     "titleBar.inactiveBackground": "#F54133"
- }
+ },
+  "editor.tokenColorCustomizations": {
+    "comments": "#d39e9e" //TODO:  주석 색상변경
+  }
 ```

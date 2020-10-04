@@ -37,5 +37,8 @@
     "titleBar.activeBackground": "#F54133",
 
     "titleBar.inactiveBackground": "#F54133"
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": "#d39e9e" //TODO:  주석 색상변경
   }
 }

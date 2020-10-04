@@ -39,6 +39,9 @@ setting.json 파일 여는 법 : [참고](https://blog.naver.com/tjddjs90/221882
   "files.autoSave": "off",
   "workbench.startupEditor": "newUntitledFile",
   "code-runner.clearPreviousOutput": true,
+  "editor.tokenColorCustomizations": {
+    "comments": "#d39e9e" //TODO:  주석 색상변경
+  }
 }
 
 ```
