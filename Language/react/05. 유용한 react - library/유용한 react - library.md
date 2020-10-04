@@ -24,6 +24,6 @@ props 의 type을 알아 볼수 있게 도와줍니다.
 import PropTypes from "prop-types"
 
 component.propTypes = {
-component 의 props 의 name.PropTypes.데이터형(string).옵션(isRequired)-필수인지 아닌지
+props이름 : PropTypes.데이터형(string).옵션(isRequired)-필수인지 아닌지
 }
 ```
