@@ -12,6 +12,8 @@ fetch()와 비슷한 역할을 합니다.
 axios.get('url');
 ```
 
+---
+
 ## prop-types
 
 ```
@@ -26,4 +28,17 @@ import PropTypes from "prop-types"
 component.propTypes = {
 props이름 : PropTypes.데이터형(string).옵션(isRequired)-필수인지 아닌지
 }
+```
+
+---
+
+## FontAwesome
+```
+yarn add @fortawesome/fontawesome-free
+```
+
+index.js에 추가해야 하는 코드
+
+```
+import '@fortawesome/fontawesome-free/js/all.js';
 ```
