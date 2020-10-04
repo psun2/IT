@@ -1,0 +1,11 @@
+@import './css/reset.css';
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: #f2f2f2;
+  margin-top: 5rem;
+  height: 100%;
+}
