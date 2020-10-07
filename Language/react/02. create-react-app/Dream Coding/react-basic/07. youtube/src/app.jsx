@@ -15,7 +15,10 @@ const App = ({ youTube }) => {
   const search = (query) => {
     youTube
       .search(query) //
-      .then((videos) => setVideos(videos));
+      .then((videos) => {
+        setVideos(videos);
+        setSelectedVideo(null);
+      });
   };
 
   useEffect(() => {
