@@ -1,28 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './app.css';
+import VideoList from './components/video_list/video_list';
 
-function App() {
-  return (
-    <>
-      <h1>VScode 커스터마이징</h1>
-      <div>
-        &#x0007B; <br />
-        &nbsp; "workbench.colorCustomizations" : &#x0007B; <br />
-        &nbsp;&nbsp;&nbsp;&nbsp; "titleBar.activeBackground" : "#F54133",
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp; "titleBar.inactiveBackground" : "#F54133"
-        <br />
-        &nbsp;&nbsp; &#x0007D;, <br />
-        <br />
-        &nbsp; "editor.tokenColorCustomizations": &#x0007B; <br />
-        &nbsp;&nbsp;&nbsp;&nbsp; "comments": "#d39e9e" //TODO: 주석 색상변경{' '}
-        <br />
-        &nbsp;&nbsp; &#x0007D;, <br />
-        &#x0007D;
-        <br />
-      </div>
-    </>
-  );
-}
+const App = () => {
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    const requestOptions = {
+      method: 'GET',
+      redirect: 'follow',
+    };
+
+    fetch(
+      'https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&q=원피스&key=AIzaSyCaaKn_W5Ei05EwtBgcpLKPUaVwhsUX0pE',
+      requestOptions,
+    )
+      .then((response) => response.json())
+      .then((result) => setVideos(result.items))
+      .catch((error) => console.log('error', error));
+  }, []);
+  return <VideoList videos={videos} />;
+};
 
 export default App;
