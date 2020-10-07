@@ -6,12 +6,17 @@ const VideoDetail = ({ video, video: { snippet } }) => (
     <iframe
       className={styles.video}
       type="text/html"
+      title="youtube video player"
       width="100%"
       height="500px"
       src={`https://www.youtube.com/embed/${video.id}`}
-      frameborder="0"
-      allowfullscreen
+      frameBorder="0"
+      allowFullScreen
     ></iframe>
+    {/* ./src/components/video_detail/video_detail.jsx
+  Line 6:5:  <iframe> elements must have a unique title property  jsx-a11y/iframe-has-title */}
+    {/* Warning: Invalid DOM property `frameborder`. Did you mean `frameBorder`? */}
+    {/* Warning: Invalid DOM property `allowfullscreen`. Did you mean `allowFullScreen`? */}
     <h2>{snippet.title}</h2>
     <h3>{snippet.channelTitle}</h3>
     <pre className={styles.description}>{snippet.description}</pre>
