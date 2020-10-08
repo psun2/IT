@@ -12,6 +12,6 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-// firebase.analytics(); // 현재 쓰지 않는 코드 입니다.
+// firebase.analytics(); // 현재 이 프로젝트 내 에서는 쓰지 않는 코드 입니다.
 
 export default firebaseApp;
