@@ -21,7 +21,7 @@ class AuthService {
   onAuthChange(onUserChanged) {
     // 사용자의 로그인 상태를 관리하는 함수 auth 내장 api
     firebase.auth().onAuthStateChanged((user) => {
-      user && onUserChanged(user);
+      user || onUserChanged(user);
       // 콜백을 입력 받아... 콜백 함수의 인자로
       // onAuthStateChanged 함수에서 받은 user을 넘겨줍니다.
       // 그럼 해당 함수에서는 argu를 받아 해당 그 콜백함수에 정의된

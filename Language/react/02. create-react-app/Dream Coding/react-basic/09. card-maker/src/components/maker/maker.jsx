@@ -42,6 +42,28 @@ const Maker = ({ authService }) => {
       fileName: 'Park',
       fileURL: null,
     },
+    {
+      id: '4',
+      name: 'Park3',
+      company: 'ssibal',
+      theme: 'colorful',
+      title: 'Software Engineer',
+      email: 'tjddjs90@gmail.com',
+      message: 'go for it',
+      fileName: 'Park',
+      fileURL: null,
+    },
+    {
+      id: '5',
+      name: 'Park3',
+      company: 'ssibal',
+      theme: 'colorful',
+      title: 'Software Engineer',
+      email: 'tjddjs90@gmail.com',
+      message: 'go for it',
+      fileName: 'Park',
+      fileURL: null,
+    },
   ]);
   const history = useHistory();
 
