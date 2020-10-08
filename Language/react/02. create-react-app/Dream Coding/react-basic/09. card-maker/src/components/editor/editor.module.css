@@ -2,6 +2,7 @@
 
 .editor {
   flex-basis: 50%;
+  background-color: teal;
 }
 
 .title {
