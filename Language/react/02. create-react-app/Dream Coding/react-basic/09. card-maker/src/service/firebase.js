@@ -1,5 +1,7 @@
 // yarn add firebase
 
+import firebase from 'firebase';
+
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -9,5 +11,7 @@ const firebaseConfig = {
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 // firebase.analytics(); // 현재 쓰지 않는 코드 입니다.
+
+export default firebaseApp;
