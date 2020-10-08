@@ -12,6 +12,17 @@ class AuthService {
     // 로그인을 할 수 있는 함수 반환
     return firebaseApp.auth().signInWithPopup(authProvider);
   }
+
+  logout() {
+    firebase.auth().signOut();
+  }
+
+  onAuthChange(onUserChanged) {
+    // 사용자의 로그인 상태를 관리하는 함수 auth 내장 api
+    firebase.auth().onAuthStateChanged((user) => {
+      onUserChanged(user);
+    });
+  }
 }
 
 export default AuthService;

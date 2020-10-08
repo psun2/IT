@@ -1,14 +1,33 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import Footer from '../footer/footer';
 import Header from '../header/hrader';
 import styles from './login.module.css';
 
 const Login = ({ authService }) => {
+  const history = useHistory();
+  const goToMaker = (userId) => {
+    // 로그인이 되면 maker 화면으로...
+    history.push({
+      pathname: '/maker',
+      state: { userId },
+    });
+  };
+
   const onLogin = (event) => {
     authService
       .login(event.currentTarget.textContent) //
-      .then(() => console.log('로그'));
+      .then((data) => goToMaker(data.user.uid));
   };
+
+  useEffect(() => {
+    authService //
+      .onAuthChange((user) => {
+        // console.log(user.uid);
+        user && goToMaker(user.uid);
+      });
+  });
 
   return (
     <section>
