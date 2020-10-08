@@ -1,7 +1,6 @@
 @value makerWhite, makerGreen from '../../common/colors.css';
 
 .footer {
-  min-width: 30em;
   width: 100%;
   background-color: makerGreen;
   text-align: center;
