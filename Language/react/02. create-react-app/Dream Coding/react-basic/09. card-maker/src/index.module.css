@@ -1,3 +1,4 @@
+@value makerWhite from './common/colors.css';
 body {
   margin: 0;
   font-size: 16px;
@@ -6,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: makerBlack;
 }
 
 code {
@@ -16,3 +18,15 @@ code {
 * {
   box-sizing: border-box;
 }
+
+/* 기존 css 변수 작성법 */
+:root {
+  /* 변수 정의 : --color-white: white; */
+  /* calc() 등등 ... */
+}
+
+/* 사용 예시 */
+/* @import './common/colors.css'; */
+/* body {
+  background-color: var(--color-white);
+} */

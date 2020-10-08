@@ -35,9 +35,8 @@
   // TODO: visualstudio code 자체 설정
   "workbench.colorCustomizations": {
     // action bar 색 변경시 에만 수정
-    "titleBar.activeBackground": "#F3BC24",
-
-    "titleBar.inactiveBackground": "#F3BC24"
+    "titleBar.activeBackground": "#3F708D",
+    "titleBar.inactiveBackground": "#3F708D"
   },
   "editor.tokenColorCustomizations": {
     "comments": "#d39e9e" //TODO:  주석 색상변경
