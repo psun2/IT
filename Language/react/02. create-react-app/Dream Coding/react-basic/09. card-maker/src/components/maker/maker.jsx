@@ -12,11 +12,12 @@ const Maker = ({ authService }) => {
   };
 
   useEffect(() => {
-    authService.onAuthChange((user) => {
-      if (!user) {
-        history.push('/');
-      }
-    });
+    authService //
+      .onAuthChange((user) => {
+        if (!user) {
+          history.push('/');
+        }
+      });
   });
   return (
     <section className={styles.maker}>
