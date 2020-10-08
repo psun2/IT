@@ -5,6 +5,8 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import Profile from './components/profile';
 import Home from './components/home';
 
+// [REACT ROUTER](https://reactrouter.com/web/api/Hooks)
+
 function App() {
   return (
     <BrowserRouter basename="park">
