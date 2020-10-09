@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import ReactDOM from 'react-dom';
 import './index.module.css';
 import App from './app';
@@ -21,10 +21,10 @@ console.log(httpClient);
 
 const imageUploader = new ImageUploader(httpClient);
 
-const FileInput = (props) => (
+const FileInput = memo((props) => (
   // 컴포넌트를 전달하는 prop 의 경우 대문자로 시작합니다.
   <ImageFileInput {...props} imageUploader={imageUploader} />
-);
+));
 
 // 데이터베이스
 const cardRepository = new CardRepository();

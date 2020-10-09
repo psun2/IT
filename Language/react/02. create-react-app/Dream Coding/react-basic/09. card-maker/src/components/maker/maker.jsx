@@ -1,11 +1,19 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
 import Editor from '../editor/editor';
 import Footer from '../footer/footer';
 import Header from '../header/hrader';
 import Preview from '../preview/preview';
 import styles from './maker.module.css';
+
+// 여기에서 memo 는 상당히 비 효율적... cash에 저장됨.
+// header 와 footer는 리 랜더링이 안 되 는 것 이 맞는데...
+// 내부에 가지고 있는 Editor은 계속 변경 되기때문에
+// 굳이 cash에 저장하여 메모리 낭비를 할 필 요가 없습니다.
+
+// state 또는 prop 의 변경이 빈번 할 경우
+// memo의 사용이 불필요 합니다.
+
 const Maker = ({ FileInput, authService, cardRepository }) => {
   // const [cards, setCards] = useState({
   //   // 배열의 형태를 유지하면 ...
@@ -43,9 +51,9 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
 
   const history = useHistory();
 
-  const onLogout = () => {
+  const onLogout = useCallback(() => {
     authService.logout();
-  };
+  }, [authService]);
 
   useEffect(() => {
     if (!userId) {
