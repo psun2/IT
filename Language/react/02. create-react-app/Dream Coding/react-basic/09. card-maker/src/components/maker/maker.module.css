@@ -4,6 +4,7 @@
 .maker {
   width: 100%;
   height: 100%;
+  max-width: 80rem;
   display: flex;
   flex-direction: column;
   background-color: makerWhite;
@@ -16,6 +17,7 @@
   /* 결국 container만 1을 줌으로써 위 아래는 가지고 있는 아이템 만큼의 크기만 가지게 되고 */
   /* 나머지는 container에 귀속 */
   display: flex;
+  min-height: 0;
 }
 
 @media screen and (max-width: mediaQuery) {

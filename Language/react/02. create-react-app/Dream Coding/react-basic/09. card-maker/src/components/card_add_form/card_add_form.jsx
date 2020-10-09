@@ -15,7 +15,6 @@ const CardAddForm = ({ FileInput, onAdd }) => {
   const [file, setFile] = useState({ fileName: null, fileURL: null });
 
   const onFileChange = (file) => {
-    console.log('asdasdasdasd ', file);
     setFile({
       fileName: file.name,
       fileURL: file.url,

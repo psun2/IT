@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import Footer from '../footer/footer';
 import Header from '../header/hrader';
 import styles from './login.module.css';
@@ -11,7 +11,7 @@ const Login = ({ authService }) => {
     // 로그인이 되면 maker 화면으로...
     history.push({
       pathname: '/maker',
-      state: { userId },
+      state: { userId }, // 로그인시 histoy객체에 state에 userid 저장
     });
   };
 

@@ -1,73 +1,46 @@
 import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 import Editor from '../editor/editor';
 import Footer from '../footer/footer';
 import Header from '../header/hrader';
 import Preview from '../preview/preview';
 import styles from './maker.module.css';
-const Maker = ({ FileInput, authService }) => {
-  const [cards, setCards] = useState({
-    // 배열의 형태를 유지하면 ...
-    // URUD가 꼬일 뿐 더러...
-    // 그렇게 하지 않으면 모든 배열의 내용을 복사해야 합니다....
-    1: {
-      id: '1',
-      name: 'Park',
-      company: 'none',
-      theme: 'dark',
-      title: 'Software Engineer',
-      email: 'tjddjs90@gmail.com',
-      message: 'go for it',
-      fileName: 'Park0',
-      fileURL: null,
-    },
-    2: {
-      id: '2',
-      name: 'Park2',
-      company: 'none',
-      theme: 'light',
-      title: 'Software Engineer',
-      email: 'tjddjs90@gmail.com',
-      message: 'go for it',
-      fileName: 'Park1',
-      fileURL: 'park.png',
-    },
-    3: {
-      id: '3',
-      name: 'Park3',
-      company: 'none',
-      theme: 'colorful',
-      title: 'Software Engineer',
-      email: 'tjddjs90@gmail.com',
-      message: 'go for it',
-      fileName: 'Park2',
-      fileURL: null,
-    },
-    4: {
-      id: '4',
-      name: 'Park3',
-      company: 'none',
-      theme: 'colorful',
-      title: 'Software Engineer',
-      email: 'tjddjs90@gmail.com',
-      message: 'go for it',
-      fileName: 'Park3',
-      fileURL: null,
-    },
-    5: {
-      id: '5',
-      name: 'Park3',
-      company: 'none',
-      theme: 'colorful',
-      title: 'Software Engineer',
-      email: 'tjddjs90@gmail.com',
-      message: 'go for it',
-      fileName: 'Park4',
-      fileURL: null,
-    },
-  });
+const Maker = ({ FileInput, authService, cardRepository }) => {
+  // const [cards, setCards] = useState({
+  //   // 배열의 형태를 유지하면 ...
+  //   // URUD가 꼬일 뿐 더러...
+  //   // 그렇게 하지 않으면 모든 배열의 내용을 복사해야 합니다....
+  //   1: {
+  //     id: '1',
+  //     name: 'Park',
+  //     company: 'none',
+  //     theme: 'dark',
+  //     title: 'Software Engineer',
+  //     email: 'tjddjs90@gmail.com',
+  //     message: 'go for it',
+  //     fileName: 'Park0',
+  //     fileURL: null,
+  //   },
+  //   2: {
+  //     id: '2',
+  //     name: 'Park2',
+  //     company: 'none',
+  //     theme: 'light',
+  //     title: 'Software Engineer',
+  //     email: 'tjddjs90@gmail.com',
+  //     message: 'go for it',
+  //     fileName: 'Park1',
+  //     fileURL: 'park.png',
+  //   },
+  // });
+
+  const historyState = useHistory().location.state;
+  console.log('historyState : ', historyState);
+  const [userId, setUserId] = useState(historyState && historyState.userId);
+
+  const [cards, setCards] = useState({});
+
   const history = useHistory();
 
   const onLogout = () => {
@@ -76,8 +49,8 @@ const Maker = ({ FileInput, authService }) => {
 
   useEffect(() => {
     authService //
-      .onAuthChange((user) => {
-        if (!user) {
+      .onAuthChange((userId) => {
+        if (!userId) {
           history.push('/');
         }
       });
@@ -99,6 +72,7 @@ const Maker = ({ FileInput, authService }) => {
       updated[card.id] = card;
       return updated;
     });
+    cardRepository.saveCard(userId, card);
   };
 
   const deleteCard = (card) => {
@@ -110,6 +84,7 @@ const Maker = ({ FileInput, authService }) => {
       delete updated[card.id];
       return updated;
     });
+    cardRepository.removeCard(userId, card);
   };
 
   return (
