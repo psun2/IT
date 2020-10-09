@@ -20,7 +20,7 @@ const Maker = ({ FileInput, authService }) => {
       title: 'Software Engineer',
       email: 'tjddjs90@gmail.com',
       message: 'go for it',
-      fileName: 'Park',
+      fileName: 'Park0',
       fileURL: null,
     },
     2: {
@@ -31,7 +31,7 @@ const Maker = ({ FileInput, authService }) => {
       title: 'Software Engineer',
       email: 'tjddjs90@gmail.com',
       message: 'go for it',
-      fileName: 'Park',
+      fileName: 'Park1',
       fileURL: 'park.png',
     },
     3: {
@@ -42,7 +42,7 @@ const Maker = ({ FileInput, authService }) => {
       title: 'Software Engineer',
       email: 'tjddjs90@gmail.com',
       message: 'go for it',
-      fileName: 'Park',
+      fileName: 'Park2',
       fileURL: null,
     },
     4: {
@@ -53,7 +53,7 @@ const Maker = ({ FileInput, authService }) => {
       title: 'Software Engineer',
       email: 'tjddjs90@gmail.com',
       message: 'go for it',
-      fileName: 'Park',
+      fileName: 'Park3',
       fileURL: null,
     },
     5: {
@@ -64,7 +64,7 @@ const Maker = ({ FileInput, authService }) => {
       title: 'Software Engineer',
       email: 'tjddjs90@gmail.com',
       message: 'go for it',
-      fileName: 'Park',
+      fileName: 'Park4',
       fileURL: null,
     },
   });

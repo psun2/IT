@@ -21,6 +21,14 @@ const CardEditForm = memo(({ FileInput, card, updateCard, deleteCard }) => {
     fileURL,
   } = card;
 
+  const onFileChange = (file) => {
+    updateCard({
+      ...card,
+      fileName: file.name,
+      fileURL: file.url,
+    });
+  };
+
   const onChange = (event) => {
     if (event.currentTarget == null) return;
     event.preventDefault();
@@ -87,7 +95,7 @@ const CardEditForm = memo(({ FileInput, card, updateCard, deleteCard }) => {
         onChange={onChange}
       ></textarea>
       <div className={styles.fileInput}>
-        <FileInput />
+        <FileInput name={fileName} onFileChange={onFileChange} />
       </div>
       <Button name="Delete" onClick={onSubmit} />
     </form>
