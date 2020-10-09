@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Footer from '../footer/footer';
 import Header from '../header/hrader';
 import styles from './login.module.css';

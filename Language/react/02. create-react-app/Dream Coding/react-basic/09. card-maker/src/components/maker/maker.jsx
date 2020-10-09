@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Editor from '../editor/editor';
 import Footer from '../footer/footer';
 import Header from '../header/hrader';
@@ -53,19 +53,36 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
     }
     const stopSync = cardRepository.syncCards(userId, (cards) => {
       setCards(cards);
+
+      // useEffect 안에서 cardRepository 를 이용 하였는데요, userId 가 변경될떄마다
+      // useEffect 를 호출했는데, 컴포넌트 자체에서는 cardRepository 가 prop으로 전달이 되는데,
+      // maker 라는 컴포넌트는 cardRepository 를 prop 으로 받아 오니깐..
+      // cardRepository 가 다른 cardRepository 로 변경이 되면 ..
+      // 변경된 cardRepository 로 부터 새로운 데이터를 받아오는 것 이 맞겠죠?
+
+      // useEffect 에서 cardRepository 라는 dependency 를 쓰고 있음에도 불구하고,
+      // cardRepository dependency 가 변경이 되었을때 전혀 업데이트가 되지 않으니까.
+      // warning 메세지를 띄워줍니다.
+
+      // line 59:6:  React Hook useEffect has a missing dependency: 'cardRepository'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+      // 59 : 6 행 : React Hook useEffect에 누락 된 종속성 'cardRepository'가 있습니다. 그것을 포함하거나 의존성 배열을 제거하십시오 react-hooks / exhaustive-deps
     });
 
     return () => stopSync;
-  }, [userId]);
+  }, [userId, cardRepository]);
 
   useEffect(() => {
     authService //
       .onAuthChange((userId) => {
-        if (!userId) {
+        if (userId) {
+          setUserId(userId.uid);
+          console.log(userId);
+        } else {
           history.push('/');
         }
       });
-  });
+  }, [authService, userId, history]);
 
   const createOrUpdateCard = (card) => {
     // const updated = { ...cards };

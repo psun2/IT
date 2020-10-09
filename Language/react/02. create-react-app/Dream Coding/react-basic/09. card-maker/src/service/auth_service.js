@@ -1,26 +1,25 @@
-import firebase from 'firebase';
-import firebaseApp from './firebase';
+import { firbaseAuth, githubProvider, googleProvider } from './firebase';
 
 class AuthService {
   // providerName
   // ex> 구글인지.. 페이스북인지.. 트위터 인지..
   login(providerName) {
     // 어떤 로그인 방법인지를 선택하는 곳
-    const authProvider = new firebase.auth[`${providerName}AuthProvider`]();
+    const authProvider = this.getProvider(providerName);
 
     // 우리의 정보로 초기화되어 반환받은 firebase를 사용하여
     // 로그인을 할 수 있는 함수 반환
-    return firebaseApp.auth().signInWithPopup(authProvider);
+    return firbaseAuth.signInWithPopup(authProvider);
   }
 
   logout() {
-    firebase.auth().signOut();
+    firbaseAuth.signOut();
   }
 
   // callback 함수를 받아서 함수를 처리 하는 로직
   onAuthChange(onUserChanged) {
     // 사용자의 로그인 상태를 관리하는 함수 auth 내장 api
-    firebase.auth().onAuthStateChanged((user) => {
+    firbaseAuth.onAuthStateChanged((user) => {
       user || onUserChanged(user);
       // 콜백을 입력 받아... 콜백 함수의 인자로
       // onAuthStateChanged 함수에서 받은 user을 넘겨줍니다.
@@ -34,6 +33,17 @@ class AuthService {
       // prams정의 된 것이 없는데 왔다 갔다 하면서 미리 받을 것을 예상하여,
       // 작성된 로직이라 굉장히 햇갈립니다.
     });
+  }
+
+  getProvider(providerName) {
+    switch (providerName) {
+      case 'Google':
+        return googleProvider;
+      case 'Github':
+        return githubProvider;
+      default:
+        throw new Error(`not supported provider: ${providerName}`);
+    }
   }
 }
 
