@@ -7,7 +7,7 @@ import Footer from '../footer/footer';
 import Header from '../header/hrader';
 import Preview from '../preview/preview';
 import styles from './maker.module.css';
-const Maker = ({ authService }) => {
+const Maker = ({ FileInput, authService }) => {
   const [cards, setCards] = useState({
     // 배열의 형태를 유지하면 ...
     // URUD가 꼬일 뿐 더러...
@@ -117,6 +117,7 @@ const Maker = ({ authService }) => {
       <Header onLogout={onLogout} />
       <div className={styles.container}>
         <Editor
+          FileInput={FileInput}
           cards={cards}
           addCard={createOrUpdateCard}
           updateCard={createOrUpdateCard}
