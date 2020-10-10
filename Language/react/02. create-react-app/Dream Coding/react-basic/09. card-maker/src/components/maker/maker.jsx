@@ -77,7 +77,7 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
       // 59 : 6 행 : React Hook useEffect에 누락 된 종속성 'cardRepository'가 있습니다. 그것을 포함하거나 의존성 배열을 제거하십시오 react-hooks / exhaustive-deps
     });
 
-    return () => stopSync;
+    return () => stopSync();
   }, [userId, cardRepository]);
 
   useEffect(() => {
