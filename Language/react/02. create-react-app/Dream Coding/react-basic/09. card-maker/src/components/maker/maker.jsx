@@ -100,10 +100,18 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
     // 의 상태라고 말 할 수 없습니다.
     // setState 는 콜백 할수를 받을 수 있으므로 함수로 처리함을 권장 드립니다.
 
-    setCards((cards) => {
+    setCards((preveCards) => {
+      // 이때 preveCards 는
+      // setCards 내부적으로 이전의 값을 함수의 인자로 전달 받습니다.
+
+      // https://reactjs.org/docs/hooks-reference.html#usestate
+      // 새 상태가 이전 상태를 사용하여 계산되는 경우 함수를에 전달할 수 있습니다
+      // setState. 이 함수는 이전 값을 받고 업데이트 된 값을 반환합니다.
+      // 다음은 두 가지 형식을 모두 사용하는 카운터 구성 요소의 예입니다 setState.
+
       // 인자로 받아오는 cards 라는 state는
       // setCards 가 불린 바로 그 시점에서의 state입니다.
-      const updated = { ...cards }; // 인자로 받아온 카드를 복사하여
+      const updated = { ...preveCards }; // 인자로 받아온 카드를 복사하여
       // 다음 로직을 진행합니다.
       updated[card.id] = card;
       return updated;
