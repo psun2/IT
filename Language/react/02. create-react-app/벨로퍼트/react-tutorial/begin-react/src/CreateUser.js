@@ -4,7 +4,7 @@ import useInputs from './useInputs';
 
 function CreateUser() {
   const dispatch = useContext(UserDispatch);
-  const [{ username, email }, change] = useInputs({
+  const [{ username, email }, change, reset] = useInputs({
     username: '',
     email: '',
   });
@@ -22,7 +22,8 @@ function CreateUser() {
       user,
     });
     nextId.current += 1;
-  }, [dispatch, email, username]);
+    reset();
+  }, [dispatch, email, username, reset]);
 
   return (
     <div>
