@@ -1,18 +1,41 @@
-import React, { memo } from 'react';
+import React, { memo, useCallback, useContext, useRef } from 'react';
+import { UserDispatch } from './App';
+import useInputs from './useInputs';
 
-function CreateUser({ username, email, onChange, onCreate }) {
+function CreateUser() {
+  const dispatch = useContext(UserDispatch);
+  const [{ username, email }, change] = useInputs({
+    username: '',
+    email: '',
+  });
+  const nextId = useRef(4);
+
+  const onCreate = useCallback(() => {
+    const user = {
+      id: nextId.current,
+      username,
+      email,
+    };
+
+    dispatch({
+      type: 'CREATE_USER',
+      user,
+    });
+    nextId.current += 1;
+  }, [dispatch, email, username]);
+
   return (
     <div>
       <input
         name="username"
         placeholder="계정명"
-        onChange={onChange}
+        onChange={change}
         value={username}
       />
       <input
         name="email"
         placeholder="이메일"
-        onChange={onChange}
+        onChange={change}
         value={email}
       />
       <button onClick={onCreate}>등록</button>
