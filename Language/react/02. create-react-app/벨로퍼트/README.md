@@ -26,4 +26,7 @@
 > 2020-10-11 | 22. 21. useReducer - App에서 useReducer 사용하기
 
 > 2020-10-12 | 23. 22. 커스텀 Hook 만들어서 사용하기  
-> 2020-10-12 | 24. 23. Context API 를 사용한 전역 값 관리  
+> 2020-10-12 | 23. 22. 커스텀 Hook 만들어서 사용하기  reducer 과제
+> 2020-10-12 | 24. 23. Context API 를 사용한 전역 값 관리    
+> 2020-10-12 | 25. 24. userDispatch Context 만들기  
+> 2020-10-12 | 25. 24. userDispatch Context 만들기 createContext, useReducer 과제  

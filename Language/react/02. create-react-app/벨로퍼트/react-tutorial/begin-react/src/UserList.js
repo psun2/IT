@@ -1,7 +1,10 @@
-import React, { useEffect, memo } from 'react';
+import React, { useEffect, memo, useContext } from 'react';
+import { UserDispatch } from './App';
 
-const User = React.memo(function User({ user, onRemove, onToggle }) {
+const User = React.memo(function User({ user }) {
   const { username, email, id, active } = user;
+  const dispatch = useContext(UserDispatch);
+
   useEffect(() => {
     return () => {};
   });
@@ -12,30 +15,39 @@ const User = React.memo(function User({ user, onRemove, onToggle }) {
           color: active ? 'green' : 'black',
           cursor: 'pointer',
         }}
-        onClick={() => onToggle(id)}
+        onClick={() =>
+          dispatch({
+            type: 'TOGGLE_USER',
+            id,
+          })
+        }
       >
         {username}
       </b>
       &nbsp;
       <span>{email}</span>
-      <button onClick={() => onRemove(id)}>삭제</button>
+      <button
+        onClick={() =>
+          dispatch({
+            type: 'REMOVE_USER',
+            id,
+          })
+        }
+      >
+        삭제
+      </button>
     </div>
   );
 });
 
-function UserList({ users, onRemove, onToggle }) {
+function UserList({ users }) {
   return (
     <div>
       {users.map((user) => (
         // <User user={user} />
         // index.js:1 Warning: Each child in a list should have a unique "key" prop.
         // 목록의 각 하위에는 고유 한 "키"소품이 있어야합니다.
-        <User
-          key={user.id}
-          user={user}
-          onRemove={onRemove}
-          onToggle={onToggle}
-        />
+        <User key={user.id} user={user} />
         // key의 역할 :
         // const arr = ['a', 'b', 'c', 'd'] 이러한 배열에서 b 와 c 사이에 z 가 들어 간다면?
         // const arr = ['a', 'b', 'z', 'c', 'd'] => user 컴포넌트를 랜더링 할때

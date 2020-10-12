@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 // import CounterUseReducer from './Counter_useReducer';
 import * as serviceWorker from './serviceWorker';
-import ContextSample from './ContextSample';
+// import ContextSample from './ContextSample';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     {/* <CounterUseReducer /> */}
-    <ContextSample />
+    {/* <ContextSample /> */}
   </React.StrictMode>,
   document.getElementById('root'),
 );
