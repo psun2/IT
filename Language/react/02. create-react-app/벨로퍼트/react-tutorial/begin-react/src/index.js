@@ -4,15 +4,17 @@ import './index.css';
 import App from './App';
 // import CounterUseReducer from './Counter_useReducer';
 import * as serviceWorker from './serviceWorker';
+import CounterClass from './Counter-class';
 // import HelloClass from './Hello_class';
 // import ContextSample from './ContextSample';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
     {/* <CounterUseReducer /> */}
     {/* <ContextSample /> */}
     {/* <HelloClass name="react" isSpecial={true} /> */}
+    <CounterClass />
   </React.StrictMode>,
   document.getElementById('root'),
 );
