@@ -32,3 +32,8 @@
 > 2020-10-12 | 24. 23. Context API 를 사용한 전역 값 관리    
 > 2020-10-12 | 25. 24. userDispatch Context 만들기  
 > 2020-10-12 | 25. 24. userDispatch Context 만들기 createContext, useReducer 과제  
+
+> 2020-10-12 | 26. 25. Immer 를 사용한 더 쉬운 불편성 지키기  
+> 2020-10-12 | 26. 25. Immer 를 사용한 더 쉬운 불편성 지키기 immer 설치 및 사용법  
+
+

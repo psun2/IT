@@ -1,7 +1,10 @@
 import React, { useReducer, useMemo, createContext } from 'react';
+import produce from 'immer';
 import './App.css';
 import CreateUser from './CreateUser';
 import UserList from './UserList';
+
+window.produce = produce;
 
 function counterActiveUsers(users) {
   console.log('활성 사용자 수를 세는중...');

@@ -1,36 +1,3 @@
-# 유용한 npm library
-
-## React 종합 libray (ui 포함)
-
-[종합 - 기능, 디자인](https://github.com/brillout/awesome-react-components)  
-
----
-
-## axios
-- 드림코딩/cardmaker 참조
-- 노마드 react-hooks 참조
-
-```
-npm i axios
-```
-
-fetch()와 비슷한 역할을 합니다.
-
-```
-axios.get('url');
-```
-
----
-
-## immer (객체의 불변성을 지키기 위한 라이브러리)
-
-- 밸로퍼트/basic-react 참조
-
-```
-yarn add immer
-```
-
-```
 // import immer from 'immer';
 // 보통 import 시 produce(생기게 하다) 라는 단어를 많이 사용합니다.
 // 물론 immer 로 불러와도 상관은 없습니다.
@@ -82,36 +49,3 @@ console.log(array); // 원본 배열을 바뀌지 않았습니다.
 // 2: {id: 3, text: "lalala"}
 // length: 3
 // __proto__: Array(0)
-```
-
----
-
-## prop-types
-
-```
-npm i prop-types
-```
-
-props 의 type을 알아 볼수 있게 도와줍니다.
-
-```
-import PropTypes from "prop-types"
-
-component.propTypes = {
-props이름 : PropTypes.데이터형(string).옵션(isRequired)-필수인지 아닌지
-}
-```
-
----
-
-## FontAwesome
-
-```
-yarn add @fortawesome/fontawesome-free
-```
-
-index.js에 추가해야 하는 코드
-
-```
-import '@fortawesome/fontawesome-free/js/all.js';
-```
