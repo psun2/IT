@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 // import CounterUseReducer from './Counter_useReducer';
 import * as serviceWorker from './serviceWorker';
+// import HelloClass from './Hello_class';
 // import ContextSample from './ContextSample';
 
 ReactDOM.render(
@@ -11,6 +12,7 @@ ReactDOM.render(
     <App />
     {/* <CounterUseReducer /> */}
     {/* <ContextSample /> */}
+    {/* <HelloClass name="react" isSpecial={true} /> */}
   </React.StrictMode>,
   document.getElementById('root'),
 );
