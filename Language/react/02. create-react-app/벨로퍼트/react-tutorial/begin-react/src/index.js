@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 // import CounterUseReducer from './Counter_useReducer';
 import * as serviceWorker from './serviceWorker';
-import CounterClass from './Counter-class';
+// import CounterClass from './Counter-class';
+import LifeCycleIIdex from './LifeCycleIIdex';
 // import HelloClass from './Hello_class';
 // import ContextSample from './ContextSample';
 
@@ -14,7 +15,8 @@ ReactDOM.render(
     {/* <CounterUseReducer /> */}
     {/* <ContextSample /> */}
     {/* <HelloClass name="react" isSpecial={true} /> */}
-    <CounterClass />
+    {/* <CounterClass /> */}
+    <LifeCycleIIdex />
   </React.StrictMode>,
   document.getElementById('root'),
 );
