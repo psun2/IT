@@ -40,6 +40,8 @@
 > 2020-10-13 | 29. 28. 클래스형 컴포넌트의 state 와 setState    
 > 2020-10-13 | 30. 29. LifeCycle 메서드 (생명주기 메서드)  
   
-> 2020-10-14 | 31. 30. componentDidCatch 와 Sentry  
+> 2020-10-14 | 31. 30. componentDidCatch 메서드  
+
+
 
 
