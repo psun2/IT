@@ -115,3 +115,22 @@ index.js에 추가해야 하는 코드
 ```
 import '@fortawesome/fontawesome-free/js/all.js';
 ```
+
+--- 
+
+## Sentry
+
+[Sentry](https://sentry.io/welcome/)
+
+[Sentry DOC](https://docs.sentry.io/)
+
+```
+yarn add @sentry/react @sentry/tracing
+```
+
+index.js에 추가해야 하는 코드
+
+```
+import * as Sentry from '@sentry/react';
+import { Integrations } from '@sentry/tracing';
+```

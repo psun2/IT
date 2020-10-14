@@ -41,6 +41,8 @@
 > 2020-10-13 | 30. 29. LifeCycle 메서드 (생명주기 메서드)  
   
 > 2020-10-14 | 31. 30. componentDidCatch 메서드  
+> 2020-10-14 | 32. 31. componentDidCatch 와 Sentry 연동  
+
 
 
 

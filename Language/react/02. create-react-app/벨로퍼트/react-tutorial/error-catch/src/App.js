@@ -3,6 +3,9 @@ import './App.css';
 import User from './User';
 import ErrorBoundary from './ErrorBoundary';
 
+// build 후 개발서버 열기
+// npx serve ./build
+
 function App() {
   const user = {
     id: 1,
