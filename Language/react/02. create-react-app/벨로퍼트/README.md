@@ -44,6 +44,8 @@
 > 2020-10-14 | 32. 31. componentDidCatch 와 Sentry 연동  
 > 2020-10-14 | 33. 32. Prettier  
 > 2020-10-14 | 34. 33. EsLint  
+> 2020-10-14 | 35. 34. EsLint 설정 커스터 마이징  
+
 
 
 
