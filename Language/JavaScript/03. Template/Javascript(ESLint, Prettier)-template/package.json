@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "add": "^2.0.6",
+    "eslint-config-javascript": "^1.3.0",
+    "eslint-config-prettier": "^6.12.0",
+    "yarn": "^1.22.10"
+  }
+}
