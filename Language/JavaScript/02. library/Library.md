@@ -35,57 +35,6 @@ axios.get('url');
 
 ---
 
-## `Sass`
-
-```
-yarn add node-sass
-```
-
-.scss 로 파일 확장자 명을 가져 갑니다.
-
-사용예시
-
-```
-// 변수 선언 $ 로 사용 합니다.
-// 주석 작성이 js 파일 과 같이 //로 사용 가능합니다.
-
-$blue: #339be6;
-
-.Button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  outline: none;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-  height: 2.25rem;
-  // rem: 현재 브라우저 페이지의 기본 폰트 사이즈에 기반 하여 사이즈 결정
-  // 크롬: 기본 px => 16px // 16 * 2.25 = 36
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1rem;
-
-  background-color: $blue;
-  &:hover {
-    background-color: lighten($blue, 10%);
-    // 첫번째 parameter: 우리가 설정한 버튼의 배경색
-    // 두번째 parameter: 밝기 조절 예 : 10% => 호버시 버튼이 10% 밝아 집니다.
-  }
-  &:active {
-    background-color: darken($blue, 10%);
-    // lighten 과 는 달리 2번째 parameter로 인하여 색이 어두워 집니다.
-  }
-}
-```
-
-- 벨로퍼트 styling-with-sass 참조
-
----
-
 ## `immer (객체의 불변성을 지키기 위한 라이브러리)`
 
 ```
@@ -150,6 +99,88 @@ console.log(array); // 원본 배열을 바뀌지 않았습니다.
 ```
 
 - 밸로퍼트/basic-react 참조
+
+---
+
+## `Sass`
+
+```
+yarn add node-sass
+```
+
+.scss 로 파일 확장자 명을 가져 갑니다.
+
+사용예시
+
+```
+// 변수 선언 $ 로 사용 합니다.
+// 주석 작성이 js 파일 과 같이 //로 사용 가능합니다.
+
+$blue: #339be6;
+
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  height: 2.25rem;
+  // rem: 현재 브라우저 페이지의 기본 폰트 사이즈에 기반 하여 사이즈 결정
+  // 크롬: 기본 px => 16px // 16 * 2.25 = 36
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+
+  background-color: $blue;
+  &:hover {
+    background-color: lighten($blue, 10%);
+    // 첫번째 parameter: 우리가 설정한 버튼의 배경색
+    // 두번째 parameter: 밝기 조절 예 : 10% => 호버시 버튼이 10% 밝아 집니다.
+  }
+  &:active {
+    background-color: darken($blue, 10%);
+    // lighten 과 는 달리 2번째 parameter로 인하여 색이 어두워 집니다.
+  }
+}
+```
+
+- 벨로퍼트 styling-with-sass 참조
+
+---
+
+## `classNames`
+
+: 클래스의 이름이 복작해질때, 다양한 방법으로 클래스 이름을 조합 할 수 있게 도와 주는 라이브 러리 입니다.
+
+```
+yarn add classnames
+```
+
+사용예시
+
+```
+// classNames 라이브 러리는 클래스명을 다양하게 조합하여 사용 할 수 있습니다.
+classNames('foo', 'bar'); // => 'foo bar'
+classNames('foo', { bar: true }); // => 'foo bar'
+classNames({ 'foo-bar': true }); // => 'foo-bar'
+classNames({ 'foo-bar': flase }); // => ''
+classNames({ foo: true }, { bar: true }); // => 'foo bar'
+classNames({ foo: true, bar: true }); // => 'foo bar'
+classNames(['foo', 'bar']); // => 'foo bar'
+
+// 동시에 여러개의 타입으로 받아올 수 도 있습니다.
+classNames('foo', { bar: true, duck: flase }, 'baz', { quux: true }); / => 'foo bar baz quux'
+
+// false, null, 0, undefined 는 무시됩니다.
+classNames(null, false, 'bar', undefined, 0, 1, { baz: null }, ''); //=> 'bar 1'
+```
+
+- 벨로퍼트 styling-with-sass 참조
 
 ---
 

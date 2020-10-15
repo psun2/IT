@@ -14,14 +14,28 @@ $blue: #339be6;
   border-radius: 4px;
   cursor: pointer;
 
-  height: 2.25rem;
-  // rem: 현재 브라우저 페이지의 기본 폰트 사이즈에 기반 하여 사이즈 결정
-  // 크롬: 기본 px => 16px // 16 * 2.25 = 36
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: 1rem;
+
+  &.large {
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+
+  &.medium {
+    height: 2.25rem;
+    // rem: 현재 브라우저 페이지의 기본 폰트 사이즈에 기반 하여 사이즈 결정
+    // 크롬: 기본 px => 16px // 16 * 2.25 = 36
+    font-size: 1rem;
+  }
+
+  &.small {
+    height: 1.75rem;
+    font-size: 0.875rem;
+  }
 
   background-color: $blue;
+  // &: 자기 자신을 가르킵니다. 즉 여기서는 Button 이 됩니다.
   &:hover {
     background-color: lighten($blue, 10%);
     // 첫번째 parameter: 우리가 설정한 버튼의 배경색
@@ -31,4 +45,15 @@ $blue: #339be6;
     background-color: darken($blue, 10%);
     // lighten 과 는 달리 2번째 parameter로 인하여 색이 어두워 집니다.
   }
+
+  & + & {
+    margin-left: 1rem;
+  }
 }
+
+// .Button 과 .Button 이 같이 있을때
+// 오른쪽에 작성된 .Button 에게 특정 스타일을 주겠다는 의미입니다.
+// .Button + .Button {
+//   margin-left: 1rem;
+//   // .Button 안에서 & + & 로 작성 할 수  도 있습니다.
+// }
