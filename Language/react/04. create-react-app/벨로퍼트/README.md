@@ -59,5 +59,7 @@
 
 > 2020-10-16 | 03. 02. Sass 버튼 A - size props 설정하기(classNames 라이브러리)      
 > 2020-10-16 | 04. 03. Sass 버튼 B - color props 설정하기(mixin 과 include)   
+> 2020-10-16 | 05. 04. Sass 버튼 C - outline, fullWidth props 설정  
+
   
   

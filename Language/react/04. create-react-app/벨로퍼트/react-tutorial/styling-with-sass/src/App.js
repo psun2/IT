@@ -34,6 +34,34 @@ const App = (props) => (
         BUTTON
       </Button>
     </div>
+    <div className="buttons">
+      <Button
+        size="large"
+        // outline={true}
+        // 위의 props 가 너무 길다면 true 일때는
+        // true 를 생략 가능 합니다.
+        outline
+      >
+        BUTTON
+      </Button>
+      <Button color="gray" outline>
+        BUTTON
+      </Button>
+      <Button color="pink" size="small" outline>
+        BUTTON
+      </Button>
+    </div>
+    <div className="buttons">
+      <Button size="large" fullWidth>
+        BUTTON
+      </Button>
+      <Button size="large" color="gray" fullWidth>
+        BUTTON
+      </Button>
+      <Button size="large" color="pink" fullWidth>
+        BUTTON
+      </Button>
+    </div>
   </div>
 );
 
