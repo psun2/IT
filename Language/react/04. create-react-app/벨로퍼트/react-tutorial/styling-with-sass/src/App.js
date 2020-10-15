@@ -58,7 +58,18 @@ const App = (props) => (
       <Button size="large" color="gray" fullWidth>
         BUTTON
       </Button>
-      <Button size="large" color="pink" fullWidth>
+      <Button
+        size="large"
+        color="pink"
+        fullWidth
+        className="customized-button"
+        onClick={() => {
+          console.log('Click!');
+        }}
+        onMouseMove={() => {
+          console.log('Move~');
+        }}
+      >
         BUTTON
       </Button>
     </div>
