@@ -172,6 +172,22 @@ export default App;
 
 ---
 
+## `polished 스타일 유틸 함수 (라이브러리) 소개`
+
+[polished](https://polished.js.org/)  
+: 많은 내장 함수가 존재 하므로 사용시 꼭 확인 부탁 드립니다.
+
+polished 라이브러리는 css 스타일링을 할때, 많이 사용 되는 코드를 함수형태로 모아놓고,  
+개발자가 해당 css를 적용하고 싶을때 함수를 호출하여 사용 합니다.
+
+```
+yarn add polished
+```
+
+- 밸로퍼트 styling-with-styled-components 참조
+
+---
+
 ## `Sass`
 
 ```
