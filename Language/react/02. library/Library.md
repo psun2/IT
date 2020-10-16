@@ -182,6 +182,52 @@ classNames(null, false, 'bar', undefined, 0, 1, { baz: null }, ''); //=> 'bar 1'
 
 - 벨로퍼트 styling-with-sass 참조
 
+💜postcss(css의 모듈화) 와 연동
+
+```
+import classNames from 'classnames/bind'
+```
+
+bind 란 유틸리티를 불러서 해당 모듈의 바인딩 처리 한후 사용 할 수 있습니다.
+
+```
+import styles from '~.module.css || .scss'
+const cx = classNames.bind(stylse);
+
+<Component className={cx('blabla', {foo: true})} />
+```
+
+- 벨로퍼트 styling-with-css-module 참조
+
+---
+
+## `react-icons`
+
+[React Icons](https://react-icons.github.io/react-icons/)
+
+설치
+
+```
+yarn add react-icons
+```
+
+사용법
+
+```
+import { IconName } from "react-icons/md";
+
+<IconName />
+```
+
+md: Material Design icons 의 약어
+해당 디자인의 아이콘 마다 들어가는 naming이 다르게 됩니다.  
+이점 유의 하세요.  
+자세한 내용은 해당 홈페이지 내에서 확인 할 수 있습니다.
+
+또한 사용 하고자 하는 컴포넌트 내에서 컴포넌트의 형식으로 사용 합니다.
+
+- 벨로퍼트 styling-with-css-module 참조
+
 ---
 
 ## `FontAwesome`
