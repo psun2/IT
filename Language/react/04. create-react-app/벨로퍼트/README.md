@@ -64,7 +64,9 @@
 > 2020-10-16 | 07. 06. CSS Module(react-icons, PostCss, classNames, sass)  
 > 2020-10-16 | 08. 07. Styled-components(라이브러리, Tagged Template Literal)   
 > 2020-10-16 | 09. 08. Styled-components 버튼 만들기  
-> 2020-10-16 | 10. 09. Styled-components-Polished 스타일 유틸함수 사용(polished 라이브러리, ThemeProvider, css함수)    
+> 2020-10-16 | 10. 09. Styled-components-Polished 스타일 유틸함수 사용(polished 라이브러리, ThemeProvider, css함수)     
+
+> 2020-10-17 | 11. 10. Styled-components 버튼 사이즈 조정하기    
   
 
 

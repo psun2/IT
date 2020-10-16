@@ -10,6 +10,12 @@ const AppBlock = styled.div`
   padding: 1rem;
 `;
 
+const ButtonGroup = styled.div`
+  & + & {
+    margin-top: 1rem;
+  }
+`;
+
 // 전역 적으로 어떤 컴포넌트에게나 뿌려줄 수 있도록 합니다.
 const palette = {
   blue: '#228be6',
@@ -21,9 +27,15 @@ function App() {
   return (
     <ThemeProvider theme={{ palette }}>
       <AppBlock>
-        <Button>Button</Button>
-        <Button color="gray">Button</Button>
-        <Button color="pink">Button</Button>
+        <ButtonGroup>
+          <Button size="large" color="gray">
+            Button
+          </Button>
+          <Button>Button</Button>
+          <Button size="small" color="pink">
+            Button
+          </Button>
+        </ButtonGroup>
       </AppBlock>
     </ThemeProvider>
   );
