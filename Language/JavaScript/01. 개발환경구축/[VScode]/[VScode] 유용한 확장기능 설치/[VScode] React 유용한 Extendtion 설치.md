@@ -7,13 +7,23 @@
 
 ---
 
-## Auto Import
+## `Auto Import`
 
 리액트의 다른 컴포넌트를 자동으로 import 해줍니다.
 
 ---
 
-## Reactjs code snippets
+## `vacode-styled-components`
+
+: styled-components 라이브러리 사용시에만 사용 하시면 더욱더 편리한 작업 환경을 꾸려 줍니다.
+
+![styled-components](./image/vscode-styled-components.png)
+
+![styled-components](./image/vscode-styled-components2.png)
+
+---
+
+## `Reactjs code snippets`
 
 ![Reactjs code snippets](./image/Reactjs_code_snippets.gif)  
 ![Reactjs code snippets](./image/Reactjs_code_snippets2.gif)

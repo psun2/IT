@@ -98,7 +98,77 @@ console.log(array); // 원본 배열을 바뀌지 않았습니다.
 // __proto__: Array(0)
 ```
 
-- 밸로퍼트/basic-react 참조
+- 밸로퍼트 basic-react 참조
+
+---
+
+## `styled-components` 라이브러리
+
+```
+yarn add styled-components
+```
+
+### 실전 사용 예제
+
+```
+import React from 'react';
+import styled, { css } from 'styled-components';
+
+const Circle = styled.div`
+  width: 5rem;
+  height: 5rem;
+  background-color: ${(props) => props.color};
+  border-radius: 50%;
+  ${(props) =>
+    props.huge &&
+    css`
+      width: ${props.huge};
+      height: 10rem;
+    `}
+`;
+
+function App() {
+  return (
+    <>
+      <Circle color="black" />
+      <Circle color="blue" huge="10rem" />
+    </>
+  );
+}
+
+export default App;
+```
+
+```
+import React from 'react';
+import styled, { css } from 'styled-components';
+
+const Circle = styled.div`
+  width: 5rem;
+  height: 5rem;
+  background-color: ${(props) => props.color};
+  border-radius: 50%;
+  ${(props) =>
+    props.huge &&
+    css`
+      width: 10rem;
+      height: 10rem;
+    `}
+`;
+
+function App() {
+  return (
+    <>
+      <Circle color="black" />
+      <Circle color="blue" huge />
+    </>
+  );
+}
+
+export default App;
+```
+
+- 밸로퍼트 styling-with-styled-components 참조
 
 ---
 
