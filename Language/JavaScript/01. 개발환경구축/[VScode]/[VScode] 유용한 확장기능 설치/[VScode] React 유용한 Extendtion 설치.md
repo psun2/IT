@@ -13,7 +13,7 @@
 
 ---
 
-## `vacode-styled-components`
+## `vscode-styled-components`
 
 : styled-components 라이브러리 사용시에만 사용 하시면 더욱더 편리한 작업 환경을 꾸려 줍니다.
 
