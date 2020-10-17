@@ -53,7 +53,7 @@
 
 ---
 
-## 리액트 - 컴포넌트 스타일링
+## 리액트 - 컴포넌트 스타일링(CSS)
 
 > 2020-10-15 | 02. 01. Sass  
 
@@ -68,9 +68,12 @@
 
 > 2020-10-17 | 11. 10. Styled-components 버튼 사이즈 조정하기    
 > 2020-10-17 | 12. 11. Styled-components 버튼 outline, fullWidth 설정  
-> 2020-10-17 | 12. 11. Styled-components Dialog 만들기    
+> 2020-10-17 | 13. 12. Styled-components Dialog 만들기(Modal)   
+> 2020-10-17 | 14. 13. Styled-components 트랜지션 구현하기_애니메이션(keyframes) - css 뿐만 아닌 프로그래밍적 코딩스타일도 적용 (확인하세요)  
   
+---
 
+## 리액트 - 투두리스트 만들기(실전예제)
 
   
  
