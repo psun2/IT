@@ -58,8 +58,8 @@ const sizeStyles = css`
 `;
 
 const fullWidthStyle = css`
-  ${({ fullWidth }) =>
-    fullWidth &&
+  ${(props) =>
+    props.fullWidth &&
     css`
       width: 100%;
       justify-content: center;
@@ -143,14 +143,13 @@ const StyledButton = styled.button`
   }} */
 
   /* 색상 */
-  ${colorStyles}
-
+  ${colorStyles} 
   /*
     &(자신) +(형제 노드) &(자신)
     즉 버튼끼리 붙어 있다면 오른쪽 버튼에 스타일링을 하는 문법 입니다.
   */
 
-  ${fullWidthStyle}
+ ${fullWidthStyle}
 `;
 
 function Button({ children, color, size, outline, fullWidth, ...rest }) {

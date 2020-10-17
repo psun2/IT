@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import Button from './components/Button';
+import Dialog from './components/Dialog';
 
 const AppBlock = styled.div`
   width: 512px;
@@ -24,7 +25,24 @@ const palette = {
 };
 
 function App() {
+  const [dialog, setDialog] = useState(false);
+
+  const onClick = useCallback(() => {
+    setDialog((dialog) => !dialog);
+  }, [setDialog]);
+
+  const onConfirm = () => {
+    console.log('확인');
+    setDialog(false);
+  };
+
+  const onCancel = () => {
+    console.log('취소');
+    setDialog(false);
+  };
+
   return (
+    // ThemeProvider 내부에는 하나의 엘리먼트만 존재 할 수 있습니다.
     <ThemeProvider theme={{ palette }}>
       <AppBlock>
         <ButtonGroup>
@@ -46,15 +64,25 @@ function App() {
           </Button>
         </ButtonGroup>
         <ButtonGroup>
-          <Button fullWidth size="large" color="gray">
-            Button
+          <Button onClick={onClick} fullWidth size="large" color="gray">
+            삭제
           </Button>
           <Button fullWidth>Button</Button>
-          <Button fullWidth outline size="small" color="pink">
+          <Button fullWidth size="small" color="pink">
             Button
           </Button>
         </ButtonGroup>
       </AppBlock>
+      <Dialog
+        title="정말로 삭제하시겠습니까?"
+        confirmText="삭제"
+        cancleTest="취소"
+        onConfirm={onConfirm}
+        onCancel={onCancel}
+        visible={dialog}
+      >
+        데이터를 정말로 삭제하시겠습니까?
+      </Dialog>
     </ThemeProvider>
   );
 }

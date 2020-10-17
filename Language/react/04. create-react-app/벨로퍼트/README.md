@@ -67,7 +67,8 @@
 > 2020-10-16 | 10. 09. Styled-components-Polished 스타일 유틸함수 사용(polished 라이브러리, ThemeProvider, css함수)     
 
 > 2020-10-17 | 11. 10. Styled-components 버튼 사이즈 조정하기    
-> 2020-10-17 | 12. 11. Styled-components 버튼 outline, fullWidth 설정    
+> 2020-10-17 | 12. 11. Styled-components 버튼 outline, fullWidth 설정  
+> 2020-10-17 | 12. 11. Styled-components Dialog 만들기    
   
 
 
