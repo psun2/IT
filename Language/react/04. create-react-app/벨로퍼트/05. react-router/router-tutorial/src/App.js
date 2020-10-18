@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, Link, Switch } from 'react-router-dom';
 import About from './About';
 import HistorySample from './HistorySample';
 import Home from './Home';
@@ -38,16 +38,25 @@ function App() {
         </li>
       </ul>
       <hr />
-
-      <Route path="/" component={Home} exact />
-      <Route path="/about" component={About} />
-      {/* <Route path="/profiles/:username/:id" component={Profile} /> */}
-      {/* /:username => 이부분이 urlParameter가 됩니다.
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/about" component={About} />
+        {/* <Route path="/profiles/:username/:id" component={Profile} /> */}
+        {/* /:username => 이부분이 urlParameter가 됩니다.
         즉, 우리가 profile 컴포넌트에서 match.params 로 가져오는 username 입니다.
       */}
-      <Route path="/profiles" component={Profiles} />
-      {/* <Route path="/history" render={() => <HistorySample />} /> */}
-      <Route path="/history" component={HistorySample} />
+        <Route path="/profiles" component={Profiles} />
+        {/* <Route path="/history" render={() => <HistorySample />} /> */}
+        <Route path="/history" component={HistorySample} />
+        <Route
+          render={({ location }) => (
+            <div>
+              <h2>이 페이지는 존재하지 않습니다.</h2>
+              <p>{location.pathname}</p>
+            </div>
+          )}
+        />
+      </Switch>
     </div>
   );
 }
