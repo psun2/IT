@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import About from './About';
 import Home from './Home';
+import Profile from './Profile';
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
 
       <Route path="/" component={Home} exact />
       <Route path="/about" component={About} />
+      <Route path="/profiles/:username/:id" component={Profile} />
+      {/* /:username => 이부분이 urlParameter가 됩니다.
+        즉, 우리가 profile 컴포넌트에서 match.params 로 가져오는 username 입니다.
+      */}
     </div>
   );
 }

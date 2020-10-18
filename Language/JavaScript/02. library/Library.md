@@ -4,6 +4,47 @@
 
 ---
 
+## `react-router-dom`
+
+![리액트 전용](./logo/favicon.ico)
+
+```
+yarn add react-router-dom
+```
+
+- 밸로퍼트/router-tutorial 참조
+
+---
+
+## `qs`
+
+: route 의 props 로 받아온 location 객체를 사용 하여, query string 을 parsing 합니다.
+
+라이브러리를 사용하지 않고도, 자바스크립트의 내장 객체(api)인  
+URLSearchParams 를 이용 할 수 도 있습니다.
+
+먼저 URLSearchParams 사용 예시 부터 보도록 하겠습니다.
+
+```
+  const param = new URLSearchParams(location.search);
+  console.log(Object.fromEntries(param));
+  // Object.fromEntries 를 이용해 Object 로 변경 하여 사용 할 수 있도록 합니다.
+```
+
+```
+yarn add qs
+```
+
+```
+import qs from 'qs';
+
+  const query = qs.parse(location.search, {
+    ignoreQueryPrefix: true, // ?표가 없이 parsing 됩니다.
+  });
+```
+
+---
+
 ## `prettier`
 
 - [Vscode] 폴더에서 확인가능
@@ -324,6 +365,7 @@ const cx = classNames.bind(stylse);
 
 ## `react-icons`
 
+![리액트 전용](./logo/favicon.ico)  
 [React Icons](https://react-icons.github.io/react-icons/)
 
 설치
@@ -381,13 +423,6 @@ index.js에 추가해야 하는 코드
 import * as Sentry from '@sentry/react';
 import { Integrations } from '@sentry/tracing';
 ```
-
----
-
-## `EsLint`
-
-- [Vscode] 폴더에서 확인가능
-- 밸로퍼트/useful-tools 참조
 
 ---
 
