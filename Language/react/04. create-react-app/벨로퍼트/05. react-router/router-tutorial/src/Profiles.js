@@ -2,6 +2,7 @@ import React from 'react';
 import Profile from './Profile';
 import { NavLink, Route } from 'react-router-dom';
 import WithRouterSample from './WithRouterSample';
+import RouterHookSample from './RouterHookSample';
 
 const Profiles = (props) => (
   <div>
@@ -44,6 +45,7 @@ const Profiles = (props) => (
     /> */}
     <Route path="/profiles/:username" component={Profile} />
     <WithRouterSample />
+    <RouterHookSample />
   </div>
 );
 
