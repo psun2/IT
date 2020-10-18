@@ -31,7 +31,42 @@ axios.get('url');
 ```
 
 - 드림코딩/cardmaker 참조
-- 노마드 react-hooks 참조
+- 노마드/react-hooks 참조
+
+---
+
+## `react-async`
+
+![리액트 전용](./logo/favicon.ico)  
+[react-async github](https://github.com/async-library/react-async)  
+비동기 작업을 도와주는 라이브러리 입니다.  
+(복잡하니 커스텀 hook 을 만들어 axios 와 결합 하여 사용을 추천 합니다.)
+
+```
+yarn add react-async
+```
+
+```
+import { useAsync } from 'react-async';
+
+  const { data, error, isLoading } = useAsync({
+    promiseFn: getUser, // callback
+    id, // callback parameter
+    watch: id, // dependencys
+  });
+```
+
+```
+const UsersReactAsync = () => {
+  // reload : refetch
+  // run deferFn 옵션과 사용시 랜더시 fetch 시키지 않고 run 함수를 실행시 fetch 가 진행됩니다.
+  const { data: users, error, isLoading, reload, run } = useAsync({
+    // promiseFn: getUsers,
+    deferFn: getUsers, // deferFn 시작과 동시에 fetch 시키지 않고, 반환된 run 함수로 ferch 시킬 수 있습니다.
+  });
+```
+
+- 밸로퍼트/react-api 참조
 
 ---
 
@@ -98,7 +133,7 @@ console.log(array); // 원본 배열을 바뀌지 않았습니다.
 // __proto__: Array(0)
 ```
 
-- 밸로퍼트 basic-react 참조
+- 밸로퍼트/basic-react 참조
 
 ---
 
@@ -168,7 +203,7 @@ function App() {
 export default App;
 ```
 
-- 밸로퍼트 styling-with-styled-components 참조
+- 밸로퍼트/styling-with-styled-components 참조
 
 ---
 
@@ -184,7 +219,7 @@ polished 라이브러리는 css 스타일링을 할때, 많이 사용 되는 코
 yarn add polished
 ```
 
-- 밸로퍼트 styling-with-styled-components 참조
+- 밸로퍼트/styling-with-styled-components 참조
 
 ---
 
@@ -235,7 +270,7 @@ $blue: #339be6;
 }
 ```
 
-- 벨로퍼트 styling-with-sass 참조
+- 벨로퍼트/styling-with-sass 참조
 
 ---
 
@@ -266,7 +301,7 @@ classNames('foo', { bar: true, duck: flase }, 'baz', { quux: true }); / => 'foo 
 classNames(null, false, 'bar', undefined, 0, 1, { baz: null }, ''); //=> 'bar 1'
 ```
 
-- 벨로퍼트 styling-with-sass 참조
+- 벨로퍼트/styling-with-sass 참조
 
 💜postcss(css의 모듈화) 와 연동
 
@@ -283,7 +318,7 @@ const cx = classNames.bind(stylse);
 <Component className={cx('blabla', {foo: true})} />
 ```
 
-- 벨로퍼트 styling-with-css-module 참조
+- 벨로퍼트/styling-with-css-module 참조
 
 ---
 
@@ -312,7 +347,7 @@ md: Material Design icons 의 약어
 
 또한 사용 하고자 하는 컴포넌트 내에서 컴포넌트의 형식으로 사용 합니다.
 
-- 벨로퍼트 styling-with-css-module 참조
+- 벨로퍼트/styling-with-css-module 참조
 
 ---
 
