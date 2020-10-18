@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import About from './About';
+import HistorySample from './HistorySample';
 import Home from './Home';
 // import Profile from './Profile';
 import Profiles from './Profiles';
@@ -32,6 +33,9 @@ function App() {
         <li>
           <Link to="/profiles">프로필 목록</Link>
         </li>
+        <li>
+          <Link to="/history">히스토리(예제)</Link>
+        </li>
       </ul>
       <hr />
 
@@ -42,6 +46,8 @@ function App() {
         즉, 우리가 profile 컴포넌트에서 match.params 로 가져오는 username 입니다.
       */}
       <Route path="/profiles" component={Profiles} />
+      {/* <Route path="/history" render={() => <HistorySample />} /> */}
+      <Route path="/history" component={HistorySample} />
     </div>
   );
 }

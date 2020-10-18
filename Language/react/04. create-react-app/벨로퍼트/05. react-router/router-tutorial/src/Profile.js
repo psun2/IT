@@ -1,4 +1,5 @@
 import React from 'react';
+import WithRouterSample from './WithRouterSample';
 
 const profileData = {
   park: {
@@ -34,6 +35,7 @@ const Profile = ({ match }) => {
           <p>{profile.description}</p>
         </div>
       )}
+      <WithRouterSample />
     </>
   );
 };
