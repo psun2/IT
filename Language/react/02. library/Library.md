@@ -77,7 +77,7 @@ yarn add react-redux
 
 ---
 
-## `Redux Developer Tools`
+## `redux-devtools-extension`
 
 [바로가기](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
 

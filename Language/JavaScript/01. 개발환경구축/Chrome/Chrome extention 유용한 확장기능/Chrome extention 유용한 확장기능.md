@@ -46,7 +46,7 @@ yarn add redux-devtools-extension
 import { createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-const store = createStore(rootReducer, composeWithDevTools);
+const store = createStore(rootReducer, composeWithDevTools());
 // 스토어를 생성 할때 두번째 파라미터 인자로 전달합니다.
 ```
 
