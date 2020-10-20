@@ -20,9 +20,58 @@ yarn add react-router-dom
 
 ![리액트 전용](./logo/favicon.ico)
 
+[공식사이트](https://ko.redux.js.org/)
+
+[Redux - GitBook](https://lunit.gitbook.io/redux-in-korean/)
+
+[Redux - GitHub](https://github.com/deminoth/redux)
+
 ```
 yarn add redux
 ```
+
+- 밸로퍼트/06. react-Redux/learn-redux 참조
+
+---
+
+## `react-redux`
+
+![리액트 전용](./logo/favicon.ico)
+
+[공식사이트](https://ko.redux.js.org/)
+
+[Redux - GitBook](https://lunit.gitbook.io/redux-in-korean/)
+
+[Redux - GitHub](https://github.com/deminoth/redux)
+
+```
+yarn add react-redux
+```
+
+- 한 파일에 몰아서 작성하는 방식
+
+  > Ducks 패턴
+
+  - action type 설정
+  - action 생성 함수
+  - 초기상태 선언
+  - reducer 작성
+
+- index (module)
+
+  > import {combineReducers} from 'redux' // reducer 합체
+
+- index (root)
+
+  > import {Provider} from 'react-redux'
+  > import {createStroe} from 'redux'
+
+  ```
+  const store = createStore(rootReducer);
+    <Provider store={store}>
+      <App />
+    </Provider>
+  ```
 
 - 밸로퍼트/06. react-Redux/learn-redux 참조
 
