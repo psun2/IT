@@ -12,7 +12,19 @@
 yarn add react-router-dom
 ```
 
-- 밸로퍼트/router-tutorial 참조
+- 밸로퍼트/05. react-router/router-tutorial 참조
+
+---
+
+## `redux`
+
+![리액트 전용](./logo/favicon.ico)
+
+```
+yarn add redux
+```
+
+- 밸로퍼트/06. react-Redux/learn-redux 참조
 
 ---
 
@@ -43,19 +55,21 @@ import qs from 'qs';
   });
 ```
 
+- 밸로퍼트/05. react-router/router-tutorial 참조
+
 ---
 
 ## `prettier`
 
 - [Vscode] 폴더에서 확인가능
-- 밸로퍼트/useful-tools 참조
+- 밸로퍼트/01. react-tutorial/useful-tools 참조
 
 ---
 
 ## `EsLint`
 
 - [Vscode] 폴더에서 확인가능
-- 밸로퍼트/useful-tools 참조
+- 밸로퍼트/01. react-tutorial/useful-tools 참조
 
 ---
 
@@ -107,7 +121,7 @@ const UsersReactAsync = () => {
   });
 ```
 
-- 밸로퍼트/react-api 참조
+- 밸로퍼트/react-api/api-integrate 참조
 
 ---
 
@@ -174,7 +188,7 @@ console.log(array); // 원본 배열을 바뀌지 않았습니다.
 // __proto__: Array(0)
 ```
 
-- 밸로퍼트/basic-react 참조
+- 밸로퍼트/01. react-tutorial/begin-react 참조
 
 ---
 
@@ -244,7 +258,7 @@ function App() {
 export default App;
 ```
 
-- 밸로퍼트/styling-with-styled-components 참조
+- 밸로퍼트/02. react-styling/styling-with-styled-components 참조
 
 ---
 
@@ -260,7 +274,7 @@ polished 라이브러리는 css 스타일링을 할때, 많이 사용 되는 코
 yarn add polished
 ```
 
-- 밸로퍼트/styling-with-styled-components 참조
+- 밸로퍼트/02. react-styling/styling-with-styled-components 참조
 
 ---
 
@@ -311,7 +325,7 @@ $blue: #339be6;
 }
 ```
 
-- 벨로퍼트/styling-with-sass 참조
+- 벨로퍼트/02. react-styling/styling-with-sass 참조
 
 ---
 
@@ -342,7 +356,7 @@ classNames('foo', { bar: true, duck: flase }, 'baz', { quux: true }); / => 'foo 
 classNames(null, false, 'bar', undefined, 0, 1, { baz: null }, ''); //=> 'bar 1'
 ```
 
-- 벨로퍼트/styling-with-sass 참조
+- 벨로퍼트/02. react-styling/styling-with-sass 참조
 
 💜postcss(css의 모듈화) 와 연동
 
@@ -359,7 +373,7 @@ const cx = classNames.bind(stylse);
 <Component className={cx('blabla', {foo: true})} />
 ```
 
-- 벨로퍼트/styling-with-css-module 참조
+- 벨로퍼트/02. react-styling/styling-with-css-module 참조
 
 ---
 
@@ -389,7 +403,7 @@ md: Material Design icons 의 약어
 
 또한 사용 하고자 하는 컴포넌트 내에서 컴포넌트의 형식으로 사용 합니다.
 
-- 벨로퍼트/styling-with-css-module 참조
+- 벨로퍼트/02. react-styling/styling-with-css-module 참조
 
 ---
 
