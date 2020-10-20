@@ -111,6 +111,7 @@
 > 2020-10-20 | 05. 04. 리덕스 모듈 만들기(react-redux 라이브러리 소개)    
 > 2020-10-20 | 06. 05. 카운터 구현하기(프레젠테이셔널 컴포넌트 와 컨테이너 컴포넌트)
 > 2020-10-20 | 07. 06. [07. 06. 리덕스 개발자 도구 적용하기(devtools 라이브러리 소개, 확장프로그램 설치) ](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)   
+> 2020-10-20 | 08. 07. 할 일 목록 구현 A - 프레젠테이셔널 컴포넌트 만들기   
 
 
 
