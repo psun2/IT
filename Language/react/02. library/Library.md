@@ -77,6 +77,32 @@ yarn add react-redux
 
 ---
 
+## `Redux Developer Tools`
+
+[바로가기](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+
+[redux-devtools-extension github](https://github.com/zalmoxisus/redux-devtools-extension)
+
+리덕스를 활용하신다면 아주 유용한 툴입니다.
+
+❗꼭 redux-devtools-extension 라이브러리와 함께 사용 가능합니다.
+
+```
+yarn add redux-devtools-extension
+```
+
+```
+import { createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+
+const store = createStore(rootReducer, composeWithDevTools());
+// 스토어를 생성 할때 두번째 파라미터 인자로 전달합니다.
+```
+
+- 밸로퍼트/06. react-Redux/learn-redux 참조
+
+---
+
 ## `qs`
 
 : route 의 props 로 받아온 location 객체를 사용 하여, query string 을 parsing 합니다.

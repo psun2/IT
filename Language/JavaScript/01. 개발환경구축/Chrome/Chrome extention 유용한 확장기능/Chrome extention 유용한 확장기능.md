@@ -26,6 +26,34 @@ width, height 의 값을 조금더 정확하고 쉽게 설정 할 수 있게 도
 
 ---
 
+## `Redux Developer Tools`
+
+[바로가기](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+
+[redux-devtools-extension github](https://github.com/zalmoxisus/redux-devtools-extension)
+
+![React Developer Tools](./img/Redux.png)
+
+리덕스를 활용하신다면 아주 유용한 툴입니다.
+
+❗꼭 redux-devtools-extension 라이브러리와 함께 사용 가능합니다.
+
+```
+yarn add redux-devtools-extension
+```
+
+```
+import { createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+
+const store = createStore(rootReducer, composeWithDevTools);
+// 스토어를 생성 할때 두번째 파라미터 인자로 전달합니다.
+```
+
+- 밸로퍼트/06. react-Redux/learn-redux 참조
+
+---
+
 ## `JSON Viewer`
 
 -[바로가기](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=ko)
