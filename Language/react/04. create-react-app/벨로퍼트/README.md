@@ -118,5 +118,13 @@
 > 2020-10-21 | 11. 10. useSelector 최적화(useSelector() 와 shallowEqual())  
 > 2020-10-21 | 12. 11. connect, HOC 함수 소개  
 > 2020-10-21 | 13. 12 . connect 를 사용해서 컨테이너 구하기(hooks 와 connect 비교_class 컴포넌트에서의 useSelect, useDispatch)     
+> 2020-10-21 | 14. 13. connect에 대해 알아두면 좋은것들(영상만 참고함...)  
+
+---
+
+## 리액트 - Redux
+> 2020-10-22 | 02. 01. 리덕스 프로젝트 준비하기(yarn add redux react-redux redux-devtools-extension)    
+
+
 
 
