@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 const TodoItem = ({ todo, onToggle }) => (
   <li
     style={{
-      textDecoration: todo.done ? 'lene-through' : 'none',
+      textDecoration: todo.done ? 'line-through' : 'none',
+      cursor: 'pointer',
     }}
     onClick={() => onToggle(todo.id)}
   >

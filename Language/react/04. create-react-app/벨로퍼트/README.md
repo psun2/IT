@@ -113,5 +113,8 @@
 > 2020-10-20 | 07. 06. [07. 06. 리덕스 개발자 도구 적용하기(devtools 라이브러리 소개, 확장프로그램 설치) ](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)   
 > 2020-10-20 | 08. 07. 할 일 목록 구현 A - 프레젠테이셔널 컴포넌트 만들기   
 
+> 2020-10-21 | 09. 08. 할 일 목록 구현 B - 컨테이너 컴포넌트 만들기  
+> 2020-10-21 | 10. 09. 할 일 목록 구현 C - 컴포넌트 최적화를 위한 작업  
+
 
 
