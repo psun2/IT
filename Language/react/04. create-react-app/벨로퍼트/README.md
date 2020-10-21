@@ -117,6 +117,6 @@
 > 2020-10-21 | 10. 09. 할 일 목록 구현 C - 컴포넌트 최적화를 위한 작업 (React.memo())  
 > 2020-10-21 | 11. 10. useSelector 최적화(useSelector() 와 shallowEqual())  
 > 2020-10-21 | 12. 11. connect, HOC 함수 소개  
-
+> 2020-10-21 | 13. 12 . connect 를 사용해서 컨테이너 구하기(hooks 와 connect 비교_class 컴포넌트에서의 useSelect, useDispatch)     
 
 
