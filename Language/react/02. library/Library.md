@@ -103,6 +103,31 @@ const store = createStore(rootReducer, composeWithDevTools());
 
 ---
 
+## `redux-logger`
+
+[mddileware-devtools 연동](https://github.com/zalmoxisus/redux-devtools-extension)  
+: redux 의 액션 과 상태를 출력하는 middleware 입니다.  
+아래에서는 redux-devtools-extenstion 과 함께 사용 하는 예제 입니다.
+
+```
+yarn add redux-logger
+```
+
+```
+import { createStore, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import logger from 'redux-logger';
+
+const store = createStore(reducer, composeWithDevTools(
+  applyMiddleware(logger),
+  // other store enhancers if any
+));
+```
+
+- 밸로퍼트/06. react-Redux/learn-redux-middleware 참조
+
+---
+
 ## `qs`
 
 : route 의 props 로 받아온 location 객체를 사용 하여, query string 을 parsing 합니다.
