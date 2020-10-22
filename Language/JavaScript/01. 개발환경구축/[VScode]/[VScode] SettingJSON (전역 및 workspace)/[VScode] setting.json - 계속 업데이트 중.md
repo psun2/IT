@@ -6,6 +6,9 @@ setting.json 파일 여는 법 : [참고](https://blog.naver.com/tjddjs90/221882
 
 ```
 {
+  // TODO: 글꼴및 합자를 관리하는 셋팅
+  "editor.fontFamily": "D2Coding ligature, D2Coding, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
   // TODO: 아이콘 theme
   "workbench.iconTheme": "vscode-icons",
   //TODO: theme
