@@ -122,8 +122,9 @@
 
 ---
 
-## 리액트 - Redux
+## 리액트 - Redux-Middleware
 > 2020-10-22 | 02. 01. 리덕스 프로젝트 준비하기(yarn add redux react-redux redux-devtools-extension)    
+> 2020-10-22 | 03. 02. 리덕스 미들웨어 만들어보고 이해하기  
 
 
 

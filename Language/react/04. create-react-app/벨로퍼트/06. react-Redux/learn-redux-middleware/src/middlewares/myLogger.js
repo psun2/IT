@@ -1,0 +1,33 @@
+// middleware 의 구조
+// const middleware = (store) => (next) => (action) => {
+//     // 하고 싶은 작업...
+//   };
+
+// function middleware(store) {
+//   return function (next) {
+//     return function (action) {
+//       // 하고 싶은 작업...
+//     };
+//   };
+// }
+
+// 함수를 리턴하는 함수를리턴하는 또 함수를 리턴하는 myLogger 함수
+const myLogger = (store) => (next) => (action) => {
+  // 미들웨어로 인한 코드변경은 middleware 생성 한 myLogger 함수 작성 로직
+  // index.js 에서 store 를 생성할때 myLogger middleware 을 넣어 준 것이 전부입니다.
+  // Container 에서 dispatch 할때 dispatch 는 액션을 가지고 store 내부에 있는
+  // myLogger 로 와서 해당 로직을 실행합니다.
+  // 즉, reducer 로 전달 되기전의 과정이 하나 더 늘어 난 것입니다.
+  console.log(action);
+
+  console.log('Preve:\t', store.getState()); // 액션이 dispatch 전 결과 출력
+
+  // 액션을 다음 미들웨어
+  // 다음 미들웨어가 없다면 action을 reducer 에게 전달 합니다.
+  const result = next(action);
+  console.log('Next:\t', store.getState()); // 액션이 dispatch 한 결과 출력
+  return result;
+  // result => 예를 들어 Container 에서 dispatch 시킨 결과물이 미들웨어의 result 입니다.
+};
+
+export default myLogger;
