@@ -128,6 +128,51 @@ const store = createStore(reducer, composeWithDevTools(
 
 ---
 
+## `redux-thunk`
+
+[redux-thunk github](https://github.com/reduxjs/redux-thunk)  
+: redux에서 dispatch 시 함수를 통하여 dispatch 할 수 있는 라이브러리  
+주로 api 등 비동기 작업에서 많이 쓰입니다.
+
+```
+yarn add redux-thunk
+```
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { createStore, applyMiddleware } from 'redux';
+import rootReducer from './modules';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { Provider } from 'react-redux';
+// import myLogger from './middlewares/myLogger';
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+
+// const store = createStore(rootReducer, applyMiddleware(myLogger, logger));
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk, logger)),
+  // logger 을 사용할땐 middleware 을 묶어주는 applyMiddleWare 의 함수의
+  // 마지막 인자로 전달 해야 합니다.
+  // 그렇지 않으면 logger 가 함수도 출력합니다.
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
+```
+
+- 밸로퍼트/06. react-Redux/learn-redux-middleware 참조
+
+---
+
 ## `qs`
 
 : route 의 props 로 받아온 location 객체를 사용 하여, query string 을 parsing 합니다.

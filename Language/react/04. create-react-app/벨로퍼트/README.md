@@ -125,4 +125,5 @@
 ## 리액트 - Redux-Middleware
 > 2020-10-22 | 02. 01. 리덕스 프로젝트 준비하기(yarn add redux react-redux redux-devtools-extension)    
 > 2020-10-22 | 03. 02. 리덕스 미들웨어 만들어보고 이해하기(applyMiddleware)   
-> 2020-10-22 | 04. 03. redux-logger 사용 및 미들웨어와 DevTools 함께 사용(redux-logger 라이브러리 소개)    
+> 2020-10-22 | 04. 03. redux-logger 사용 및 미들웨어와 DevTools 함께 사용(redux-logger 라이브러리 소개)   
+> 2020-10-22 | 05. 04. redux-thunk 라이브러리 소개  
