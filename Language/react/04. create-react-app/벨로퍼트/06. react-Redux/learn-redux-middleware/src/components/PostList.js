@@ -10,5 +10,4 @@ const PostList = ({ posts }) => (
     ))}
   </ul>
 );
-
 export default PostList;
