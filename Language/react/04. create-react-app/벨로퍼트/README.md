@@ -130,3 +130,5 @@
 > 2020-10-22 | 06. 05. redux-thunk로 Promise 다루기 A - thunk 작성하기   
 
 > 2020-10-24 | 07. 06. redux-thunk로 Promise 다루기 B - reducerUtils  
+> 2020-10-24 | 08. 07. redux-thunk로 Promise 다루기 C - 리팩토링  
+> 2020-10-24 | 08. 07. redux-thunk로 Promise 다루기 D - 리팩토링  
