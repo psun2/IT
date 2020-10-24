@@ -132,4 +132,5 @@
 > 2020-10-24 | 07. 06. redux-thunk로 Promise 다루기 B - reducerUtils  
 > 2020-10-24 | 08. 07. redux-thunk로 Promise 다루기 C - 리팩토링  
 > 2020-10-24 | 09. 08. redux-thunk로 Promise 다루기 D - 리팩토링  
-> 2020-10-24 | 10. 09. redux-thunk로 Promise 다루기 E - 포스트  
+> 2020-10-24 | 10. 09. redux-thunk로 Promise 다루기 E - 포스트    
+> 2020-10-24 | 11. 10. redux-thunk로 Promise 다루기 F - 라우터  

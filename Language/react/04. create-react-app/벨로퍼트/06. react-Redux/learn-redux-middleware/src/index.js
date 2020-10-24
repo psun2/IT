@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 // import myLogger from './middlewares/myLogger';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
+import { BrowserRouter } from 'react-router-dom';
 
 // const store = createStore(rootReducer, applyMiddleware(myLogger, logger));
 const store = createStore(
@@ -20,9 +21,11 @@ const store = createStore(
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
 );
