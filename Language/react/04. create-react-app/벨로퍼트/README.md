@@ -127,4 +127,6 @@
 > 2020-10-22 | 03. 02. 리덕스 미들웨어 만들어보고 이해하기(applyMiddleware)   
 > 2020-10-22 | 04. 03. redux-logger 사용 및 미들웨어와 DevTools 함께 사용(redux-logger 라이브러리 소개)   
 > 2020-10-22 | 05. 04. redux-thunk 라이브러리 소개(함수를통한 dispatch)  
-> 2020-10-22 | 06. 05. redux-thunk로 Promise 다루기 A - thunk 작성하기    
+> 2020-10-22 | 06. 05. redux-thunk로 Promise 다루기 A - thunk 작성하기   
+
+> 2020-10-24 | 07. 06. redux-thunk로 Promise 다루기 B - reducerUtils  
