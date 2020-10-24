@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import Post from '../components/Post';
-import { getPost } from '../modules/posts';
+import { clearPost, getPost } from '../modules/posts';
 
 const PostContainer = ({ postId }) => {
   const { data, loading, error } = useSelector(
@@ -12,6 +12,9 @@ const PostContainer = ({ postId }) => {
 
   useEffect(() => {
     dispatch(getPost(postId));
+    return () => {
+      dispatch(clearPost());
+    };
   }, [dispatch, postId]);
 
   if (loading) return <div>로딩중 ...</div>;

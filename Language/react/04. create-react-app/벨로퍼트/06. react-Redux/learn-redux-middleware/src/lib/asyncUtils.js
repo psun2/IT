@@ -4,7 +4,6 @@ export const createPromiseThunk = (type, promiseCreator) => {
   // const thunkCreator = (param) => async (dispatch) => {
   return (param) => async (dispatch) => {
     dispatch({ type });
-
     try {
       const payload = await promiseCreator(param);
       dispatch({
@@ -23,7 +22,7 @@ export const createPromiseThunk = (type, promiseCreator) => {
   // return thunkCreator;
 };
 
-export const handleAsnycActions = (type, key) => {
+export const handleAsnycActions = (type, key, keppData) => {
   const [SUCCESS, ERROR] = [`${type}_SUCCESS`, `${type}_ERROR`];
 
   return (state, action) => {
@@ -32,7 +31,7 @@ export const handleAsnycActions = (type, key) => {
       case type:
         return {
           ...state,
-          [key]: reducerUtils.loading(),
+          [key]: reducerUtils.loading(keppData ? state[key].data : null),
         };
       case SUCCESS:
         return {
