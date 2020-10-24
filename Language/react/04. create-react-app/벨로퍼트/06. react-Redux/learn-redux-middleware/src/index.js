@@ -8,12 +8,21 @@ import { Provider } from 'react-redux';
 // import myLogger from './middlewares/myLogger';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+
+const customHistory = createBrowserHistory();
 
 // const store = createStore(rootReducer, applyMiddleware(myLogger, logger));
 const store = createStore(
   rootReducer,
-  composeWithDevTools(applyMiddleware(thunk, logger)),
+  composeWithDevTools(
+    applyMiddleware(
+      thunk.withExtraArgument({ history: customHistory }),
+      logger,
+    ),
+  ),
   // logger 을 사용할땐 middleware 을 묶어주는 applyMiddleWare 의 함수의
   // 마지막 인자로 전달 해야 합니다.
   // 그렇지 않으면 logger 가 함수도 출력합니다.
@@ -21,11 +30,13 @@ const store = createStore(
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router history={customHistory}>
+      {/* <BrowserRouter> */}
       <Provider store={store}>
         <App />
       </Provider>
-    </BrowserRouter>
+      {/* </BrowserRouter> */}
+    </Router>
   </React.StrictMode>,
   document.getElementById('root'),
 );
