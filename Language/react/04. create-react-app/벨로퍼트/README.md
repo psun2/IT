@@ -139,4 +139,5 @@
 > 2020-10-24 | 14. 13. 사용자 경험 개선 C - createPromiseThunkById  
 > 2020-10-24 | 15. 14. Thunk 함수에서 리액트 라우터 history 사용하기  
 
-> 2020-10-25 | 16. 15. json-server  
+> 2020-10-25 | 16. 15. ❗❗json-server(api의 get, post, put, delete 메소드 및 포스트맨)  
+> 2020-10-25 | 17. 16. CORS and Proxy   
