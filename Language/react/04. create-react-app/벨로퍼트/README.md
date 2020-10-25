@@ -141,3 +141,4 @@
 
 > 2020-10-25 | 16. 15. ❗❗json-server(api의 get, post, put, delete 메소드 및 포스트맨)  
 > 2020-10-25 | 17. 16. CORS and Proxy   
+> 2020-10-25 | 18. 17. redux-saga A - 소개, Generator 문법  
