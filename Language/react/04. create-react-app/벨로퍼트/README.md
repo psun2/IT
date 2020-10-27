@@ -110,7 +110,7 @@
 > 2020-10-20 | 04. 03. 리덕스 사용 할 준비하기(redux 라이브러리 소개)   
 > 2020-10-20 | 05. 04. 리덕스 모듈 만들기(react-redux 라이브러리 소개) (createStore(), Provider)  
 > 2020-10-20 | 06. 05. 카운터 구현하기(프레젠테이셔널 컴포넌트 와 컨테이너 컴포넌트)  
-> 2020-10-20 | 07. 06. [리덕스 개발자 도구 적용하기(devtools 라이브러리 소개, 확장프로그램 설치) ](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd), (composeWithDevTools()) 
+> 2020-10-20 | 07. 06. [리덕스 개발자 도구 적용하기(devtools 라이브러리 소개, 확장프로그램 설치) ](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd), (composeWithDevTools())        
 > 2020-10-20 | 08. 07. 할 일 목록 구현 A - 프레젠테이셔널 컴포넌트 만들기   
 
 > 2020-10-21 | 09. 08. 할 일 목록 구현 B - 컨테이너 컴포넌트 만들기  
@@ -142,3 +142,5 @@
 > 2020-10-25 | 16. 15. ❗❗json-server(api의 get, post, put, delete 메소드 및 포스트맨)  
 > 2020-10-25 | 17. 16. CORS and Proxy   
 > 2020-10-25 | 18. 17. redux-saga A - 소개, Generator 문법  
+
+> 2020-10-27 | 19. 18. redux-saga B - 기초 비동기 카운터 구현  

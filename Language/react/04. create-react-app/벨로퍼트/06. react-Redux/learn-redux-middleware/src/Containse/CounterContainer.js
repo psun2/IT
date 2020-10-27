@@ -1,12 +1,13 @@
 import React from 'react';
 import { useSelector, useDispatch, shallowEqual } from 'react-redux';
-import {
-  // increase,
-  // decrease,
-  increaseAsync,
-  decreaseAsync,
-  // examThunkBody,
-} from '../modules/counter';
+// import {
+//   // increase,
+//   // decrease,
+//   increaseAsync,
+//   decreaseAsync,
+//   // examThunkBody,
+// } from '../modules/counter';
+import { increaseAsync, decreaseAsync } from '../modules/counter_redux-saga';
 import Counter from '../components/Conter';
 const CounterContainer = () => {
   const number = useSelector((state) => state.counter, shallowEqual);

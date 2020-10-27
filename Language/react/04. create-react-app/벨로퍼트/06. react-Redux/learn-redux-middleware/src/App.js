@@ -10,8 +10,8 @@ function App() {
     <>
       <Route exact path="/" render={() => <PostListPage />} />
       <Route exact path="/:id" render={() => <PostPage />} />
-      {/* <CounterContainer />
-      <PostListContainer /> */}
+      <CounterContainer />
+      {/* <PostListContainer /> */}
     </>
   );
 }
