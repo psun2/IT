@@ -4,6 +4,8 @@
 
 import * as postsAPI from '../api/posts';
 import {
+  createPromiseSaga,
+  createPromiseSagaById,
   handleAsnycActions,
   handleAsnycActionsById,
   reducerUtils,
@@ -24,40 +26,43 @@ const CLEAR_POST = 'CLEAR_POST';
 export const getPosts = () => ({ type: GET_POSTS });
 export const getPost = (id) => ({ type: GET_POST, payload: id, meta: id });
 
-function* getPostsSaga() {
-  try {
-    const posts = yield call(postsAPI.getPosts);
-    yield put({
-      type: GET_POSTS_SUCCESS,
-      payload: posts,
-    });
-  } catch (error) {
-    yield put({
-      type: GET_POSTS_ERROR,
-      payload: error,
-      error: true,
-    });
-  }
-}
+// function* getPostsSaga() {
+//   try {
+//     const posts = yield call(postsAPI.getPosts);
+//     yield put({
+//       type: GET_POSTS_SUCCESS,
+//       payload: posts,
+//     });
+//   } catch (error) {
+//     yield put({
+//       type: GET_POSTS_ERROR,
+//       payload: error,
+//       error: true,
+//     });
+//   }
+// }
 
-function* getPostSaga(action) {
-  const id = action.payload;
-  try {
-    const post = yield call(postsAPI.getPostById, id);
-    yield put({
-      type: GET_POST_SUCCESS,
-      payload: post,
-      meta: id,
-    });
-  } catch (error) {
-    yield put({
-      type: GET_POST_ERROR,
-      payload: error,
-      error: true,
-      meta: id,
-    });
-  }
-}
+// function* getPostSaga(action) {
+//   const id = action.payload;
+//   try {
+//     const post = yield call(postsAPI.getPostById, id);
+//     yield put({
+//       type: GET_POST_SUCCESS,
+//       payload: post,
+//       meta: id,
+//     });
+//   } catch (error) {
+//     yield put({
+//       type: GET_POST_ERROR,
+//       payload: error,
+//       error: true,
+//       meta: id,
+//     });
+//   }
+// }
+
+const getPostsSaga = createPromiseSaga(GET_POSTS, postsAPI.getPosts);
+const getPostSaga = createPromiseSagaById(GET_POST, postsAPI.getPostById);
 
 // saga 를 모니터링 하는 함수 => 루트 사가에 포함 시켜 주어야 합니다.
 export function* postsSaga() {
