@@ -11,7 +11,7 @@ import {
   reducerUtils,
 } from '../lib/asyncUtils';
 
-import { call, put, takeEvery } from 'redux-saga/effects';
+import { call, getContext, put, takeEvery } from 'redux-saga/effects';
 
 const GET_POSTS = 'posts/GET_POSTS'; // 특정 요청이 시작됨을 알리는 액션
 const GET_POSTS_SUCCESS = 'posts/GET_POSTS_SUCCESS'; // 요청이 끝난뒤 Loading fasle 데이터 성공
@@ -23,8 +23,16 @@ const GET_POST_ERROR = 'post/GET_POST_ERROR';
 
 const CLEAR_POST = 'CLEAR_POST';
 
+const GO_TO_HOME = 'GO_TO_HOME';
+
 export const getPosts = () => ({ type: GET_POSTS });
 export const getPost = (id) => ({ type: GET_POST, payload: id, meta: id });
+export const goToHome = () => ({ type: GO_TO_HOME });
+
+function* goToHomeSaga() {
+  const history = yield getContext('history');
+  history.push('/');
+}
 
 // function* getPostsSaga() {
 //   try {
@@ -68,14 +76,9 @@ const getPostSaga = createPromiseSagaById(GET_POST, postsAPI.getPostById);
 export function* postsSaga() {
   yield takeEvery(GET_POSTS, getPostsSaga);
   yield takeEvery(GET_POST, getPostSaga);
+  yield takeEvery(GO_TO_HOME, goToHomeSaga);
 }
 
-export const goToHome = () => (dispatch, getState, { history }) => {
-  console.log('dispatch', dispatch);
-  console.log('getState', getState());
-  console.log('history', history);
-  // history.push('/');
-};
 export const clearPost = () => ({ type: CLEAR_POST });
 
 const initialState = {

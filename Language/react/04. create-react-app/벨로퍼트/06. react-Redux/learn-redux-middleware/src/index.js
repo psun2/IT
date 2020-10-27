@@ -14,7 +14,13 @@ import { createBrowserHistory } from 'history';
 import createSagaMiddleware from 'redux-saga';
 
 const customHistory = createBrowserHistory();
-const sagaMiddleware = createSagaMiddleware();
+const sagaMiddleware = createSagaMiddleware({
+  context: {
+    // saga 미들웨에서 history 사용
+    // react-router-dom 에서 훅스가 나왔으므로 간편하게 훅스 사용 가능!
+    history: customHistory,
+  },
+});
 
 // const store = createStore(rootReducer, applyMiddleware(myLogger, logger));
 const store = createStore(

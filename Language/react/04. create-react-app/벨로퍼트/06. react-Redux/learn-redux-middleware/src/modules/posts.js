@@ -2,6 +2,7 @@
 // 성공시의 데이터의 상태
 // 에러시의 에러의 상태
 
+import { getContext } from 'redux-saga/effects';
 import * as postsAPI from '../api/posts';
 import {
   createPromiseThunk,
@@ -38,6 +39,7 @@ export const goToHome = () => (dispatch, getState, { history }) => {
   console.log('history', history);
   // history.push('/');
 };
+
 export const clearPost = () => ({ type: CLEAR_POST });
 
 const initialState = {
