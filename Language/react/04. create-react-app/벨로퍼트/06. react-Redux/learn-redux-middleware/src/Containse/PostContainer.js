@@ -3,7 +3,7 @@ import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import Post from '../components/Post';
 import { reducerUtils } from '../lib/asyncUtils';
 // import { getPost, goToHome } from '../modules/posts';
-import { getPost, goToHome } from '../modules/posts_redux-saga';
+import { getPost, goToHome, printState } from '../modules/posts_redux-saga';
 
 const PostContainer = ({ postId }) => {
   const { data, loading, error } = useSelector(
@@ -25,6 +25,7 @@ const PostContainer = ({ postId }) => {
   return (
     <>
       <button onClick={() => dispatch(goToHome())}>홈으로 이동</button>
+      <button onClick={() => dispatch(printState())}>상태출력</button>
       <Post post={data} />
     </>
   );
