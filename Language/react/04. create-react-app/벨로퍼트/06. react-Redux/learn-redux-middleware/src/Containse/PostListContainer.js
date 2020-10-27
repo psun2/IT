@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, shallowEqual, useSelector } from 'react-redux';
 import PostList from '../components/PostList';
-import { getPosts } from '../modules/posts';
+// import { getPosts } from '../modules/posts';
+import { getPosts } from '../modules/posts_redux-saga';
 
 const PostListContainer = () => {
   const { data, loading, error } = useSelector(

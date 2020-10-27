@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import Post from '../components/Post';
 import { reducerUtils } from '../lib/asyncUtils';
-import { getPost, goToHome } from '../modules/posts';
+// import { getPost, goToHome } from '../modules/posts';
+import { getPost, goToHome } from '../modules/posts_redux-saga';
 
 const PostContainer = ({ postId }) => {
   const { data, loading, error } = useSelector(
