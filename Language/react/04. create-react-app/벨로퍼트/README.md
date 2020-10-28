@@ -1,6 +1,8 @@
 # 학습 스케쥴
 
 > [자습서](https://react.vlpt.us/)  
+> [ts-자습서](http://bit.ly/tshandbook/)  
+> [ts_ko-자습서](http://bit.ly/tshandbook-kr/)  
 
 ---
 
@@ -147,3 +149,10 @@
 > 2020-10-27 | 20. 19. redux-saga C - 프로미스 다루기  
 > 2020-10-27 | 21. 20. redux-saga D - 프로미스 관련 saga 리팩토링  
 > 2020-10-27 | 22. 21. redux-saga E - 라우터 연동   
+
+---
+## 리액트 - TypeScript    
+> [ts-자습서](http://bit.ly/tshandbook/)  
+> [ts_ko-자습서](http://bit.ly/tshandbook-kr/)  
+> 2020-10-28 | 02. 01. 타입스크립트 연습 A - 작업환경 설정, 기본타입, 함수  
+

@@ -131,7 +131,7 @@ const store = createStore(reducer, composeWithDevTools(
 ## `redux-thunk`
 
 [redux-thunk github](https://github.com/reduxjs/redux-thunk)  
-: redux에서 dispatch 시 함수를 통하여 dispatch 할 수 있는 라이브러리  
+: redux에서 dispatch 시 함수를 통하여 dispatch 할 수 있는 middleware 라이브러리  
 주로 api 등 비동기 작업에서 많이 쓰입니다.
 
 ```
@@ -167,6 +167,21 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root'),
 );
+```
+
+- 밸로퍼트/06. react-Redux/learn-redux-middleware 참조
+
+---
+
+## `redux-saga`
+
+[redux-saga](https://redux-saga.js.org/)  
+: middleware 라이브러리 주로 api 등 비동기 작업에서 많이 쓰입니다.    
+redux-thunk 와는 다르게 순수 action 으로 dispatch 가 가능합니다.  
+Generator 문법을 사용 하는 자바스크립트 코드입니다.  
+
+```
+yarn add redux-saga
 ```
 
 - 밸로퍼트/06. react-Redux/learn-redux-middleware 참조
@@ -267,6 +282,53 @@ const UsersReactAsync = () => {
 ```
 
 - 밸로퍼트/react-api/api-integrate 참조
+
+---
+
+## 'TypeScript'
+
+# TypeScript
+
+### nodemodule 초기화 package.json 생성
+
+```
+yarn init -y
+```
+
+### typescript 라이브러리
+
+```
+yarn add typescript
+```
+
+### ts-node 라이브러리
+
+```
+yarn add ts-node
+```
+
+### 초기화 타입스크립트 설정 파일 생성 (tsconfig.json)
+
+```
+yarn run tsc --init
+```
+
+### 컴파일
+
+```
+yarn run tsc
+```
+
+: 문제점 const => var 로 변경 tsconfig.json 에서 target 설정으로 상위버전으로 변경합니다.
+
+### 노드 실행
+
+```
+yarn run ts-node ./src/practice.ts
+yarn run ts-node ./scr/경로/파일이름.ts
+```
+
+- 밸로퍼트/ts-practice 참조
 
 ---
 
