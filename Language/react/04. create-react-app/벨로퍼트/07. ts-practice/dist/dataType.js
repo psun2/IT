@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 let count = 0; // 타입스크립트를 쓴다고 해서 무조건 뒤에 :자료형 을 붙이는 것이 아닙니다.
 count += 1;
 // count = '문자열'; // number타입의 변수에 문자열을 넣을시 에러
