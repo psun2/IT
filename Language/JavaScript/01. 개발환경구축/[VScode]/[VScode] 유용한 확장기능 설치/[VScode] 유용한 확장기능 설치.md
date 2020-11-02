@@ -138,7 +138,7 @@ Editor: Format On Save
 ## `CSS peek`
 
 <mark>필수옵션</mark>  
-![CSS peek](./image/CSS_peek.gif)  
+![CSS peek](./image/CSS_Peek.gif)  
 해당 태그의 클래스 에서 ctrl + 우클릭으로 적용된 style이 무엇이며, style sheet 로의 이동 할 수 있게 도와 줍니다.
 
 ---
