@@ -1,12 +1,12 @@
 type Person = {
   name: string;
-  age?: number;
+  age?: number; // ? 있을 수 도 있고 없을 수 도 있다는 의미 입니다.
 };
 
 type Developer = Person & {
   // Person 상속
   name: string;
-  age?: number;
+  age?: number; // ? 있을 수 도 있고 없을 수 도 있다는 의미 입니다.
   skills: string[];
 };
 
